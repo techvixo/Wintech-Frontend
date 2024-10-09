@@ -3,6 +3,7 @@ module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./Components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
@@ -13,5 +14,19 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [require("daisyui")],
+  daisyui: {
+    themes: [
+      {
+        mytheme: {
+          "primary": "#252B42",
+          "secondary": "#4179B6",
+          "accent": "#4177B7",
+          "neutral": "##86BCFC", //extra
+          "base-100": "#FFFFFF",
+        },
+      },
+      "light",
+    ],
+  },
 };
