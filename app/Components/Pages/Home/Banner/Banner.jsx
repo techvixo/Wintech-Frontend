@@ -72,13 +72,13 @@ const Banner = () => {
                       {slider?.title}
                     </h2>
                     <p className="text-white text-sm">{slider?.des}</p>
-                    <div className="w-full flex items-center justify-center">
+                    <div className="w-full flex items-center justify-center pt-5 md:pt-2">
                       <div className="md:w-2/3 h-12 md:h-14 bg-white relative w-full rounded-2xl">
                         <input
                           onChange={(e) => setInputValue(e.target.value)}
                           type="text"
                           required
-                          placeholder="Type your email"
+                          placeholder="Search here.."
                           className={`absolute top-0 left-0 input h-full rounded-2xl input-bordered w-full `} // Add red border when email is not valid
                         />
                         <button

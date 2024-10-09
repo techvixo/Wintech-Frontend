@@ -111,7 +111,7 @@ const Navbar = () => {
   ];
   return (
     <nav
-      className={`z-40  w-full fixed left-0 right-0 py-4 lg:py-0  ${
+      className={`z-40  w-full fixed left-0 right-0 py-2 lg:py-0  ${
         isSticky
           ? "top-0 bg-white nav_shadow"
           : `top-0 bg-white ${isRoot && "md:bg-[#00000000]"} navber_border`
@@ -219,7 +219,7 @@ const Navbar = () => {
         <div
           className={`absolute ${
             navToggle ? "left-0" : "left-[-120%] w-1/2 "
-          } top-[3.5rem] flex w-full flex-col pb-3 pt-2 transition-all duration-300  lg:static lg:w-[unset] lg:flex-row bg-white  lg:bg-transparent  lg:pb-0 lg:pt-0 `}
+          } top-[4.5rem] flex w-full flex-col pb-3 pt-2 transition-all duration-300  lg:static lg:w-[unset] lg:flex-row bg-white  lg:bg-transparent  lg:pb-0 lg:pt-0 `}
         >
           {/*============= for large device ========== */}
           <div className="hidden md:block">
