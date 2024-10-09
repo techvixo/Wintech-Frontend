@@ -29,8 +29,8 @@ p {
   color: #5c5c5c;
 }
 .main_container {
-  width: 81%;
-  max-width: 1536px;
+  width: 90%;
+  max-width: 1240px !important;
   margin: auto;
 }
 
@@ -121,7 +121,7 @@ nav {
   animation: upAndDown 2s infinite ease-in-out;
 }
 #banner .slick-dots {
-  bottom: 12px !important;
+  bottom: 20px !important;
   width: 100%;
   padding: 0;
   margin: 0;
@@ -130,7 +130,7 @@ nav {
 }
 #banner .slick-dots li button:before {
   font-family: "slick";
-  font-size: 13px;
+  font-size: 15px;
   line-height: 20px;
   /* border: 1px solid white; */
   position: absolute;
@@ -152,4 +152,34 @@ nav {
 }
 .contain.absolute.top-0.left-0.w-full.h-full {
   background: linear-gradient(45deg, #000000a3, #00000057);
+}
+
+#custom_part{
+  /* height: 80vh; */
+   background-image: url('../public/assets/home-img/custom-part-banner.png'); /* Or use an icon font */
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  }
+
+ /*============================================================
+  <<<<<<<<<<<<< All media query css code  here  >>>>>>>>>>>>>>>
+ =============================================================*/
+ @media only screen and (max-width: 600px) {
+  .main_container {
+    width: 95%;
+    max-width: 1536px;
+    margin: auto;
+  }
+  
+  /* .side_title{
+    font-size: 26px;
+    margin: 28px 0;
+  }
+  .slick-prev, .slick-next {
+    display: none !important;
+  }
+  .slick-prev {
+    display: none !important;
+  } */
 }

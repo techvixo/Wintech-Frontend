@@ -111,7 +111,7 @@ const Navbar = () => {
   ];
   return (
     <nav
-      className={`z-10  w-full fixed left-0 right-0 py-4 lg:py-0  ${
+      className={`z-40  w-full fixed left-0 right-0 py-4 lg:py-0  ${
         isSticky
           ? "top-0 bg-white nav_shadow"
           : `top-0 bg-white ${isRoot && "md:bg-[#00000000]"} navber_border`
@@ -183,7 +183,7 @@ const Navbar = () => {
         }`}
       >
         {/* Logo side here >>>>>>>>>>>>>>>> */}
-        <div className="nav_logo_side">
+        <div className="nav_logo_side hidden md:block">
           {isRoot ? (
             <Link href="/">
               <Image
@@ -203,6 +203,17 @@ const Navbar = () => {
               />
             </Link>
           )}
+        </div>
+        {/* Only for mobile device  */}
+        <div className="nav_logo_side  md:hidden">
+        <Link href="/">
+              <Image
+                src={mainLogo}
+                alt="logo"
+                width={400}
+                className="w-32"
+              />
+            </Link>
         </div>
         {/* NAv manu side here >>>>>>>>>>>>>>>> */}
         <div
