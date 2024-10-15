@@ -177,26 +177,6 @@ const Footer = () => {
                         <p className="text-[#FFFFFFE5] normal-case">Enter your email address for get promotions and news.</p>
                     </div>
                 </div>
-                <div className="grid grid-cols-1 md:grid-cols-4 gap-5  lg:gap-7 pt-5 text-[#FFFFFFE5] capitalize">
-                    <div className="w-full hidden md:block">
-                        <Image
-                            src={locationImg}
-                            alt="location"
-                            width={200}
-                            className="w-11/12"
-                        />
-                    </div>
-                    {
-                        address.map((location, i) => {
-                            return (
-                                <div key={location.id} className="flex flex-col">
-                                    <p className="px-4 p-1 mb-2 md:mb-4 rounded-md md:mt-2  bg-[#fafafae8] text-black font-semibold text-sm">{location.county}</p>
-                                    <p className='flex items-start gap-3 text-[#FFFFFFE5]'><span className="text-xl font-semibold text-primary"><FaLocationDot /></span><span>{location.address}</span></p>
-                                </div>
-                            )
-                        })
-                    }
-                </div>
                 <div className="footer_border py-2 md:py-4 w-full text-[#939393] flex flex-col-reverse md:flex-row justify-between items-center gap-3 mt-4 ">
                     <div className="md:w-1/2 md:flex flex-col items-start">
                         <div className=" flex items-center justify-center md:justify-start gap-3">

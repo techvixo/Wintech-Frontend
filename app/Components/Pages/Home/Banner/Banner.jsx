@@ -71,7 +71,7 @@ const Banner = () => {
                     <h2 className="text-3xl md:text-center text-white font-bold md:text-4xl capitalize ">
                       {slider?.title}
                     </h2>
-                    <p className="text-white text-sm">{slider?.des}</p>
+                    <p className="text-white text-sm md:text-lg">{slider?.des}</p>
                     <div className="w-full flex items-center justify-center pt-5 md:pt-2">
                       <div className="md:w-2/3 h-12 md:h-14 bg-white relative w-full rounded-2xl">
                         <input

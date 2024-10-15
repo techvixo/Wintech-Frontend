@@ -18,6 +18,7 @@ import { FaFacebookF } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
 import { RiWhatsappFill } from "react-icons/ri";
 import { BsInstagram } from "react-icons/bs";
+import LngSwitcher from "../LngSwitcher/LngSwitcher";
 
 const Navbar = () => {
   const [navToggle, setNavToggle] = useState(false);
@@ -215,7 +216,7 @@ const Navbar = () => {
               />
             </Link>
         </div>
-        {/* NAv manu side here >>>>>>>>>>>>>>>> */}
+        {/* NAv menu side here >>>>>>>>>>>>>>>> */}
         <div
           className={`absolute ${
             navToggle ? "left-0" : "left-[-120%] w-1/2 "
@@ -328,9 +329,13 @@ const Navbar = () => {
                 )}
               </li>
             ))}
+            
           </ul>
         </div>
         {/* Right toggle bar for mobile  */}
+        <div className="nav_right hidden md:block">
+          <LngSwitcher isRoot={isRoot} isSticky={isSticky}></LngSwitcher>
+        </div>
         <label className="swap-rotate swap   bg-white rounded-full h-7 w-7  lg:hidden">
           <input
             checked={navToggle}
