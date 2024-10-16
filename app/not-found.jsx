@@ -9,10 +9,10 @@ const NotFound = () => {
         src={notFoundImage}
         alt="not-found"
         width={600}
-        className="max-w-[600px] h-auto mx-auto p-2 rounded-md"
+        className="w-1/2 md:max-w-[600px] h-auto mx-auto p-2 rounded-md"
       />
       <Link href="/" className="mt-5 mb-2 inline-block">
-        <button className="btn btn-primary bg-blue-500">Back to Home</button>
+        <button className="btn btn-xs md:btn-md btn-primary bg-blue-500">Back to Home</button>
       </Link>
     </div>
   );
