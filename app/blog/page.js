@@ -1,3 +1,6 @@
+import BlogShow from "../Components/Pages/Blog/BlogShow/BlogShow";
+import GetInTouch from "../Components/Pages/Blog/GetInTouch/GetInTouch";
+import Subscribe from "../Components/Pages/Contact/Subscribe/Subscribe";
 import ShareBanner from "../Components/Shared/ShareBanner/ShareBanner";
 import TopGap from "../Components/Shared/TopGap/TopGap";
 import bannerImg from "@@/banner-img.png"
@@ -7,7 +10,9 @@ export default function Page() {
     <div className="">
       <TopGap></TopGap>
       <ShareBanner bannerBg={bannerImg} title={"Win Tech Blog"} link={"blog"}></ShareBanner>
-      Blog
+      <BlogShow></BlogShow>
+      <Subscribe></Subscribe>
+      <GetInTouch></GetInTouch>
     </div>
   );
 }

@@ -193,17 +193,17 @@ const Footer = () => {
                 href={"https://www.facebook.com/fare.com.bd"}
                 target="blank"
               >
-                <span className="flex items-center justify-center bg-primary text-white h-8 w-8 text-lg rounded-full font-bold shadow">
+                <span className="flex items-center justify-center bg-secondary text-white h-8 w-8 text-lg rounded-full font-bold shadow">
                   <FaFacebookF />
                 </span>
               </Link>
-              <span className="flex items-center justify-center bg-primary text-white h-8 w-8 text-lg rounded-full font-bold shadow">
+              <span className="flex items-center justify-center bg-secondary text-white h-8 w-8 text-lg rounded-full font-bold shadow">
                 <FaLinkedinIn />
               </span>
-              <span className="flex items-center justify-center bg-primary text-white h-8 w-8 text-lg rounded-full font-bold shadow">
+              <span className="flex items-center justify-center bg-secondary text-white h-8 w-8 text-lg rounded-full font-bold shadow">
                 <FaSquareXTwitter />
               </span>
-              <span className="flex items-center justify-center bg-primary text-white h-8 w-8 text-lg rounded-full font-bold shadow">
+              <span className="flex items-center justify-center bg-secondary text-white h-8 w-8 text-lg rounded-full font-bold shadow">
                 <FaYoutube />
               </span>
             </div>

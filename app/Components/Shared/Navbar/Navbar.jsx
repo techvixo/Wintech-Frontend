@@ -135,7 +135,7 @@ const Navbar = () => {
             <span className="">
               <TfiEmail />
             </span>
-            <span>techvixo@gmail.com</span>
+            <span>wintech@gmail.com</span>
           </p>
         </div>
         <div className="flex items-center justify-end gap-3">
