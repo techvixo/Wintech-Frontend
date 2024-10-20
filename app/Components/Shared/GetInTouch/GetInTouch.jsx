@@ -82,7 +82,7 @@ const GetInTouch = () => {
             </div>
             {/*============= Social media link or icon here =============== */}
             <p className="text-sm md:text-base my-2 md:my-5 md:pt-3">
-              Let's connect. We are just a click away!
+              Let&apos;s connect. We are just a click away!
             </p>
             <div className="flex items-center text-md md:text-2xl gap-3 md:gap-6 text-black my-3">
               <a
