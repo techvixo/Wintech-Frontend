@@ -94,7 +94,7 @@ const Footer = () => {
   return (
     <section
       id="footer"
-      className="bg-[#252B42] text-xs md:text-base mt-10  md:mt-20 relative  md:mb-0"
+      className="bg-[#252B42] text-xs md:text-base mt-6  md:mt-12 relative  md:mb-0"
     >
       <div className="shap relative top-[-2px]  left-0 w-full">
         <Image src={shap} alt="logo" width={800} className="w-full" />

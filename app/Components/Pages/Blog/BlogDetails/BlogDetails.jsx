@@ -4,7 +4,7 @@ import blogDetailsImg from "@@/blog-img/blog-details.png"
 import Image from "next/image";
 import Subscribe from "../../Contact/Subscribe/Subscribe";
 import RelatedBlogs from "../RelatadeBlog/RelatedBlogs";
-import GetInTouch from "../GetInTouch/GetInTouch";
+import GetInTouch from "../../../Shared/GetInTouch/GetInTouch";
 
 const BlogDetails = () => {
   return (

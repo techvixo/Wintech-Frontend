@@ -19,12 +19,16 @@ const ShareBanner = ({ bannerBg, title, link }) => {
         <div className="main_container">
           <p className="flex items-center gap-2 md:font-semibold text-sm">
             <span>Home</span>
-            <span><IoIosArrowForward /></span>
-            <Link className="capitalize" href={link}>{link}</Link>
+            <span>
+              <IoIosArrowForward />
+            </span>
+            <Link className="capitalize" href={link}>
+              {link}
+            </Link>
           </p>
           <h2 className="text-xl md:text-2xl font-bold uppercase text-[#252B42] ">
-        {title}
-      </h2>
+            {title}
+          </h2>
         </div>
       </div>
     </section>

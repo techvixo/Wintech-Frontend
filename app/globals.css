@@ -163,6 +163,18 @@ nav {
   background-size: cover;
   background-repeat: no-repeat;
   }
+#find_product{
+  /* height: 80vh; */
+   background-image: url('../public/assets/home-img/find-product-bg.png'); /* Or use an icon font */
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  }
+
+  .collapse-title::after {
+    color: #1976D3 !important;
+    font-size: 20px;
+  }
 
  /*============================================================
   <<<<<<<<<<<<< All media query css code  here  >>>>>>>>>>>>>>>
