@@ -178,6 +178,9 @@ nav {
 .testimonial_card{
   border: 1.5px solid #E5E5E5;
 }
+#page_menu:nth-child(1) {
+border-left:  none !important;
+}
  /*============================================================
   <<<<<<<<<<<<< All media query css code  here  >>>>>>>>>>>>>>>
  =============================================================*/

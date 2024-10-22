@@ -1,3 +1,4 @@
+import Portfolio from "../Components/Pages/Portfolios/Portfilio";
 import FindProducts from "../Components/Shared/FindProducts/FindProducts";
 import ShareBanner from "../Components/Shared/ShareBanner/ShareBanner";
 import TopGap from "../Components/Shared/TopGap/TopGap";
@@ -8,7 +9,7 @@ export default function Page() {
     <div className="">
       <TopGap></TopGap>
       <ShareBanner bannerBg={bannerImg} title={"Portfolio"} link={"portfolio"}></ShareBanner>
-      POrtfolio
+      <Portfolio></Portfolio>
       
       <FindProducts></FindProducts>
     </div>
