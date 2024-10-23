@@ -7,20 +7,18 @@ const Portfolio = () => {
   const menus = [
     {
       id: 1,
-      name: "Video",
-      link: "/video",
-    },
-    {
-      id: 1,
       name: "Portfolio",
       link: "/portfolio",
     },
+    {
+      id: 1,
+      name: "Video",
+      link: "/portfolio/video",
+    }
   ];
   return (
     <div className="portfolio_section">
-      <div className="main_container">
-        <PageMenu menus={menus}></PageMenu>
-      </div>
+      <PageMenu menus={menus}></PageMenu>
       <ImagePortfolio></ImagePortfolio>
     </div>
   );
