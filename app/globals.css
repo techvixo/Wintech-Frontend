@@ -194,6 +194,9 @@ border-left:  none !important;
   #banner_slider {
     height: 90vh;
   }
+  #service_banner_section {
+    /* height: 90vh; */
+  }
   /* .side_title{
     font-size: 26px;
     margin: 28px 0;
