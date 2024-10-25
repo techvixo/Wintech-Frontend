@@ -68,23 +68,23 @@ const Navbar = () => {
       title: "Services",
       subManu: [
         {
-          path: "/products/modernization",
+          path: "/services/modernization",
           title: "Modernization",
         },
         {
-          path: "/products/repair",
+          path: "/services/repair",
           title: "Repair",
         },
         {
-          path: "/products/maintenance",
+          path: "/services/maintenance",
           title: "Maintenance",
         },
         {
-          path: "/products/digital-service",
+          path: "/services/digital-service",
           title: "Digital Service",
         },
         {
-          path: "/products/service-plan",
+          path: "/services/service-plan",
           title: "Service Plan",
         },
       ],
