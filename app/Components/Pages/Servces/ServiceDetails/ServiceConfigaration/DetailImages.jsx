@@ -84,7 +84,7 @@ const DetailImages = () => {
       <Slider {...settings}>
         {otherImages.map((img, i) => {
           return (
-            <div className="px-2">
+            <div key={i} className="px-2">
               <Image
                 width={200}
                 src={img?.imgUrl}
