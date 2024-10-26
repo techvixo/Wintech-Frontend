@@ -1,6 +1,6 @@
 import FAQ from "../Components/Pages/Home/FAQ/FAQ";
 import PageMenu from "../Components/Pages/Portfolios/PageMenu/PageMenu";
-import AllServices from "../Components/Pages/Servces/AllServices/AllSErvices";
+import AllServices from "../Components/Pages/Servces/AllServices/AllServices";
 import MachinesCenter from "../Components/Pages/Servces/MachinsCenter/MachinsCenter";
 import ServiceBanner from "../Components/Pages/Servces/ServiceBanner/ServiceBanner";
 import ServiceProcesses from "../Components/Pages/Servces/ServiceProcesses/ServiceProcesses";
