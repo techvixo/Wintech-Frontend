@@ -19,6 +19,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { RiWhatsappFill } from "react-icons/ri";
 import { BsInstagram } from "react-icons/bs";
 import LngSwitcher from "../LngSwitcher/LngSwitcher";
+import SubMenuBar from "./SubMenuBar";
 
 const Navbar = () => {
   const [navToggle, setNavToggle] = useState(false);
@@ -67,26 +68,72 @@ const Navbar = () => {
       path: "/services",
       title: "Services",
       subManu: [
-        {
-          path: "/services/modernization",
-          title: "Modernization",
-        },
-        {
-          path: "/services/repair",
-          title: "Repair",
-        },
-        {
-          path: "/services/maintenance",
-          title: "Maintenance",
-        },
-        {
-          path: "/services/digital-service",
-          title: "Digital Service",
-        },
-        {
-          path: "/services/service-plan",
-          title: "Service Plan",
-        },
+       {
+        serviceName: "CNC Machining Services",
+        path: "/cnc-machining",
+        subServiceName: [
+          {
+            path: "/cnc-turing",
+            title: "CNC Turning",
+          }, 
+          {
+            path: "/cnc-turing",
+            title: "CNC Milling",
+          },
+          {
+            path: "/cnc-turing",
+            title: "Complex Mill-Turning",
+          },
+          {
+            path: "/cnc-turing",
+            title: "5-Axis Machining",
+          },
+        ]
+       },
+       {
+        serviceName: "Materials Machined",
+        path: "/cnc-machining",
+        subServiceName: [
+          {
+            path: "/cnc-turing",
+            title: "Metals",
+          }, 
+          {
+            path: "/cnc-turing",
+            title: "Plastics",
+          },
+          {
+            path: "/cnc-turing",
+            title: "Complex Mill",
+          },
+          {
+            path: "/cnc-turing",
+            title: " Machining",
+          },
+        ]
+       },
+       {
+        serviceName: "Surface Finishing Services",
+        path: "/cnc-machining",
+        subServiceName: [
+          {
+            path: "/cnc-turing",
+            title: "CNC Turning",
+          }, 
+          {
+            path: "/cnc-turing",
+            title: "CNC Milling",
+          },
+          {
+            path: "/cnc-turing",
+            title: "Complex Mill-Turning",
+          },
+          {
+            path: "/cnc-turing",
+            title: "5-Axis Machining",
+          },
+        ]
+       },
       ],
     },
     {
@@ -232,7 +279,7 @@ const Navbar = () => {
               }`}
             >
               {navData.map(({ path, title, subManu }) => (
-                <li key={path} className=" mx-2 py-6 relative">
+                <li key={path} className=" mx-2 py-6 ">
                   <NavLink
                     onClick={() => setNavToggle(false)}
                     href={path}
@@ -244,26 +291,7 @@ const Navbar = () => {
                     {subManu.length > 0 && <span className="arrow"></span>}
                   </NavLink>
                   {subManu?.length > 0 && (
-                    <ul className="sub_nav_manu  z-10 shadow-lg absolute top-16 left-[-15px] w-60 h-auto bg-primary p-1 text-white ">
-                      <div className="relative">
-                        <span className="absolute -z-50 top-[-10px]  rotate-45 left-5 bg-primary h-5 w-5 "></span>
-                      </div>
-                      {subManu?.map(({ path, title }) => (
-                        <li
-                          key={path}
-                          className="mx-auto z-40 hover:bg-white  px-4 p-2"
-                        >
-                          <NavLink
-                            onClick={() => setNavToggle(false)}
-                            href={path}
-                            activeClassName=""
-                            exact={path === "/"}
-                          >
-                            {title}
-                          </NavLink>
-                        </li>
-                      ))}
-                    </ul>
+                   <SubMenuBar servicesList={subManu} setNavToggle={setNavToggle}></SubMenuBar>
                   )}
                 </li>
               ))}
@@ -308,24 +336,28 @@ const Navbar = () => {
                       openSubMenus[path] ? "open pt-3" : ""
                     }`}
                   >
-                    {subManu.map(({ path, title }) => (
-                      <li
-                        key={path}
-                        className="flex items-center gap-2 hover:bg-white py-3"
-                      >
-                        <span className="text-primary">
-                          <MdOutlineKeyboardDoubleArrowRight />
-                        </span>
-                        <NavLink
-                          onClick={() => setNavToggle(false)}
-                          href={path}
-                          exact={path === "/"}
+                    {subManu?.slice(0,4)?.map((subService, i) => {
+                        return(
+                          <li
+                          key={i}
+                          className="flex items-center gap-2 hover:bg-white py-3"
                         >
-                          {title}
-                        </NavLink>
-                      </li>
-                    ))}
+                          <span className="text-primary">
+                            <MdOutlineKeyboardDoubleArrowRight />
+                          </span>
+                          <NavLink
+                            onClick={() => setNavToggle(false)}
+                            href={subService?.path}
+                            exact={subService?.path === "/"}
+                          >
+                            {subService?.serviceName}
+                          </NavLink>
+                        </li>
+                        )
+                    })
+                    }
                   </ul>
+                  
                 )}
               </li>
             ))}

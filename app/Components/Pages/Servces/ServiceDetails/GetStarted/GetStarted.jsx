@@ -16,32 +16,32 @@ const GetStarted = () => {
     },
     {
       id: 1,
-      name: "Dutch",
+      name: "English",
       img: img2,
     },
     {
       id: 1,
-      name: "Dutch",
+      name: "French",
       img: img3,
     },
     {
       id: 1,
-      name: "Dutch",
+      name: "German",
       img: img4,
     },
     {
       id: 1,
-      name: "Dutch",
+      name: "Italian",
       img: img5,
     },
     {
       id: 1,
-      name: "Dutch",
+      name: "Japanese",
       img: img6,
     },
     {
       id: 1,
-      name: "Dutch",
+      name: "Russian",
       img: img7,
     },
   ];
@@ -63,7 +63,7 @@ const GetStarted = () => {
         <div className="flex items-center justify-center flex-wrap gap-2 pt-3">
           {flags.map((item, i) => {
             return (
-              <div className="flex items-center">
+              <div key={i} className="flex items-center">
                 <p className="pr-1 font-semibold">{item.name}</p>
                 <Image
                   width={100}
