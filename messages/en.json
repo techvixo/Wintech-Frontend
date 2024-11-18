@@ -1,0 +1,472 @@
+{
+  "LocaleSwitcher": {
+    "zh": "Chinese",
+    "en": "English",
+    "label": "Language"
+  },
+  "AppLayout": {
+    "NabTop": {
+      "social": "Follow Us "
+    },
+    "navData": {
+      "menu1": {
+        "path": "/",
+        "title": "Home",
+        "subMenu": ""
+      },
+      "menu2": {
+        "path": "/services",
+        "title": "Services",
+        "subMenu": "isMenu"
+      },
+      "menu3": {
+        "path": "/about",
+        "title": "About Us",
+        "subMenu": ""
+      },
+      "menu4": {
+        "path": "/portfolio",
+        "title": "Portfolio",
+        "subMenu": ""
+      },
+      "menu5": {
+        "path": "/blog",
+        "title": "Blog",
+        "subMenu": ""
+      },
+      "menu6": {
+        "path": "/contact",
+        "title": "Contact",
+        "subMenu": ""
+      }
+    }
+  },
+  "HomePage": {
+    "title": "Home",
+    "CncMachined": {
+      "title": "Top Quality CNC Machining Solutions"
+    },
+    "WhyChoose": {
+      "title": "Why choose us?",
+      "Features": {
+        "feature1": {
+          "id": 1,
+          "icon": "img1",
+          "title": "Exceptional Quality",
+          "description": "In summary, a well-defined SEO strategy can boost your business whether it is small or medium in scale. Most of the time small business owners struggle for building a solid SEO strategy for success path. Contact us today!",
+          "link": "/"
+        },
+        "feature2": {
+          "id": 2,
+          "icon": "img2",
+          "title": "Fast Turnaround",
+          "description": "Salesforce is an integrated customer relationship management (CRM) platform that brings companies and customers together in a solution. It includes all the departments like management, HR, marketing, sales, commerce, and customer services...",
+          "link": "/"
+        },
+        "feature3": {
+          "id": 3,
+          "icon": "img3",
+          "title": "Cost-Effective Solutions",
+          "description": "American Best IT Ltd. offers digital PR services in Bangladesh which involve getting high-quality backlinks from websites and blogs and honest customer reviews. Digital PR aids you to reach your target audience by featuring your products...",
+          "link": "/"
+        },
+        "feature4": {
+          "id": 4,
+          "icon": "img1",
+          "title": "Exceptional Quality",
+          "description": "In summary, a well-defined SEO strategy can boost your business whether it is small or medium in scale. Most of the time small business owners struggle for building a solid SEO strategy for success path. Contact us today!",
+          "link": "/"
+        },
+        "feature5": {
+          "id": 5,
+          "icon": "img2",
+          "title": "Fast Turnaround",
+          "description": "Salesforce is an integrated customer relationship management (CRM) platform that brings companies and customers together in a solution. It includes all the departments like management, HR, marketing, sales, commerce, and customer services...",
+          "link": "/"
+        },
+        "feature6": {
+          "id": 6,
+          "icon": "img3",
+          "title": "Cost-Effective Solutions",
+          "description": "American Best IT Ltd. offers digital PR services in Bangladesh which involve getting high-quality backlinks from websites and blogs and honest customer reviews. Digital PR aids you to reach your target audience by featuring your products...",
+          "link": "/"
+        }
+      },
+      "button": "SEE OUR WORK"
+    },
+    "CustomPart": {
+      "title": "Custom Parts Make Easy",
+      "button": "EXPLORE NOW"
+    },
+    "CounterSection": {
+      "title": "Some Numbers",
+      "des": "Our story in numbers",
+      "Counters": {
+        "counter1": {
+          "countNumber": "3000 +",
+          "name": "Satisfied Clients"
+        },
+        "counter2": {
+          "countNumber": "5000 +",
+          "name": "Projects Completed"
+        },
+        "counter3": {
+          "countNumber": "10 +",
+          "name": "Awards Earned"
+        },
+        "counter4": {
+          "countNumber": "12 +",
+          "name": "Content Created"
+        }
+      }
+    },
+    "HowWork": {
+      "title": "How it Works",
+      "WorksList": {
+        "work1": {
+          "id": 1,
+          "title": "Fast Turnaround",
+          "description": "Salesforce is an integrated customer relationship management (CRM) platform that brings companies and customers together in a solution. It includes all the departments like "
+        },
+        "work2": {
+          "id": 2,
+          "title": "Fast Turnaround",
+          "description": "Salesforce is an integrated customer relationship management (CRM) platform that brings companies and customers together in a solution. It includes all the departments like "
+        },
+        "work3": {
+          "id": 3,
+          "title": "Direct Delivery To You",
+          "description": "Salesforce is an integrated customer relationship management (CRM) platform that brings companies and customers together in a solution. It includes all the departments like "
+        }
+      }
+    },
+    "FeaturedVideo": {
+      "title": "Featured Videos"
+    },
+    "Testimonial": {
+      "title": "What our customers say?",
+      "description": "Hear from our satisfied customers and clients.",
+      "testimonialData": {
+        "testimonial1": {
+          "id": 1,
+          "name": "Ethan",
+          "des": "“The precision and efficiency of their CNC machining really impressed me. They handled complex parts exactly to spec, and the turnaround was quick. If you need high-quality machining, I highly recommend them!",
+          "rating": 4.9,
+          "imgUrl": "img1",
+          "link": "/"
+        },
+        "testimonial2": {
+          "id": 2,
+          "name": "Liam",
+          "des": "“Their customer service was exceptional from start to finish. They kept me updated every step of the way, and their dedication to customer satisfaction really stood out.",
+          "rating": 4.9,
+          "imgUrl": "img1",
+          "link": "/"
+        },
+        "testimonial3": {
+          "id": 3,
+          "name": "Nathaniel",
+          "des": "“I’ve partnered with them for years, and they’re consistently reliable. They always deliver top-quality parts on time, even with challenging projects.",
+          "rating": 4.9,
+          "imgUrl": "img1",
+          "link": "/"
+        },
+        "testimonial4": {
+          "id": 4,
+          "name": "Christopher",
+          "des": "“For the quality they offer, the pricing is fantastic. They don’t cut corners, and I know I can trust them for future projects. Great value for the service.",
+          "rating": 4.9,
+          "imgUrl": "img1",
+          "link": "/"
+        },
+        "testimonial5": {
+          "id": 5,
+          "name": "Isaac",
+          "des": "“The Wintec team is truly innovative. They came up with creative solutions to some challenging designs, and I appreciate their expertise and commitment to doing the job right.",
+          "rating": 4.9,
+          "imgUrl": "img1",
+          "link": "/"
+        }
+      }
+    },
+    "FAQ": {
+      "title": "Frequently Asked Questions",
+      "QuestionList": {
+        "question1": {
+          "title": "What is CNC machining?",
+          "dis": "CNC machining is a manufacturing process that uses computer-controlled machines to shape materials like metals and plastics. It involves interpreting digital designs and translating them into precise instructions for the machine's tools."
+        },
+        "question2": {
+          "title": "What are the common types of CNC machining?",
+          "dis": " Common types include milling, turning, Complex Mill Turning, and 5-axis Machining."
+        },
+        "question3": {
+          "title": "What materials can be used with CNC machining? ",
+          "dis": "CNC machining can be used on a wide range of materials, including metals (aluminum, steel, brass, etc.), plastics (ABS, nylon, polycarbonate, etc.), and composites."
+        },
+        "question4": {
+          "title": "How does the CNC machining process work?",
+          "dis": " The process involves creating a digital design, programming the CNC machine with instructions based on the design, setting up the machine with the appropriate tools and materials, and then allowing the machine to execute the program to shape the material."
+        },
+        "question5": {
+          "title": "What factors affect the cost of CNC machining? ",
+          "dis": "Factors that can affect cost include the material used, the complexity of the design, the quantity of parts needed, and the machining time required."
+        },
+        "question6": {
+          "title": "How can I ensure the quality of CNC machined parts?",
+          "dis": " Reputable CNC machining services have quality control measures in place to ensure the accuracy and precision of their work. It's also important to provide clear specifications and tolerances in your design."
+        },
+        "question7": {
+          "title": "Can CNC machining be used for prototyping or production?",
+          "dis": " CNC machining can be used for both prototyping and production, making it a flexible manufacturing process."
+        }
+      }
+    },
+    "ContactForm": {
+      "title": "Get in touch to schedule a visit to your new Product.",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing? Explore opportunities with",
+      "office": "Corporate office",
+      "social": "Let's connect. We are just a click away!",
+      "ContactInfo": {
+        "call": "call",
+        "wp": "What's App",
+        "mail": "Mail",
+        "address": "11,Odo-Olowu, Ijeshatedo B/Stop, Surulere"
+      }
+    },
+    "FindProduct": {
+      "title": "Find sustainable products that fit your life perfectly.",
+      "description": "customers in over 30 countries—let’s find what works for you!",
+      "button": "Browse Product"
+    }
+  },
+  "ServicePage": {
+    "title": "Products & services",
+    "Process": {
+      "section1": {
+        "title": "Processes",
+        "description": "We offer expert CNC prototyping services, precision CNC machining services, and plastic CNC prototyping. Our highly skilled workforce operates state-of-the-art machines.",
+        "list": {
+          "item1": "CNC Milling",
+          "item2": "CNC Machining",
+          "item3": "CNC Turning",
+          "item4": "CNC Router",
+          "item5": "Prototype CNC",
+          "item6": "EDM"
+        },
+        "img": "img1"
+      },
+      "section2": {
+        "title": "Equipment",
+        "description": "We can mill complex shapes from the toughest materials using our advanced equipment, ensuring speed, precision, and quality.",
+        "list": {
+          "item1": "3 Axis Machining",
+          "item2": "4 Axis Machining",
+          "item3": "5 Axis Machining (up to 110\" x 72\" x 40\")",
+          "item4": "7 Axis Lathe",
+          "item5": "5 Axis Gun Drill",
+          "item6": ""
+        },
+        "img": "img2"
+      },
+      "section3": {
+        "title": "Materials",
+        "description": "Choose from a wide range of CNC machining services and materials to get your project done quickly and efficiently.",
+        "list": {
+          "item1": "Aluminum Billet",
+          "item2": "Aluminum Casting",
+          "item3": "Brass/Bronze",
+          "item4": "Zinc",
+          "item5": "Copper",
+          "item6": "Titanium"
+        },
+        "img": "img3"
+      },
+      "section4": {
+        "title": "Industries Served",
+        "description": "Our CNC machining services can be used for a variety of industries and applications. Trust us for your prototype CNC machining needs.",
+        "list": {
+          "item1": "Automotive (Autonomous)",
+          "item2": "Aerospace",
+          "item3": "Defense",
+          "item4": "Medical",
+          "item5": "Consumer Products",
+          "item6": "Industrial"
+        },
+        "img": "img4"
+      }
+    },
+    "Wintech": {
+      "title": "The Wintech Standard",
+      "DataList": {
+        "item1": {
+          "id": 1,
+          "icon": "img1",
+          "title": "Quality",
+          "description": "Our inspection equipment includes CMM, Linear Height, and Projector, thread gages, Pin... We follow the ISO 9001 quality system from the material purchase to machining to inspection.",
+          "link": "/"
+        },
+        "item2": {
+          "id": 2,
+          "icon": "img2",
+          "title": "Certification",
+          "description": "Our quality management system is ISO 9001:2015 certified, certificate No.: 51822Q07569R0S. IAF, CNAS certificate and ISO 13485:2016 certified, certificate No.: 64623B8060538ROS.",
+          "link": "/"
+        },
+        "item3": {
+          "id": 3,
+          "icon": "img3",
+          "title": "Quality Documents",
+          "description": "The First Article Inspection report, Certificate of Conformance, Material Certificate, and Finishing Test Report will be provided on your requirements.",
+          "link": "/"
+        }
+      },
+      "button": "SEE OUR WORK"
+    },
+    "MachineCenter": {
+      "title": "Our CNC Machining Center",
+      "shortTitle": "Our Galley"
+    }
+  },
+  "AboutPage": {
+    "title": "About Us",
+    "WhoWeAre": {
+      "title": "Who We Are",
+      "des1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat dignissim lectus tortor, magna lobortis. Cursus at condimentum tincidunt parturient gravida suspendisse eu, ac arcu. Nunc molestie risus, quis et dolor placerat lacinia bibendum. Eu proin cursus amet, pharetra sollicitudin iaculis.",
+      "des2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat dignissim lectus tortor, magna lobortis. Cursus at condimentum tincidunt parturient gravida suspendisse eu, ac arcu. Nunc molestie risus, quis et dolor placerat lacinia bibendum. Eu proin cursus amet, pharetra sollicitudin iaculis.",
+      "des3": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat dignissim lectus tortor, magna lobortis. Cursus at condimentum tincidunt parturient gravida suspendisse eu, ac arcu. Nunc molestie risus, quis et dolor placerat lacinia bibendum. Eu proin cursus amet, pharetra sollicitudin iaculis.",
+      "des4": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat dignissim lectus tortor, magna lobortis. Cursus at condimentum tincidunt parturient gravida suspendisse eu, ac arcu. Nunc molestie risus, quis et dolor placerat lacinia bibendum. Eu proin cursus amet, pharetra sollicitudin iaculis."
+    },
+    "WhatWeDo": {
+      "title": "What We Do?",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. A, egestas nibh cursus viverra dui. Orci, nulla pulvinar purus nisi. Nulla est consequat nibh morbi nisl orci. Semper enim gravida in nisl varius. Eget amet egestas ornare morbi viverra volutpat diam quis leo. Ut pellentesque pharetra nibh dui tristique tempor. Odio volutpat nulla ipsum sollicitudin nunc nec maecenas. Senectus amet, nulla nibh lobortis interdum sit. Scelerisque augue non habitant morbi velit nibh mus eget consequat. Id tempor elementum tincidunt vulputate est. Iaculis est velit, facilisis consequat cras egestas. Pulvinar arcu augue aliquam malesuada pharetra fusce pulvinar. At euismod aliquet nisl faucibus dui sagittis blandit eget. Risus volutpat praesent pretium a.",
+      "list": {
+        "para1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pretium lacus venenatis pretium fringilla nisi, duis eget. Ac mauris aliquam suscipit massa feugiat quis risus dictum. Ornare tellus sit enim fermentum vitae. Vel pellentesque pellentesque tristique metus. Quam faucibus ut eu et. Et massa faucibus risus imperdiet fermentum enim, proin ultrices sapien.",
+        "para2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pretium lacus venenatis pretium fringilla nisi, duis eget. Ac mauris aliquam suscipit massa feugiat quis risus dictum. Ornare tellus sit enim fermentum vitae. Vel pellentesque pellentesque tristique metus. Quam faucibus ut eu et. Et massa faucibus risus imperdiet fermentum enim, proin ultrices sapien.",
+        "para3": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pretium lacus venenatis pretium fringilla nisi, duis eget. Ac mauris aliquam suscipit massa feugiat quis risus dictum. Ornare tellus sit enim fermentum vitae. Vel pellentesque pellentesque tristique metus. Quam faucibus ut eu et. Et massa faucibus risus imperdiet fermentum enim, proin ultrices sapien."
+      }
+    },
+    "Facilities": {
+      "title": "Facilities",
+      "Data": {
+        "item1": {
+          "id": 1,
+          "title": "Manufacturer",
+          "link": "/"
+        },
+        "item2": {
+          "id": 2,
+          "title": "Quality Guaranteed",
+          "link": "/"
+        },
+        "item3": {
+          "id": 3,
+          "title": "Short Turnaround Lead Time",
+          "link": "/"
+        },
+        "item4": {
+          "id": 4,
+          "title": "Cost Effective",
+          "link": "/"
+        }
+      }
+    },
+    "OurTeam": {
+      "title": "Our Team",
+      "teamMembers": {
+        "item1": {
+          "id": 1,
+          "name": "Arafat Jaman Chowdhury",
+          "post": "Engineer",
+          "exp": "08 years Experience",
+          "lang": "English, Hindi",
+          "address": "Badda, Bangladesh",
+          "edu": "United International University",
+          "link": "/"
+        },
+        "item2": {
+          "id": 2,
+          "name": "Arafat Jaman Chowdhury",
+          "post": "Engineer",
+          "exp": "08 years Experience",
+          "lang": "English, Hindi",
+          "address": "Badda, Bangladesh",
+          "edu": "United International University",
+          "link": "/"
+        },
+        "item3": {
+          "id": 3,
+          "name": "Arafat Jaman Chowdhury",
+          "post": "Engineer",
+          "exp": "08 years Experience",
+          "lang": "English, Hindi",
+          "address": "Badda, Bangladesh",
+          "edu": "United International University",
+          "link": "/"
+        },
+        "item4": {
+          "id": 4,
+          "name": "Arafat Jaman Chowdhury",
+          "post": "Engineer",
+          "exp": "08 years Experience",
+          "lang": "English, Hindi",
+          "address": "Badda, Bangladesh",
+          "edu": "United International University",
+          "link": "/"
+        },
+        "item5": {
+          "id": 5,
+          "name": "Arafat Jaman Chowdhury",
+          "post": "Engineer",
+          "exp": "08 years Experience",
+          "lang": "English, Hindi",
+          "address": "Badda, Bangladesh",
+          "edu": "United International University",
+          "link": "/"
+        },
+        "item6": {
+          "id": 6,
+          "name": "Arafat Jaman Chowdhury",
+          "post": "Engineer",
+          "exp": "08 years Experience",
+          "lang": "English, Hindi",
+          "address": "Badda, Bangladesh",
+          "edu": "United International University",
+          "link": "/"
+        }
+      }
+    },
+    "Certification": {
+      "title": "Certification & Awards"
+    }
+  },
+  "Portfolio": {
+    "title": "Portfolio"
+  },
+  "Blog": {
+    "title": "Win Tech Blog",
+    "Subscribe": {
+      "title": "Subscribe our newsletter?",
+      "description": "Join the business club (1k+ members) and get marketing services on a monthly basis.",
+      "button": "Subscribe "
+    },
+    "BlogDetail": {
+      "title": "Other Blogs"
+    }
+  },
+  "Contact": {
+    "title": "Contact Us",
+    "ContactForm": {
+      "title": "Get in touch",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing? Explore opportunities with",
+      "office": "Corporate office",
+      "social": "Let's connect. We are just a click away!",
+      "ContactInfo": {
+        "call": "call",
+        "wp": "What's App",
+        "mail": "Mail",
+        "address": "11,Odo-Olowu, Ijeshatedo B/Stop, Surulere"
+      }
+    }
+  }
+}

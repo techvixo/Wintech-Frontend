@@ -1,0 +1,472 @@
+{
+  "LocaleSwitcher": {
+    "zh": "中文",
+    "en": "英语",
+    "label": "语言"
+  },
+  "AppLayout": {
+    "NabTop": {
+      "social": "跟着我们"
+    },
+    "navData": {
+      "menu1": {
+        "path": "/",
+        "title": "首页",
+        "subMenu": ""
+      },
+      "menu2": {
+        "path": "/services",
+        "title": "服务",
+        "subMenu": "isMenu"
+      },
+      "menu3": {
+        "path": "/about",
+        "title": "关于我们",
+        "subMenu": ""
+      },
+      "menu4": {
+        "path": "/portfolio",
+        "title": "作品集",
+        "subMenu": ""
+      },
+      "menu5": {
+        "path": "/blog",
+        "title": "博客",
+        "subMenu": ""
+      },
+      "menu6": {
+        "path": "/contact",
+        "title": "联系我们",
+        "subMenu": ""
+      }
+    }
+  },
+  "HomePage": {
+    "title": "首页",
+    "CncMachined": {
+      "title": "顶级品质 CNC 加工解决方案"
+    },
+    "WhyChoose": {
+      "title": "为什么选择我们？",
+      "Features": {
+        "feature1": {
+          "id": 1,
+          "icon": "img1",
+          "title": "卓越的质量",
+          "description": "总之，一个定义明确的SEO策略可以提升您的业务，无论是小型还是中型规模。大多数时候，小企业主在建立坚实的SEO策略时会遇到困难。今天就联系我们！",
+          "link": "/"
+        },
+        "feature2": {
+          "id": 2,
+          "icon": "img2",
+          "title": "快速周转",
+          "description": "Salesforce 是一个集成的客户关系管理（CRM）平台，将公司和客户汇集在一个解决方案中。它包括管理、人力资源、营销、销售、商务和客户服务等所有部门……",
+          "link": "/"
+        },
+        "feature3": {
+          "id": 3,
+          "icon": "img3",
+          "title": "成本效益解决方案",
+          "description": "American Best IT Ltd. 在孟加拉国提供数字公关服务，包括从网站和博客获得高质量的反向链接和真实的客户评论。数字公关帮助您通过展示您的产品来接触目标受众……",
+          "link": "/"
+        },
+        "feature4": {
+          "id": 4,
+          "icon": "img1",
+          "title": "卓越的质量",
+          "description": "总之，一个定义明确的SEO策略可以提升您的业务，无论是小型还是中型规模。大多数时候，小企业主在建立坚实的SEO策略时会遇到困难。今天就联系我们！",
+          "link": "/"
+        },
+        "feature5": {
+          "id": 5,
+          "icon": "img2",
+          "title": "快速周转",
+          "description": "Salesforce 是一个集成的客户关系管理（CRM）平台，将公司和客户汇集在一个解决方案中。它包括管理、人力资源、营销、销售、商务和客户服务等所有部门……",
+          "link": "/"
+        },
+        "feature6": {
+          "id": 6,
+          "icon": "img3",
+          "title": "成本效益解决方案",
+          "description": "American Best IT Ltd. 在孟加拉国提供数字公关服务，包括从网站和博客获得高质量的反向链接和真实的客户评论。数字公关帮助您通过展示您的产品来接触目标受众……",
+          "link": "/"
+        }
+      },
+      "button": "查看我们的工作"
+    },
+    "CustomPart": {
+      "title": "定制零件变得简单",
+      "button": "立即探索"
+    },
+    "CounterSection": {
+      "title": "一些数字",
+      "des": "我们的故事",
+      "Counters": {
+        "counter1": {
+          "countNumber": "3000 +",
+          "name": "满意的客户"
+        },
+        "counter2": {
+          "countNumber": "5000 +",
+          "name": "完成的项目"
+        },
+        "counter3": {
+          "countNumber": "10 +",
+          "name": "获得的奖项"
+        },
+        "counter4": {
+          "countNumber": "12 +",
+          "name": "创建的内容"
+        }
+      }
+    },
+    "HowWork": {
+      "title": "工作原理",
+      "WorksList": {
+        "work1": {
+          "id": 1,
+          "title": "快速周转",
+          "description": "Salesforce 是一个集成的客户关系管理 (CRM) 平台，将公司和客户汇集在一个解决方案中。它涵盖了所有部门，例如 "
+        },
+        "work2": {
+          "id": 2,
+          "title": "快速周转",
+          "description": "Salesforce 是一个集成的客户关系管理 (CRM) 平台，将公司和客户汇集在一个解决方案中。它涵盖了所有部门，例如 "
+        },
+        "work3": {
+          "id": 3,
+          "title": "直接送达",
+          "description": "Salesforce 是一个集成的客户关系管理 (CRM) 平台，将公司和客户汇集在一个解决方案中。它涵盖了所有部门，例如 "
+        }
+      }
+    },
+    "FeaturedVideo": {
+      "title": "精选视频"
+    },
+    "Testimonial": {
+      "title": "我们的客户怎么说？",
+      "description": "听听我们满意的客户和顾客怎么说。",
+      "testimonialData": {
+        "testimonial1": {
+          "id": 1,
+          "name": "伊森",
+          "des": "“他们数控加工的精度和效率让我印象深刻。他们处理了复杂的零件，完全符合规格，且周转速度很快。如果您需要高质量的加工，我强烈推荐他们！",
+          "rating": 4.9,
+          "imgUrl": "img1",
+          "link": "/"
+        },
+        "testimonial2": {
+          "id": 2,
+          "name": "利亚姆",
+          "des": "“从始至终，他们的客户服务都非常出色。他们在每个步骤中都保持沟通，他们对客户满意度的重视令人印象深刻。",
+          "rating": 4.9,
+          "imgUrl": "img1",
+          "link": "/"
+        },
+        "testimonial3": {
+          "id": 3,
+          "name": "内森尼尔",
+          "des": "“多年来，我一直与他们合作，他们始终可靠。他们总能按时交付高质量的零件，即使是具有挑战性的项目。",
+          "rating": 4.9,
+          "imgUrl": "img1",
+          "link": "/"
+        },
+        "testimonial4": {
+          "id": 4,
+          "name": "克里斯托弗",
+          "des": "“考虑到他们提供的质量，价格非常棒。他们绝不偷工减料，我知道未来的项目可以信任他们。这项服务非常有价值。",
+          "rating": 4.9,
+          "imgUrl": "img1",
+          "link": "/"
+        },
+        "testimonial5": {
+          "id": 5,
+          "name": "艾萨克",
+          "des": "“Wintec团队真的非常有创新精神。他们为一些具有挑战性的设计提出了创造性的解决方案，我很感激他们的专业知识以及对高质量工作的承诺。",
+          "rating": 4.9,
+          "imgUrl": "img1",
+          "link": "/"
+        }
+      }
+    },
+    "FAQ": {
+      "title": "常见问题",
+      "QuestionList": {
+        "question1": {
+          "title": "什么是CNC加工？",
+          "dis": "CNC加工是一种使用计算机控制的机器来塑造金属和塑料等材料的制造工艺。它涉及解释数字设计并将其转换为机器工具的精确指令。"
+        },
+        "question2": {
+          "title": "常见的CNC加工类型有哪些？",
+          "dis": "常见类型包括铣削、车削、复杂铣车加工和五轴加工。"
+        },
+        "question3": {
+          "title": "CNC加工可以使用哪些材料？",
+          "dis": "CNC加工可以用于多种材料，包括金属（铝、钢、黄铜等）、塑料（ABS、尼龙、聚碳酸酯等）以及复合材料。"
+        },
+        "question4": {
+          "title": "CNC加工过程如何工作？",
+          "dis": "该过程包括创建数字设计、根据设计对CNC机器进行编程、用合适的工具和材料设置机器，然后让机器执行程序以塑造材料。"
+        },
+        "question5": {
+          "title": "哪些因素会影响CNC加工的成本？",
+          "dis": "影响成本的因素包括所用材料、设计的复杂性、所需零件的数量以及所需的加工时间。"
+        },
+        "question6": {
+          "title": "如何确保CNC加工零件的质量？",
+          "dis": "信誉良好的CNC加工服务会有质量控制措施以确保工作的准确性和精度。提供清晰的设计规范和公差也很重要。"
+        },
+        "question7": {
+          "title": "CNC加工可以用于原型制作或生产吗？",
+          "dis": "CNC加工既可以用于原型制作，也可以用于生产，是一种灵活的制造工艺。"
+        }
+      }
+    },
+    "ContactForm": {
+      "title": "联系我们安排参观您的新产品。",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing? 探索机会",
+      "office": "公司办公室",
+      "social": "让我们联系吧。我们就在您的点击之间！",
+      "ContactInfo": {
+        "call": "电话",
+        "wp": "WhatsApp",
+        "mail": "邮件",
+        "address": "11, Odo-Olowu, Ijeshatedo B/Stop, Surulere"
+      }
+    },
+    "FindProduct": {
+      "title": "寻找完美适合您生活的可持续产品。",
+      "description": "覆盖30多个国家的客户——让我们为您找到合适的产品！",
+      "button": "浏览产品"
+    }
+  },
+  "ServicePage": {
+    "title": "产品和服务",
+    "Process": {
+      "section1": {
+        "title": "流程",
+        "description": "我们提供专业的 CNC 原型制作服务、精密 CNC 加工服务和塑料 CNC 原型制作。我们技术娴熟的员工操作先进的机器。",
+        "list": {
+          "item1": "CNC 铣削",
+          "item2": "CNC 加工",
+          "item3": "CNC 车削",
+          "item4": "CNC 路由器",
+          "item5": "CNC 原型",
+          "item6": "放电加工 (EDM)"
+        },
+        "img": "img1"
+      },
+      "section2": {
+        "title": "设备",
+        "description": "我们使用先进设备加工坚硬材料的复杂形状，确保速度、精度和质量。",
+        "list": {
+          "item1": "三轴加工",
+          "item2": "四轴加工",
+          "item3": "五轴加工（最大 110\" x 72\" x 40\"）",
+          "item4": "七轴车床",
+          "item5": "五轴枪钻",
+          "item6": ""
+        },
+        "img": "img2"
+      },
+      "section3": {
+        "title": "材料",
+        "description": "从广泛的 CNC 加工服务和材料中选择，以快速高效地完成您的项目。",
+        "list": {
+          "item1": "铝锭",
+          "item2": "铝铸件",
+          "item3": "黄铜/青铜",
+          "item4": "锌",
+          "item5": "铜",
+          "item6": "钛"
+        },
+        "img": "img3"
+      },
+      "section4": {
+        "title": "服务行业",
+        "description": "我们的 CNC 加工服务可用于多种行业和应用。信任我们满足您的 CNC 原型加工需求。",
+        "list": {
+          "item1": "汽车（自动驾驶）",
+          "item2": "航空航天",
+          "item3": "国防",
+          "item4": "医疗",
+          "item5": "消费品",
+          "item6": "工业"
+        },
+        "img": "img4"
+      }
+    },
+    "Wintech": {
+      "title": "Wintech 标准",
+      "DataList": {
+        "item1": {
+          "id": 1,
+          "icon": "img1",
+          "title": "质量",
+          "description": "我们的检测设备包括CMM、线性高度仪和投影仪、螺纹量规、销钉...我们遵循ISO 9001质量体系，从材料采购到加工再到检测。",
+          "link": "/"
+        },
+        "item2": {
+          "id": 2,
+          "icon": "img2",
+          "title": "认证",
+          "description": "我们的质量管理体系已获得ISO 9001:2015认证，证书编号：51822Q07569R0S。IAF、CNAS认证以及ISO 13485:2016认证，证书编号：64623B8060538ROS。",
+          "link": "/"
+        },
+        "item3": {
+          "id": 3,
+          "icon": "img3",
+          "title": "质量文件",
+          "description": "根据您的需求，将提供首件检验报告、符合性证书、材料证书和表面处理测试报告。",
+          "link": "/"
+        }
+      },
+      "button": "查看我们的工作"
+    },
+    "MachineCenter": {
+      "title": "我们的 CNC 加工中心",
+      "shortTitle": "我们的画廊"
+    }
+  },
+  "AboutPage": {
+    "title": "关于我们",
+    "WhoWeAre": {
+      "title": "我们是谁",
+      "des1": "我们是一家致力于提供高质量服务的公司，专注于创新和技术驱动的解决方案，以满足客户的多样化需求。",
+      "des2": "我们的团队拥有丰富的行业经验，能够为不同行业提供定制化服务，以实现更高效的业务流程。",
+      "des3": "我们的使命是通过卓越的服务和技术支持，帮助客户提升竞争力和市场影响力。",
+      "des4": "我们秉持诚信、合作与创新的价值观，力求为客户带来可持续的成功和成长。"
+    },
+    "WhatWeDo": {
+      "title": "我们做什么？",
+      "description": "我们提供广泛的服务，包括咨询、设计、技术开发以及项目管理，帮助客户优化业务流程，提升效率并实现业务目标。我们的解决方案专为满足客户的特定需求而设计，确保每个项目都能达到最高标准。",
+      "list": {
+        "para1": "我们为客户提供从概念到实施的全方位服务，以确保每个阶段的完美执行。",
+        "para2": "我们在多个行业拥有广泛的经验，包括制造业、医疗、金融等，为客户提供切实可行的解决方案。",
+        "para3": "我们的团队致力于通过技术创新和卓越的执行力，为客户带来持久的价值。"
+      }
+    },
+    "Facilities": {
+      "title": "设施",
+      "Data": {
+        "item1": {
+          "id": 1,
+          "title": "制造商",
+          "link": "/"
+        },
+        "item2": {
+          "id": 2,
+          "title": "质量保证",
+          "link": "/"
+        },
+        "item3": {
+          "id": 3,
+          "title": "短周期交付",
+          "link": "/"
+        },
+        "item4": {
+          "id": 4,
+          "title": "成本有效",
+          "link": "/"
+        }
+      }
+    },
+    "OurTeam": {
+      "title": "我们的团队",
+      "teamMembers": {
+        "item1": {
+          "id": 1,
+          "name": "Arafat Jaman Chowdhury",
+          "post": "工程师",
+          "exp": "08年经验",
+          "lang": "英语, 印地语",
+          "address": "巴达，孟加拉国",
+          "edu": "联合国际大学",
+          "link": "/"
+        },
+        "item2": {
+          "id": 2,
+          "name": "Arafat Jaman Chowdhury",
+          "post": "工程师",
+          "exp": "08年经验",
+          "lang": "英语, 印地语",
+          "address": "巴达，孟加拉国",
+          "edu": "联合国际大学",
+          "link": "/"
+        },
+        "item3": {
+          "id": 3,
+          "name": "Arafat Jaman Chowdhury",
+          "post": "工程师",
+          "exp": "08年经验",
+          "lang": "英语, 印地语",
+          "address": "巴达，孟加拉国",
+          "edu": "联合国际大学",
+          "link": "/"
+        },
+        "item4": {
+          "id": 4,
+          "name": "Arafat Jaman Chowdhury",
+          "post": "工程师",
+          "exp": "08年经验",
+          "lang": "英语, 印地语",
+          "address": "巴达，孟加拉国",
+          "edu": "联合国际大学",
+          "link": "/"
+        },
+        "item5": {
+          "id": 5,
+          "name": "Arafat Jaman Chowdhury",
+          "post": "工程师",
+          "exp": "08年经验",
+          "lang": "英语, 印地语",
+          "address": "巴达，孟加拉国",
+          "edu": "联合国际大学",
+          "link": "/"
+        },
+        "item6": {
+          "id": 6,
+          "name": "Arafat Jaman Chowdhury",
+          "post": "工程师",
+          "exp": "08年经验",
+          "lang": "英语, 印地语",
+          "address": "巴达，孟加拉国",
+          "edu": "联合国际大学",
+          "link": "/"
+        }
+      }
+    },
+    "Certification": {
+      "title": "认证与奖项"
+    }
+  },
+  "Portfolio": {
+    "title": "作品集"
+  },
+  "Blog": {
+    "title": "赢科技博客",
+    "Subscribe": {
+      "title": "订阅我们的新闻通讯？",
+      "description": "加入商业俱乐部（超过1千名成员），每月获取营销服务。",
+      "button": "订阅"
+    },
+    "BlogDetail": {
+      "title": "其他博客"
+    }
+  },
+  "Contact": {
+    "title": "联系我们",
+    "ContactForm": {
+      "title": "联系我们",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing? 探索机会",
+      "office": "公司办公室",
+      "social": "让我们联系吧。我们就在您的点击之间！",
+      "ContactInfo": {
+        "call": "电话",
+        "wp": "WhatsApp",
+        "mail": "邮件",
+        "address": "11, Odo-Olowu, Ijeshatedo B/Stop, Surulere"
+      }
+    }
+  }
+}
