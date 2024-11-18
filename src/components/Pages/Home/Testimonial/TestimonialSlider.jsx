@@ -3,9 +3,9 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 // Import your images
-import img1 from "../../../../../public/assets/home-img/testimonial-img/client-img.png";
-import img2 from "../../../../../public/assets/home-img/testimonial-img/client-img.png";
-import img3 from "../../../../../public/assets/home-img/testimonial-img/client-img.png";
+// import img1 from "../../../../../public/assets/home-img/testimonial-img/client-img.png";
+// import img2 from "../../../../../public/assets/home-img/testimonial-img/client-img.png";
+// import img3 from "../../../../../public/assets/home-img/testimonial-img/client-img.png";
 import Image from "next/image";
 import TestimonialCard from "./TestimonailCard";
 import { useTranslations } from "next-intl";
@@ -83,40 +83,6 @@ const settings = {
     ],
 };
 const TestimonialSlider = ({ keys, images, title, description }) => {
-    const testimonialData = [
-        {
-            id: 1,
-            name: "Felix Jimoh",
-            des: "“I had a wonderful experience working with EcoHaven Realty to find my new home. They really took the time to understand what was important to me and helped me find a home that was not only beautiful but also eco-friendly and energy-efficient. ",
-            rating: 4.9,
-            imgUrl: img1,
-            link: "/"
-        },
-        {
-            id: 1,
-            name: "Felix Jimoh",
-            des: "“I had a wonderful experience working with EcoHaven Realty to find my new home. They really took the time to understand what was important to me and helped me find a home that was not only beautiful but also eco-friendly and energy-efficient. ",
-            rating: 4.9,
-            imgUrl: img1,
-            link: "/"
-        },
-        {
-            id: 1,
-            name: "Felix Jimoh",
-            des: "“I had a wonderful experience working with EcoHaven Realty to find my new home. They really took the time to understand what was important to me and helped me find a home that was not only beautiful but also eco-friendly and energy-efficient. ",
-            rating: 4.9,
-            imgUrl: img1,
-            link: "/"
-        },
-        {
-            id: 1,
-            name: "Felix Jimoh",
-            des: "“I had a wonderful experience working with EcoHaven Realty to find my new home. They really took the time to understand what was important to me and helped me find a home that was not only beautiful but also eco-friendly and energy-efficient. ",
-            rating: 4.9,
-            imgUrl: img1,
-            link: "/"
-        },
-    ];
     const t = useTranslations('HomePage');
     return (
         <div className="my-5 md:my-10">

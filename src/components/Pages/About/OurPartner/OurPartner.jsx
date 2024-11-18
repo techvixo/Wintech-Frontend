@@ -62,7 +62,7 @@ const PrevArrow = ({ onClick }) => {
   );
 };
 
-const OurPartner = () => {
+const OurPartner = ({ourPartners, locale}) => {
   const ourPartner = [
     {
       id: 1,
@@ -118,8 +118,8 @@ const OurPartner = () => {
       {"Our Partner"}
       </h2>
       <Slider {...settings}>
-        {ourPartner.map((part, i) => {
-          return <PartnerCard key={part.id} part={part}></PartnerCard>;
+        {ourPartners?.map((part, i) => {
+          return <PartnerCard locale={locale} key={i} part={part}></PartnerCard>;
         })}
       </Slider>
     </div>

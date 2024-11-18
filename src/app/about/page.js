@@ -12,19 +12,21 @@ import GetInTouch from "../../components/Shared/GetInTouch/GetInTouch";
 import TopGap from "../../components/Shared/TopGap/TopGap";
 import getAllTeamMember from "../../lib/getAllTeamMember";
 import getCertificates from "../../lib/getCertificates";
+import getPartners from "../../lib/getPartners";
 import { getLocale } from "next-intl/server";
 
 
 export default async function Page() {
   const teamMembers = await getAllTeamMember()
   const certificatesData = await getCertificates()
+  const partnerData = await getPartners()
   const locale = await getLocale();
-console.log("certificatesData:", teamMembers);
+console.log("certificatesData:", partnerData.data);
   return (
     <div className="">
       <TopGap></TopGap>
       <AboutBanner></AboutBanner>
-      <AboutMenuTab></AboutMenuTab>
+      <AboutMenuTab locale={locale} ourPartners={partnerData?.data}></AboutMenuTab>
       <WeDo></WeDo>
       <Facilities></Facilities>
       <OurTeam locale={locale} ourTeamMembers={teamMembers?.data}></OurTeam>

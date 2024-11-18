@@ -4,7 +4,7 @@ import WhoWeAre from "./WhoWeAre/WhoWeAre";
 import OurPartner from "./OurPartner/OurPartner";
 import Honor from "./Honor/Honor";
 
-const AboutMenuTab = () => {
+const AboutMenuTab = ({locale, ourPartners}) => {
   const menus = [
     {
       id: 1,
@@ -47,7 +47,7 @@ const AboutMenuTab = () => {
       <div className="">
         {activeTab === menus[0].name &&
           <WhoWeAre></WhoWeAre>}
-        {activeTab === menus[1].name && <OurPartner></OurPartner>}
+        {activeTab === menus[1].name && <OurPartner  locale={locale} ourPartners={ourPartners}></OurPartner>}
         {activeTab === menus[2].name && <Honor></Honor> }
         {/* Add more content conditions as needed */}
       </div>
