@@ -10,12 +10,13 @@ import AboutMenuTab from "../../components/Pages/About/AboutMenuTab";
 import FindProducts from "../../components/Shared/FindProducts/FindProducts";
 import GetInTouch from "../../components/Shared/GetInTouch/GetInTouch";
 import TopGap from "../../components/Shared/TopGap/TopGap";
-import getHomePageData from "../../lib/getHomePageData";
+import getCertificates from "../../lib/getCertificates";
+import { getLocale } from "next-intl/server";
 
 
 export default async function Page() {
-  const certificatesData = await getHomePageData()
-
+  const certificatesData = await getCertificates()
+  const locale = await getLocale();
 // console.log("certificatesData:", certificatesData);
   return (
     <div className="">
@@ -25,7 +26,7 @@ export default async function Page() {
       <WeDo></WeDo>
       <Facilities></Facilities>
       <OurTeam></OurTeam>
-      <Certificates certificatesData={certificatesData?.data}></Certificates>
+      <Certificates locale={locale} certificatesData={certificatesData?.data}></Certificates>
       <ClientTestimonial></ClientTestimonial>
       <GetInTouch></GetInTouch>
       <FindProducts></FindProducts>

@@ -1,43 +1,11 @@
-import Link from "next/link";
-// Import your images
-import img from "../../../../../public/assets/about-img/certificate.png";
+// import img from "../../../../../public/assets/about-img/certificate.png";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
+import { BASEURL } from "../../../../../Constant";
 
-const Certificates = ({certificatesData}) => {
-  const data = [
-    {
-      id: 1,
-      image: img,
-      title: "manufacturer",
-      link: "/",
-    },
-    {
-      id: 2,
-      image: img,
-      title: "Quality Guaranteed",
-      link: "/",
-    },
-    {
-      id: 3,
-      image: img,
-      title: "Short Turnaround Lead Time",
-      link: "/",
-    },
-    {
-      id: 4,
-      image: img,
-      title: "Cost Effective",
-      link: "/",
-    },
-    {
-      id: 4,
-      image: img,
-      title: "Cost Effective",
-      link: "/",
-    },
-  ];
+const Certificates = ({certificatesData, locale}) => {
   const t = useTranslations('AboutPage');
+  console.log(certificatesData);
   return (
     <div className="py-3 md:py-5">
       <div className="">
@@ -45,21 +13,22 @@ const Certificates = ({certificatesData}) => {
       {t(`Certification.title`)}
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-5 gap-2 md:gap-4 pt-2">
-            {data.map((item, i) => {
+            {certificatesData?.map((item, i) => {
               return (
                 <div key={i} className="">
                   <Image
                     width={500}
-                    src={item.image}
-                    alt={item.title}
-                    className="w-full"
+                    height={800}
+                    src={`${BASEURL}/${item?.image}`}
+                    alt={locale == "en" ? item?.name_en : item?.name_cn}
+                    className="w-full h-60 md:h-80 object-cover"
                   />
                 <div className="bg-[#252B42] p-2 md:p-3">
                 <h4 className="uppercase text-sm text-white">
                 Certificate:
                   </h4>
                 <h4 className="capitalize text-sm font-semibold  text-white">
-                Certificate Name
+                {locale == "en" ? item?.name_en : item?.name_cn}
                   </h4>
                 </div>
                 </div>
