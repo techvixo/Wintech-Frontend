@@ -11,7 +11,7 @@ import bannerImg from "../../../../public/assets/banner-img.png"
 import getSpecificCategory from "../../../lib/getSpecificCategory"
 import ServiceMenu from "../../../components/Pages/Servces/ServiceMenu";
 export default async function Page() {
-  const categoryId = "673c7031fac2fb2487397867"
+  const categoryId = "673c6f6afac2fb2487397861"
   const categoryProducts = await getSpecificCategory(categoryId);
   const menus = [
     {
@@ -36,7 +36,7 @@ export default async function Page() {
       <ServiceBanner bannerBg={bannerImg} title={"Products & services"} link={"services"}></ServiceBanner>
       {/* <PageMenu menus={menus}></PageMenu> */}
       <ServiceMenu></ServiceMenu>
-      <AllServices products={categoryProducts?.data}></AllServices>
+      <AllServices products={categoryProducts?.data?.products}></AllServices>
       <ServiceProcesses></ServiceProcesses>
       <WintechStandard></WintechStandard>
       <MachinesCenter></MachinesCenter>
