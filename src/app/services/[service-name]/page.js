@@ -9,8 +9,9 @@ import GetInTouch from "../../../components/Shared/GetInTouch/GetInTouch";
 import TopGap from "../../../components/Shared/TopGap/TopGap";
 import bannerImg from "../../../../public/assets/banner-img.png"
 import getSpecificCategory from "../../../lib/getSpecificCategory"
+import ServiceMenu from "../../../components/Pages/Servces/ServiceMenu";
 export default async function Page() {
-  const categoryId = "671cbaf81cab3a4651abb8f7"
+  const categoryId = "673c7031fac2fb2487397867"
   const categoryProducts = await getSpecificCategory(categoryId);
   const menus = [
     {
@@ -33,7 +34,8 @@ export default async function Page() {
     <div className="">
       <TopGap></TopGap>
       <ServiceBanner bannerBg={bannerImg} title={"Products & services"} link={"services"}></ServiceBanner>
-      <PageMenu menus={menus}></PageMenu>
+      {/* <PageMenu menus={menus}></PageMenu> */}
+      <ServiceMenu></ServiceMenu>
       <AllServices products={categoryProducts?.data}></AllServices>
       <ServiceProcesses></ServiceProcesses>
       <WintechStandard></WintechStandard>

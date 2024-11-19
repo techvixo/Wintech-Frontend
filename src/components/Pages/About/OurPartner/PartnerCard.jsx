@@ -13,7 +13,7 @@ const PartnerCard = ({part, locale}) => {
        alt={locale == "en" ? part?.name_en : part?.name_cn}
        className="w-full h-24 object-cover"
      />
-     <div className="p-2 bg-[#FBFAFE]">
+     <div className="p-1 bg-[#FBFAFE]">
        <h3 className="text-xl text-center md:my-1 capitalize font-semibold text-[#1A1A1A]">
        {locale == "en" ? part?.name_en : part?.name_cn}
        </h3>

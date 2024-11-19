@@ -1,5 +1,6 @@
 import FAQ from "../../components/Pages/Home/FAQ/FAQ";
 import PageMenu from "../../components/Pages/Portfolios/PageMenu/PageMenu";
+import ServiceMenu from "../../components/Pages/Servces/ServiceMenu";
 import AllServices from "../../components/Pages/Servces/AllServices/AllServices";
 import MachinesCenter from "../../components/Pages/Servces/MachinsCenter/MachinsCenter";
 import ServiceBannerWrapper from "../../components/Pages/Servces/ServiceBanner/ServiceBannerWraper";
@@ -8,10 +9,12 @@ import WintechStandard from "../../components/Pages/Servces/WintechStandard/Wint
 import GetInTouch from "../../components/Shared/GetInTouch/GetInTouch";
 import TopGap from "../../components/Shared/TopGap/TopGap";
 import getAllCategories from "../../lib/getAllCategories"
+import getProducts from "../../lib/getProducts"
 
 export default async function Page() {
-  const allCategories = await getAllCategories()
-  // console.log("allCategories:", allCategories.data)
+  // const allCategories = await getAllCategories()
+  const allProducts = await getProducts()
+  // console.log("allCategories:", allProducts.data)
   const menus = [
     {
       id: 1,
@@ -34,8 +37,9 @@ export default async function Page() {
     <div className="">
       <TopGap></TopGap>
       <ServiceBannerWrapper></ServiceBannerWrapper>
-      <PageMenu menus={menus}></PageMenu>
-      <AllServices></AllServices>
+      {/* <PageMenu menus={menus}></PageMenu> */}
+      <ServiceMenu></ServiceMenu>
+      <AllServices products={allProducts?.data}></AllServices>
       <ServiceProcesses></ServiceProcesses>
       <WintechStandard></WintechStandard>
       <MachinesCenter></MachinesCenter>

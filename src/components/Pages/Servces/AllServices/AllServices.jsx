@@ -29,7 +29,7 @@ const AllServices = ({products}) => {
     }
   ];
   
-  // console.log("Products::", products)
+  console.log("Products::", products)
   return (
     <div className="my-5 md:my-14">
       <div className="main_container">

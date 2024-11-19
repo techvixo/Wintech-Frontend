@@ -1,9 +1,9 @@
-import { BASEURL } from "@/Constant";
+import { BASEURL } from "../../Constant";
 
-export default async function getExclusiveDeals() {
+export default async function getProducts() {
     // console.log(props)
     const result = await fetch(
-        `${BASEURL}/user/exclusive-deals`,
+        `${BASEURL}/product/all`,
         {
             cache: "no-store"
             // next: {
@@ -13,7 +13,7 @@ export default async function getExclusiveDeals() {
     )
 
     if (!result.ok) {
-        throw new Error("Ther was an error fetching Exclusive Deals")
+        throw new Error("There was an error fetching all Product Data!")
     }
     return result.json();
 }
