@@ -11,15 +11,17 @@ import HowWorks from "./HowWorks/HowWorks"
 import ClientTestimonial from "./Testimonial/Testimonial"
 import WhyChooseUs from "./WhyChooseUs/WhyChooseUs"
 import getHomePageData from '../../../lib/getHomePageData';
+import getHomeBannerData from '../../../lib/getHomeBannerData';
 import { getLocale } from "next-intl/server"
 
 const HomePage = async () => {
+  const homeBanner = await getHomeBannerData()
   const homePageData = await getHomePageData()
   const locale = await getLocale();
-  console.log("Home_Page_Data:",homePageData?.data)
+  // console.log("Home_Page_Data:",homeBanner?.data)
   return (
     <div>
-      <Banner></Banner>
+      <Banner locale={locale} data={homeBanner?.data}></Banner>
       <CngMachines locale={locale} machines={homePageData?.data?.cnc_machine_parts}></CngMachines>
       <CustomPartsBanner></CustomPartsBanner>
       <WhyChooseUs></WhyChooseUs>
