@@ -75,8 +75,8 @@ const ProductDetails = () => {
       )}
 
       {activeTab === "related" && (
-        <div className="text-gray-600 mt-4">
-          <p>Related products will appear here.</p>
+        <div className="">
+          <h5 className="capitalize font-semibold text-xl md:text-2xl text-black ">here is some Related products:</h5>
         </div>
       )}
     </div>
