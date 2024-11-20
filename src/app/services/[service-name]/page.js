@@ -7,33 +7,31 @@ import ServiceProcesses from "../../../components/Pages/Servces/ServiceProcesses
 import WintechStandard from "../../../components/Pages/Servces/WintechStandard/WintechStandard";
 import GetInTouch from "../../../components/Shared/GetInTouch/GetInTouch";
 import TopGap from "../../../components/Shared/TopGap/TopGap";
-import bannerImg from "../../../../public/assets/banner-img.png"
 import getSpecificCategory from "../../../lib/getSpecificCategory"
 import ServiceMenu from "../../../components/Pages/Servces/ServiceMenu";
+import getBanners from "../../../lib/getBanner"
+import { getLocale } from "next-intl/server";
+import { BASEURL } from "../../../../Constant";
+
 export default async function Page() {
   const categoryId = "673c6f6afac2fb2487397861"
   const categoryProducts = await getSpecificCategory(categoryId);
-  const menus = [
-    {
-      id: 1,
-      name: "CNC Machining Services",
-      link: "/services/cnc-machining",
-    },
-    {
-      id: 2,
-      name: "Materials Machined",
-      link: "/services/materials-machined",
-    },
-    {
-      id: 3,
-      name: "Surface Finishing Services",
-      link: "/services/surface-finishing",
-    },
-  ];
+  const banner = await getBanners("services")
+  const locale = await getLocale();
+
   return (
     <div className="">
       <TopGap></TopGap>
-      <ServiceBanner bannerBg={bannerImg} title={"Products & services"} link={"services"}></ServiceBanner>
+      <ServiceBanner
+        bannerBg={`${BASEURL}/${banner?.data?.banner_image}`}
+        title={locale == "en" ? banner?.data?.title_en
+          : banner?.data?.title_cn
+        }
+        des={locale == "en" ? banner?.data?.description_en
+          : banner?.data?.description_cn
+        }
+        link={"/services"}
+      ></ServiceBanner>
       {/* <PageMenu menus={menus}></PageMenu> */}
       <ServiceMenu></ServiceMenu>
       <AllServices products={categoryProducts?.data?.products}></AllServices>
