@@ -5,6 +5,8 @@ import { AiOutlineDelete } from "react-icons/ai";
 import { IoMdClose } from "react-icons/io";
 import { useState, useEffect } from 'react';
 import ConversationsBox from './ConversationsBox';
+import { BASEURL } from '../../../../Constant';
+import axios from 'axios';
 
 const ChatBox = () => {
   const [isOpenChat, setIsOpenChat] = useState(false);
@@ -19,26 +21,36 @@ const ChatBox = () => {
   const handleChatBoxOpenOrClose = () => {
     setIsOpenChat(!isOpenChat);
   }
-  const handleChatClose = () => {
-     // Save name and email to localStorage
-     localStorage.removeItem("name");
-     localStorage.removeItem("email");
-     setIsNewChat("");
+  const handleChatClose = async () => {
+    try {
+      const response = await axios.delete(`${BASEURL}/message/delete/all/${localStorage.getItem("email")}`);
+      // console.log("Response:", response.data);
+      if (response?.data?.status === "success") {
+        localStorage.removeItem("name");
+        localStorage.removeItem("email");
+        setIsNewChat("");
+      }
+    } catch (error) {
+      console.error("Error sending message:", error.message);
+      alert("Failed to send message. Please try again.");
+    }
+
+
   }
 
   const handleStartChat = (e) => {
     e.preventDefault();
     const name = e.target.elements.name.value;
     const email = e.target.elements.email.value;
-    
+
     // Save name and email to localStorage
     localStorage.setItem("name", name);
     localStorage.setItem("email", email);
-    
+
     // Set isNewChat to true after saving user data
     setIsNewChat(true);
   };
-// console.log(isNewChat)
+  // console.log(isNewChat)
   return (
     <div className='fixed bottom-5 right-3 z-30'>
       <div className={`chat_box relative ${isOpenChat ? "open block" : "close hidden"}`}>
@@ -47,7 +59,7 @@ const ChatBox = () => {
             <div className="chat_top absolute top-0 left-0 right-0 w-full flex items-center justify-between border-b py-1">
               <p className='text-gray-700 font-semibold text-sm'>Wintech Support</p>
               <p className='text-lg flex items-center gap-4'>
-                <button  onClick={handleChatClose} id='delete_button' type='button' className=''><AiOutlineDelete /></button>
+                <button onClick={handleChatClose} id='delete_button' type='button' className=''><AiOutlineDelete /></button>
                 <button onClick={() => setIsOpenChat(false)} id='close_button' type='button' className=' text-xl'><IoMdClose /></button>
               </p>
             </div>

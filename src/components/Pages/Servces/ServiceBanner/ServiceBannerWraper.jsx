@@ -1,12 +1,19 @@
-import { useTranslations } from 'next-intl';
-import React from 'react'
 import ServiceBanner from "./ServiceBanner";
-import bannerImg from "../../../../../public/assets/banner-img.png"
+import { BASEURL } from '../../../../../Constant';
 
-const ServiceBannerWrapper = () => {
-    const t = useTranslations('ServicePage');
+const ServiceBannerWrapper = ({ banner, locale }) => {
+  // console.log("banner:", banner)
   return (
-    <ServiceBanner bannerBg={bannerImg} title={t(`title`)} link={"services"}></ServiceBanner>
+    <ServiceBanner
+      bannerBg={`${BASEURL}/${banner?.banner_image}`}
+      title={locale == "en" ? banner?.title_en
+        : banner?.title_cn
+      }
+      des={locale == "en" ? banner?.description_en
+        : banner?.description_cn
+      }
+      link={"services"}
+    ></ServiceBanner>
   )
 }
 

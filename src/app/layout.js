@@ -7,6 +7,7 @@ import NewFooter from "../components/Shared/Footer/NewFooter";
 import ChatBox from "../components/Shared/ChatBox/ChatBox";
 import SocialIcons from "../components/Shared/SocialIcons/SocialIcons";
 import TestNavbar from "../components/TestNavbar";
+import { Toaster } from "react-hot-toast";
 
 export const metadata = {
   title: "Abroad",
@@ -22,6 +23,7 @@ export default async function RootLayout({ children }) {
   return (
     <html lang={locale}>
       <body className={``}>
+         <Toaster position="top-center" />
         <NextIntlClientProvider messages={messages}>
           <Navbar></Navbar>
           <SocialIcons></SocialIcons>

@@ -1,10 +1,16 @@
-import { useTranslations } from 'next-intl';
-import bannerImg from "../../../../../public/assets/banner-img.png"
+import { BASEURL } from '../../../../../Constant';
 import ShareBanner from '../../../Shared/ShareBanner/ShareBanner';
-const BlogBanner = () => {
-    const t = useTranslations('Blog');
+const BlogBanner = ({ banner, locale }) => {
   return (
-    <ShareBanner bannerBg={bannerImg} title={t(`title`)} link={"blog"}></ShareBanner>
+    <ShareBanner
+     bannerBg={`${BASEURL}/${banner?.banner_image}`}
+    title={locale == "en" ? banner?.title_en
+      : banner?.title_cn
+    }
+    des={locale == "en" ? banner?.description_en
+      : banner?.description_cn
+    } link={"blog"}
+    ></ShareBanner>
   )
 }
 

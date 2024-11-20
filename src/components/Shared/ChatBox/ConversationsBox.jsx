@@ -1,86 +1,92 @@
 import { IoSend } from "react-icons/io5";
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { FaRegUser } from "react-icons/fa";
 import { FaUserShield } from "react-icons/fa";
+import { BASEURL } from "../../../../Constant";
+import axios from "axios";
 
 const ConversationsBox = () => {
+    const [preData, setPreData] = useState([]);
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState(null);
     const [message, setMessage] = useState("");
+    const email = localStorage.getItem("email")
 
-    const handleSendMessage = () => {
+    //===================================
+    // <<<< Get Previous Message here >>>>
+    //====================================
+    const fetchUsers = async () => {
+        try {
+            setLoading(true);
+            const response = await axios.get(`${BASEURL}/message/start-chat/${email}`);
+            setPreData(response?.data?.data);
+        } catch (err) {
+            setError(err?.message);
+            setLoading(false);
+        } finally {
+            setLoading(false);
+        }
+    };
+    useEffect(() => {
+        fetchUsers();
+    }, [email]);
+    //===================================
+    //    <<<< Send Message here >>>>
+    //====================================
+    const handleSendMessage = async () => {
         if (message.trim()) {
-            console.log("Message:", message); // This is where you can send the message (e.g., to an API or chat system)
-            setMessage(""); // Clear the message after sending
+            const messageData = {
+                email: email,
+                message: message
+            }
+            try {
+                const response = await axios.post(`${BASEURL}/message/chat-user/send-message`, messageData);
+                console.log("Response:", response.data);
+                setMessage("");
+                fetchUsers();
+            } catch (error) {
+                console.error("Error sending message:", error.message);
+                alert("Failed to send message. Please try again.");
+            }
         } else {
             alert("Please write a message before sending.");
         }
     };
-    const data = [
-        {
-            id: 1,
-            role: "user",
-            des: "I want to create a website",
-            name: "",
-            time: "12:03"
-        },
-        {
-            id: 1,
-            role: "admin",
-            des: "Hi! I am Kodee, Hostinger AI sales expert 🤖. How can I help you today?",
-            name: "",
-            time: "12:03"
-        },
-        {
-            id: 1,
-            role: "user",
-            des: "That's great! To help you better, could you please tell me what type of website you are planning to create?",
-            name: "",
-            time: "12:03"
-        },
-        {
-            id: 1,
-            role: "admin",
-            des: "Is it a blog, an online store, a portfolio, or something else?",
-            name: "",
-            time: "12:03"
-        },
-        {
-            id: 1,
-            role: "admin",
-            des: "Is it a blog, an online store, a portfolio, or something else?",
-            name: "",
-            time: "12:03"
-        },
-        {
-            id: 1,
-            role: "admin",
-            des: "Is it a blog, an online store, a portfolio, or something else?",
-            name: "",
-            time: "12:03"
-        },
-    ]
+
+
+    if (loading) return <div>Loading...</div>;
+    if (error) return <div>Error: {error}</div>;
+    
     return (
         <div id='conversations_box' className="relative">
             <div className="conversations">
-                <div className="message_show flex flex-col gap-1">
-                    {
-                        data.map((message, i) => {
-                            return (
-                                <div key={i} className={`message_card flex gap-1 p-2 rounded-sm ${message?.role == "user" && "bg-gray-200"}`}>
-                                    <p className=" pt-2">
-                                        {
-                                            message?.role == "user" ? <span className="text-lg text-gray-600 font-semibold"><FaRegUser /></span>
-                                                :
-                                                <span className="text-lg text-blue-400 font-semibold"><FaUserShield /></span>
+                {
+                    preData?.previousMessages?.length > 0 ?
+                        <div className="message_show flex flex-col gap-1">
+                            {
+                                preData?.previousMessages?.map((message, i) => {
+                                    return (
+                                        <div key={i} className={`message_card flex items-center gap-1 p-2 rounded-sm ${message?.sender == "user" ? "bg-gray-200" : "bg-[#30b84000]"}`}>
+                                            <p className="">
+                                                {
+                                                    message?.sender == "user" ? <span className="text-lg text-gray-600 font-semibold"><FaRegUser /></span>
+                                                        :
+                                                        <span className="text-lg text-blue-400 font-semibold"><FaUserShield /></span>
 
-                                        }
+                                                }
 
-                                    </p>
-                                    <p className="text-sm">{message?.des}</p>
-                                </div>
-                            )
-                        })
-                    }
-                </div>
+                                            </p>
+                                            <p className="text-sm">{message?.message}</p>
+                                        </div>
+                                    )
+                                })
+                            }
+                        </div>
+                        :
+                        <div className="">
+                            <p className="text-sm text-center mt-20">Start Message</p>
+                        </div>
+                }
             </div>
             {/* Write Message here  */}
             <div className="send_message_box relative w-full overflow-hidden">

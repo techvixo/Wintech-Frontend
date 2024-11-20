@@ -10,11 +10,15 @@ import GetInTouch from "../../components/Shared/GetInTouch/GetInTouch";
 import TopGap from "../../components/Shared/TopGap/TopGap";
 import getAllCategories from "../../lib/getAllCategories"
 import getProducts from "../../lib/getProducts"
+import getBanners from "../../lib/getBanner"
+import { getLocale } from "next-intl/server";
 
 export default async function Page() {
   // const allCategories = await getAllCategories()
   const allProducts = await getProducts()
-  // console.log("allCategories:", allProducts.data)
+  const banner = await getBanners("services")
+  const locale = await getLocale();
+  // console.log("banner:", banner.data)
   const menus = [
     {
       id: 1,
@@ -36,7 +40,7 @@ export default async function Page() {
   return (
     <div className="">
       <TopGap></TopGap>
-      <ServiceBannerWrapper></ServiceBannerWrapper>
+      <ServiceBannerWrapper locale={locale} banner={banner?.data}></ServiceBannerWrapper>
       {/* <PageMenu menus={menus}></PageMenu> */}
       <ServiceMenu></ServiceMenu>
       <AllServices products={allProducts?.data}></AllServices>

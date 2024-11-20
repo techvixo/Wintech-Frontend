@@ -2,8 +2,9 @@
 // import { BASEURL } from "@/Constant";
 import axios from "axios";
 import { useState } from "react";
-import { toast } from "react-toastify";
+// import { toast } from "react-toastify";
 import "./style.css";
+import toast from "react-hot-toast";
 
 const ContactForm = () => {
   const [isLoading, setIsLoading] = useState(false);

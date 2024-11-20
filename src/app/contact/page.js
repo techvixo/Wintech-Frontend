@@ -3,15 +3,26 @@ import MapLocation from "../../components/Pages/Contact/MapLocation/MapLocation"
 import Subscribe from "../../components/Pages/Contact/Subscribe/Subscribe";
 import ShareBanner from "../../components/Shared/ShareBanner/ShareBanner";
 import TopGap from "../../components/Shared/TopGap/TopGap";
-import bannerImg from "../../../public/assets/banner-img.png"
-import { useTranslations } from "next-intl";
+import getBanners from "../../lib/getBanner";
+import { BASEURL } from "../../../Constant";
+import { getLocale } from "next-intl/server";
 
-export default function Page() {
-  const t = useTranslations('Contact');
+export default async function Page() {
+  const banner = await getBanners("contact_us")
+  const locale = await getLocale();
+
   return (
     <div className="">
       <TopGap></TopGap>
-      <ShareBanner bannerBg={bannerImg} title= {t(`title`)} link={"contact"}></ShareBanner>
+      <ShareBanner
+        bannerBg={`${BASEURL}/${banner?.data?.banner_image}`}
+        title={locale == "en" ? banner?.data?.title_en
+          : banner?.data?.title_cn
+        }
+        des={locale == "en" ? banner?.data?.description_en
+          : banner?.data?.description_cn
+        } link={"contact"}
+      ></ShareBanner>
       <ContactBox></ContactBox>
       <MapLocation></MapLocation>
       <Subscribe></Subscribe>

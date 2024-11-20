@@ -1,7 +1,8 @@
 import Link from "next/link";
 import { IoIosArrowForward } from "react-icons/io";
 
-const ShareBanner = ({ bannerBg, title, link }) => {
+const ShareBanner = ({ bannerBg, title, link, des }) => {
+  const processedBannerBg = bannerBg ? bannerBg.replace(/ /g, "%20") : null;
   return (
     <section>
       <div
@@ -9,7 +10,7 @@ const ShareBanner = ({ bannerBg, title, link }) => {
         className="h-[20vh] md:h-[40vh]"
         style={{
           // height: "67vh",
-          backgroundImage: `url(${bannerBg.src})`,
+          backgroundImage: `url(${processedBannerBg || "https://via.placeholder.com/150"})`,
           backgroundPosition: "center",
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
