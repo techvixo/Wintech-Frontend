@@ -1,45 +1,44 @@
 "use client";
-// import { BASEURL } from "@/Constant";
 import axios from "axios";
 import { useState } from "react";
-// import { toast } from "react-toastify";
 import "./style.css";
 import toast from "react-hot-toast";
+import { BASEURL } from "../../../../Constant";
 
 const ContactForm = () => {
   const [isLoading, setIsLoading] = useState(false);
 
   const handleSubmit = async (e) => {
-    // setIsLoading(true)
+    setIsLoading(true)
     e.preventDefault();
     const from = e.target;
     const name = from.name.value;
     const email = from.email.value;
     const phone = from.phone.value;
+    const service = from.service.value;
     const note = from.note.value;
     const data = {
       name,
       email,
       phone,
-      note,
+      enquery: service,
+      editionalInfo: note
     };
-    toast.success("Your message was sent successfully!");
-    console.log(data);
-    // try {
-    //   setIsLoading(true)
-    //   const response = await axios.post(
-    //     `${BASEURL}/contact-request`,
-    //     data
-    //   );
-    //   toast.success("Your message was sent successfully!");
-    //   setIsLoading(false)
-    //   from.reset("")
-    //   return response.data;
-    // } catch (error) {
-    //   console.error("Error sending message:", error);
-    //   toast.error("There was an error sending your message.");
-    //   setIsLoading(false)
-    // }
+    try {
+      setIsLoading(true)
+      const response = await axios.post(
+        `${BASEURL}/user/email/customer-enquery`,
+        data
+      );
+      toast.success("Your message was sent successfully!");
+      setIsLoading(false)
+      from.reset("")
+      return response.data;
+    } catch (error) {
+      console.error("Error sending message:", error);
+      toast.error("There was an error sending your message.");
+      setIsLoading(false)
+    }
   };
   return (
     <form
