@@ -17,6 +17,7 @@ const ServiceCard = ({ product, locale }) => {
   //   configurations,
   //   category,
   // } = product;
+  console.log("object:", product);
   return (
     <div>
       <div className="product_img w-full">
@@ -33,7 +34,7 @@ const ServiceCard = ({ product, locale }) => {
           {locale == "en" ? product?.title_en : product?.title_cn}
         </h4>
         <p className="text-sm md:text-base text-[#666666] my-2 mb-3 md:mb-5">
-          {locale == "en" ? product?.description_en : product?.description_cn}
+          {locale == "en" ? product?.description_en?.slice(0, 30) : product?.description_cn?.slice(0, 30)}
         </p>
         <Link
           href={`/services/service-name/${product?._id}`}

@@ -23,7 +23,7 @@ const ConversationsBox = () => {
     };
     try {
       setLoading(true);
-      const response = await axios.get(`${BASEURL}/message/start-chat`, {data});
+      const response = await axios.post(`${BASEURL}/message/start-chat`, data);
       setPreData(response?.data?.data);
     } catch (err) {
       console.log(err);
@@ -64,7 +64,7 @@ const ConversationsBox = () => {
 
   if (loading) return <div>Loading...</div>;
   if (error) return <div>Error: {error}</div>;
-
+console.log(preData);
   return (
     <div id="conversations_box" className="relative">
       <div className="conversations">
@@ -90,6 +90,7 @@ const ConversationsBox = () => {
                     )}
                   </p>
                   <p className="text-sm">{message?.message}</p>
+                  {/* <p className="text-sm">{message?.createdAt}</p> */}
                 </div>
               );
             })}

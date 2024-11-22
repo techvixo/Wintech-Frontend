@@ -24,6 +24,7 @@ import axios from "axios";
 const NewFooter = () => {
   const [inputValue, setInputValue] = useState("");
   const [isValidEmail, setIsValidEmail] = useState(true); // State to track if email is valid
+  const currentYear = new Date().getFullYear(); // Get the current year dynamically
   const paymentMathod = [
     {
       id: 1,
@@ -240,7 +241,7 @@ const NewFooter = () => {
           </div>
         </div>
         <p className="text-sm text-center text-white mt-4 md:mt-4 w-full">
-          © Copyright Wintec precision machining Co.,Ltd 2024 - All Rights Reserved.
+          © Copyright Wintec precision machining Co.,Ltd {currentYear} - All Rights Reserved.
         </p>
         <p className="text-sm text-center text-secondary py-3 w-full">
           <a className="hover:underline" target="blank" href="https://techvixo.com/">Designed and developed by @ Tech-vixo</a>

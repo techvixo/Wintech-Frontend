@@ -38,7 +38,7 @@ const ChatBox = () => {
 
   }
 
-  const handleStartChat = (e) => {
+  const handleStartChat = async (e) => {
     e.preventDefault();
     const name = e.target.elements.name.value;
     const email = e.target.elements.email.value;
@@ -46,9 +46,19 @@ const ChatBox = () => {
     // Save name and email to localStorage
     localStorage.setItem("name", name);
     localStorage.setItem("email", email);
-
-    // Set isNewChat to true after saving user data
+    const data = {
+      fullName: name,
+      email: email,
+    };
+    try {
+      const response = await axios.post(`${BASEURL}/message/start-chat`, data);
+      // setPreData(response?.data?.data);
+       // Set isNewChat to true after saving user data
     setIsNewChat(true);
+    } catch (err) {
+      console.log(err);
+    }
+   
   };
   // console.log(isNewChat)
   return (
