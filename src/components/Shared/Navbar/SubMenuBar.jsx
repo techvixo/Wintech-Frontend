@@ -3,7 +3,7 @@ import NavLink from "./NavLink";
 
 import logo from "../../../../public/assets/logo/logo.png";
 import Link from "next/link";
-const SubMenuBar = ({ setNavToggle }) => {
+const SubMenuBar = ({ setNavToggle, allCategories }) => {
   const servicesList =  [
     {
       serviceName: "CNC Machining Services",
@@ -72,7 +72,7 @@ const SubMenuBar = ({ setNavToggle }) => {
       ]
     },
   ]
-  
+  console.log("HHHHHHHHHHHHHHHH:", allCategories);
   return (
     <div className="sub_nav_manu py-6 z-10 shadow-lg absolute top-28 left-0 right-0 w-full h-auto bg-primary p-1 text-white ">
       <div className="main_container">
@@ -80,19 +80,19 @@ const SubMenuBar = ({ setNavToggle }) => {
           <span className="absolute -z-50 top-[-20px] left-1/2  rotate-45  bg-primary h-5 w-5 "></span>
         </div>
         <div className="grid grid-cols-4 gap-5">
-          {servicesList?.slice(0,3)?.map((service, i) => {
+          {allCategories?.slice(0,3)?.map((service, i) => {
             return (
               <div key={i} className="mx-auto z-40 p-2">
                 <NavLink
                   onClick={() => setNavToggle(false)}
-                  href={`/services${service?.path}`}
+                  href={`/services/${service?._id}`}
                   // activeClassName=""
                   // exact={service?.path === "/"}
                 >
-                  {service?.serviceName}
+                  {service?.name_en}
                 </NavLink>
                 <ul className=" py-2">
-                  {service?.subServiceName?.map((subService, i) => {
+                  {service?.products?.slice(0,5)?.map((subService, i) => {
                     return (
                       <li
                         key={i}
@@ -100,11 +100,11 @@ const SubMenuBar = ({ setNavToggle }) => {
                       >
                         <NavLink
                           onClick={() => setNavToggle(false)}
-                          href={`/services/service-name${subService?.path}`}
+                          href={`/services/service-name/${subService?._id}`}
                           // activeClassName=""
                           // exact={subService?.path === "/"}
                         >
-                          {subService?.title}
+                          {subService?.title_en}
                         </NavLink>
                       </li>
                     );

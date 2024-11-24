@@ -24,13 +24,12 @@ import LocaleSwitcher from "../LanguageSwitcher/LocaleSwitcher";
 import { useTranslations } from "next-intl";
 import MenuLink from "./MenuLink";
 
-const Navbar = () => {
+const Navbar = ({allCategories, local}) => {
   const [navToggle, setNavToggle] = useState(false);
   const [isSticky, setIsSticky] = useState(false);
   const [isRoot, setIsRoot] = useState(true);
   const [openSubMenus, setOpenSubMenus] = useState(false);
   const pathname = usePathname();
-
   useEffect(() => {
     setIsRoot(pathname === "/");
   }, [pathname]);
@@ -92,7 +91,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`z-40  w-full fixed left-0 right-0 py-2 lg:py-0  ${isSticky
+      className={`z-40 w-full fixed left-0 right-0 py-2 lg:py-0  ${isSticky
         ? "top-0 bg-white nav_shadow"
         : `top-0 bg-white ${isRoot && "md:bg-[#00000000]"} navber_border`
         }`}
@@ -219,7 +218,7 @@ const Navbar = () => {
                     {t(`navData.${key}.subMenu`) == "isMenu" && <span className="arrow ml-2"></span>}
                   </NavLink>
                   {t(`navData.${key}.subMenu`) == "isMenu" && (
-                    <SubMenuBar setNavToggle={setNavToggle}></SubMenuBar>
+                    <SubMenuBar allCategories={allCategories} setNavToggle={setNavToggle}></SubMenuBar>
                   )}
                 </li>
               ))}
