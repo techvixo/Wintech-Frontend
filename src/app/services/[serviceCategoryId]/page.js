@@ -13,12 +13,10 @@ import getBanners from "../../../lib/getBanner"
 import { getLocale } from "next-intl/server";
 import { BASEURL } from "../../../../Constant";
 
-export default async function Page() {
-  const categoryId = "673c6f6afac2fb2487397861"
-  const categoryProducts = await getSpecificCategory(categoryId);
+export default async function Page({params}) {
+  const categoryProducts = await getSpecificCategory(params?.serviceCategoryId);
   const banner = await getBanners("services")
   const locale = await getLocale();
-
   return (
     <div className="">
       <TopGap></TopGap>

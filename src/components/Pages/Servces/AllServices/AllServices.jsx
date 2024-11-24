@@ -1,39 +1,11 @@
+import Image from "next/image";
 import { getLocale } from "next-intl/server";
-import img from "../../../../../public/assets/services/service-img.png";
 import notFoundImg from "../../../../../public/assets/services/product-not-found.png";
 import ServiceCard from "./ServiceCard";
-import Image from "next/image";
 
 const AllServices = async ({ products }) => {
   const locale = await getLocale();
-  const data = [
-    {
-      title: "CNC Turning",
-      des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce enim fames quam pellentesque interdum purus senectus feugiat elit.c.",
-      img: img,
-      link: "",
-    },
-    {
-      title: "CNC Turning",
-      des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce enim fames quam pellentesque interdum purus senectus feugiat elit.c.",
-      img: img,
-      link: "",
-    },
-    {
-      title: "CNC Turning",
-      des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce enim fames quam pellentesque interdum purus senectus feugiat elit.c.",
-      img: img,
-      link: "",
-    },
-    {
-      title: "CNC Turning",
-      des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce enim fames quam pellentesque interdum purus senectus feugiat elit.c.",
-      img: img,
-      link: "",
-    },
-  ];
 
-  console.log("Products::", products);
   return (
     <div className="my-5 md:my-14">
       <div className="main_container">

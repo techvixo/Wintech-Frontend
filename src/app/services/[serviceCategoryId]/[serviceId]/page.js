@@ -7,9 +7,9 @@ import { getLocale } from "next-intl/server";
 import { BASEURL } from "../../../../../Constant";
 
 
-export default async function Page() {
-  const productId = "673cc31e7f4e54dc479bd6d2"
-  const product = await getSpecificProduct(productId)
+export default async function Page({params}) {
+  // const productId = "673cc31e7f4e54dc479bd6d2"
+  const product = await getSpecificProduct(params?.serviceId)
   const banner = await getBanners("services")
   const locale = await getLocale();
 
@@ -26,7 +26,7 @@ export default async function Page() {
         }
         link={"/services"}
       ></ServiceBanner>
-      <ServiceDetails product={product?.data}></ServiceDetails>
+      <ServiceDetails  product={product?.data}></ServiceDetails>
     </div>
   );
 }

@@ -5,7 +5,7 @@ import ProductDetails from "./ProdutcDetails";
 import { BASEURL } from "../../../../../../Constant";
 
 const ServiceConfigaration = ({product, locale}) => {
-  console.log(product);
+  // console.log(product);
   return (
     <div className="my-5 md:my-14">
      <div className="main_container">
@@ -25,12 +25,12 @@ const ServiceConfigaration = ({product, locale}) => {
           {/* CNC Machining Services */}
           {locale == "en" ? product?.title_en : product?.title_cn}
           </h4>
-        <p className="text-sm md:text-base">This machine is fully automatic to produce the outside earloop face mask, including 1 set of mask body machine and 1 set of earloop welding machine.The process is from raw material feeding,earloop welding＆nose wire welding to finished product</p>
-        <DetailImages></DetailImages>
+        <p className="text-sm md:text-base">{locale == "en" ? product?.description_en : product?.description_cn}</p>
+        <DetailImages productImage={product?.images}></DetailImages>
         </div>
        </div>
       </div>
-      <ProductDetails></ProductDetails>
+      <ProductDetails configurations={product?.configurations}></ProductDetails>
      </div>
     </div>
   )
