@@ -32,8 +32,8 @@ const generateSlug = (text) => {
         </h4>
         <p className="text-sm md:text-base text-[#666666] my-2 mb-3 md:mb-5">
           {locale == "en"
-            ? product?.description_en?.slice(0, 30)
-            : product?.description_cn?.slice(0, 30)}
+            ? product?.description_en?.slice(0, 110) + ".."
+            : product?.description_cn?.slice(0, 110) + ".."}
         </p>
         <Link
           href={link}

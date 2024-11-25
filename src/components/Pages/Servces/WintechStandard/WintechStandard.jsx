@@ -7,29 +7,6 @@ import Image from "next/image";
 import { useTranslations } from "next-intl";
 
 const WintechStandard = () => {
-  const data = [
-    {
-      id: 1,
-      icon: img1,
-      title: "Quality",
-      des: "Our inspection equipment includes CMM, Linear Height, and Projector, thread gages, Pin...We follow the ISO 9001 quality system from the material purchase to machining to inspection.",
-      link: "/",
-    },
-    {
-      id: 2,
-      icon: img2,
-      title: "Certification",
-      des: "Our quality management system is ISO 9001:2015 certified，certificate No. : 51822Q07569R0S. IAF, CNAS certificate and iso 13485:2016 certified, certificate No.: 64623B8060538ROS",
-      link: "/",
-    },
-    {
-      id: 3,
-      icon: img3,
-      title: "Quality Documents",
-      des: "The First Article Inspection report, Certificate of Conformance, Material Certificate, and Finishing Test Report will be provided on your requirements.",
-      link: "/",
-    },
-  ];
   const t = useTranslations('ServicePage');
   const keys = ['item1', 'item2', 'item3'];
   const images = [img1, img2, img3];
@@ -55,7 +32,7 @@ const WintechStandard = () => {
                     <h4 className="capitalize font-semibold text-xl text-[#252B42]">
                     {t(`Wintech.DataList.${item}.title`)}
                     </h4>
-                    <p className="text-[#000000]">{t(`Wintech.DataList.${item}.description`)}</p>
+                    <p className="text-[#000000] text-center">{t(`Wintech.DataList.${item}.description`)}</p>
                 </div>
               );
             })}

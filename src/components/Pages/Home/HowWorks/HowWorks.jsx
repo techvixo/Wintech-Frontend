@@ -1,11 +1,12 @@
 import { useTranslations } from "next-intl";
-import worksImg from "../../../../../public/assets/home-img/work-img/work-img.png";
+// import worksImg from "../../../../../public/assets/home-img/work-img/work-img.png";
+import worksImg from "../../../../../public/assets/home-img/work-img/location.jpg";
 import Image from "next/image";
 
 const HowWorks = () => {
  
   const t = useTranslations('HomePage');
-  const keys = ['work1', 'work2', 'work3'];
+  const keys = ['work1', 'work2', 'work3', 'work4'];
   return (
     <div className="py-3 md:py-5 ">
       <div className="main_container">
@@ -13,7 +14,7 @@ const HowWorks = () => {
           <h2 className="text-center text-2xl md:text-3xl font-bold text-[#070F11] my-4 md:my-7">
           {t(`HowWork.title`)}
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-5">
+          <div className="grid grid-cols-1 md:grid-cols-2">
             <div className="w-full">
               <Image
                 width={1000}

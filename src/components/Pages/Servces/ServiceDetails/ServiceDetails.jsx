@@ -10,7 +10,7 @@ const ServiceDetails = async ({product}) => {
   return (
     <div>
      <ServiceConfigaration locale={locale} product={product}></ServiceConfigaration>
-     <RelatedServices product={product}></RelatedServices>
+     <RelatedServices locale={locale} product={product}></RelatedServices>
      <OrderingProcess></OrderingProcess>
      <GetStarted></GetStarted>
     </div>

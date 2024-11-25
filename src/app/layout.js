@@ -3,11 +3,9 @@ import { NextIntlClientProvider } from 'next-intl';
 import "./globals.css";
 import Navbar from "../components/Shared/Navbar/Navbar";
 import NavbarWrap from "../components/Shared/Navbar/NavberWrap";
-import Footer from "../components/Shared/Footer/Footer";
 import NewFooter from "../components/Shared/Footer/NewFooter";
 import ChatBox from "../components/Shared/ChatBox/ChatBox";
 import SocialIcons from "../components/Shared/SocialIcons/SocialIcons";
-import TestNavbar from "../components/TestNavbar";
 import { Toaster } from "react-hot-toast";
 
 export const metadata = {

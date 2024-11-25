@@ -167,7 +167,7 @@ nav {
   }
 #find_product{
   /* height: 80vh; */
-   background-image: url('../../public/assets/home-img/find-product-bg.png'); /* Or use an icon font */
+   background-image: linear-gradient(90deg, #0404048f, #0404048f), url('../../public/assets/home-img/find-product-bg.jpg'); /* Or use an icon font */
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

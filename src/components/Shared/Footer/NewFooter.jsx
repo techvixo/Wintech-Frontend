@@ -149,15 +149,15 @@ const NewFooter = () => {
             <Link href="/terms-conditions">
               <span>Terms And Conditions</span>
             </Link>
-            <Link href="/refund-policy">
+            <Link href="/privacy-policy">
               <span>Refund policy</span>
             </Link>
             {/* <Link href="/cencellation-policy"><span>cancellation policy</span></Link> */}
             <Link href="/privacy-policy">
               <span>Privacy & Policy</span>
             </Link>
-            <Link href="/faq">
-              <span>FAQS</span>
+            <Link href="/blog">
+              <span>Blog and article</span>
             </Link>
           </div>
           <div className=" flex flex-col gap-3">

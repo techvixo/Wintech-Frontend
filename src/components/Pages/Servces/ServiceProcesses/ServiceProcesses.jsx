@@ -1,68 +1,10 @@
 "use client";
 import { useTranslations } from "next-intl";
-import img1 from "../../../../../public/assets/services/processed/1.png";
-import img2 from "../../../../../public/assets/services/processed/2.png";
-import img3 from "../../../../../public/assets/services/processed/3.png";
-import img4 from "../../../../../public/assets/services/processed/4.png";
+import img1 from "../../../../../public/assets/services/processed/process copy.jpg";
+import img2 from "../../../../../public/assets/services/processed/Equipment copy.jpg";
+import img3 from "../../../../../public/assets/services/processed/product copy.jpg";
+import img4 from "../../../../../public/assets/services/processed/industry-serve copy.jpg";
 import Image from "next/image";
-
-const sections = [
-  {
-    title: "Processes",
-    description:
-      "We offer expert CNC prototyping services, precision CNC machining services, and plastic CNC prototyping. Our highly skilled workforce operates state-of-the-art machines.",
-    list: [
-      "CNC Milling",
-      "CNC Machining",
-      "CNC Turning",
-      "CNC Router",
-      "Prototype CNC",
-      "EDM",
-    ],
-    img: img1,
-  },
-  {
-    title: "Equipment",
-    description:
-      "We can mill complex shapes from the toughest materials using our advanced equipment, ensuring speed, precision, and quality.",
-    list: [
-      "3 Axis Machining",
-      "4 Axis Machining",
-      '5 Axis Machining (up to 110" x 72" x 40")',
-      "7 Axis Lathe",
-      "5 Axis Gun Drill",
-    ],
-    img: img2,
-  },
-  {
-    title: "Materials",
-    description:
-      "Choose from a wide range of CNC machining services and materials to get your project done quickly and efficiently.",
-    list: [
-      "Aluminum Billet",
-      "Aluminum Casting",
-      "Brass/Bronze",
-      "Zinc",
-      "Copper",
-      "Titanium",
-    ],
-    img: img3,
-  },
-  {
-    title: "Industries Served",
-    description:
-      "Our CNC machining services can be used for a variety of industries and applications. Trust us for your prototype CNC machining needs.",
-    list: [
-      "Automotive (Autonomous)",
-      "Aerospace",
-      "Defense",
-      "Medical",
-      "Consumer Products",
-      "Industrial",
-    ],
-    img: img4,
-  },
-];
 
 const ServiceProcesses = () => {
   const t = useTranslations('ServicePage');
@@ -103,7 +45,7 @@ const ServiceProcesses = () => {
                     </li>
                   ))}
                 </ul>
-                <p className="my-2 md:my-4"> {t(`Process.${section}.title`)}</p>
+                <p className="my-2 md:my-4"> {t(`Process.${section}.description`)}</p>
               </div>
             </div>
           );

@@ -1,10 +1,10 @@
 import Link from "next/link";
-import img1 from "../../../../../public/assets/home-img/why-chose-us/1.png";
-import img2 from "../../../../../public/assets/home-img/why-chose-us/2.png";
-import img3 from "../../../../../public/assets/home-img/why-chose-us/3.png";
-import img4 from "../../../../../public/assets/home-img/why-chose-us/1.png";
-import img5 from "../../../../../public/assets/home-img/why-chose-us/2.png";
-import img6 from "../../../../../public/assets/home-img/why-chose-us/3.png";
+import img1 from "../../../../../public/assets/home-img/why-chose-us/Commitment.svg";
+import img2 from "../../../../../public/assets/home-img/why-chose-us/Expertise.svg";
+import img3 from "../../../../../public/assets/home-img/why-chose-us/Tailored-Solutions.svg";
+import img4 from "../../../../../public/assets/home-img/why-chose-us/Advanced-Technology.svg";
+import img5 from "../../../../../public/assets/home-img/why-chose-us/Responsive-Transparent.svg";
+import img6 from "../../../../../public/assets/home-img/why-chose-us/Cost-Effective.svg";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 
@@ -17,7 +17,7 @@ const WhyChooseUs = () => {
     <div className="py-5 md:py-8 bg-[#E4E5DF]">
       <div className="main_container">
         <div className="">
-          <h2 className="text-center text-2xl md:text-3xl font-bold text-[#070F11] my-4 md:my-7">
+          <h2 className="text-center w-full md:w-1/2 mx-auto text-2xl md:text-3xl font-bold text-[#070F11] my-4 md:my-7">
             {t("WhyChoose.title")}
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-5">

@@ -47,55 +47,55 @@
       "title": "Top Quality CNC Machining Solutions"
     },
     "WhyChoose": {
-      "title": "Why choose us?",
+      "title": "Why Choose Us as Your Preferred CNC Machining Partner?",
       "Features": {
         "feature1": {
           "id": 1,
           "icon": "img1",
-          "title": "Exceptional Quality",
-          "description": "In summary, a well-defined SEO strategy can boost your business whether it is small or medium in scale. Most of the time small business owners struggle for building a solid SEO strategy for success path. Contact us today!",
+          "title": "Commitment ",
+          "description": "We believe in building lasting relationships. Our team is dedicated to understanding your unique needs and challenges, working closely with you to provide the best possible solutions.",
           "link": "/"
         },
         "feature2": {
           "id": 2,
           "icon": "img2",
-          "title": "Fast Turnaround",
-          "description": "Salesforce is an integrated customer relationship management (CRM) platform that brings companies and customers together in a solution. It includes all the departments like management, HR, marketing, sales, commerce, and customer services...",
+          "title": "Expertise",
+          "description": "With over a decade of industry experience, we have the skills and insight to handle complex projects across various sectors. Our seasoned experts bring precision and reliability to every job.",
           "link": "/"
         },
         "feature3": {
           "id": 3,
           "icon": "img3",
-          "title": "Cost-Effective Solutions",
-          "description": "American Best IT Ltd. offers digital PR services in Bangladesh which involve getting high-quality backlinks from websites and blogs and honest customer reviews. Digital PR aids you to reach your target audience by featuring your products...",
+          "title": "Tailored Solutions",
+          "description": "No project is too small or complex. Whether it’s a one-off prototype or a large production run, we adapt to your needs, ensuring the right solution for every project size.",
           "link": "/"
         },
         "feature4": {
           "id": 4,
           "icon": "img1",
-          "title": "Exceptional Quality",
-          "description": "In summary, a well-defined SEO strategy can boost your business whether it is small or medium in scale. Most of the time small business owners struggle for building a solid SEO strategy for success path. Contact us today!",
+          "title": "Advanced Technology",
+          "description": "We invest in the latest CNC technology and equipment to stay at the forefront of machining. Our advanced capabilities mean you receive parts that are both precise and durable.",
           "link": "/"
         },
         "feature5": {
           "id": 5,
           "icon": "img2",
-          "title": "Fast Turnaround",
-          "description": "Salesforce is an integrated customer relationship management (CRM) platform that brings companies and customers together in a solution. It includes all the departments like management, HR, marketing, sales, commerce, and customer services...",
+          "title": "Responsive &Transparent Service",
+          "description": "We prioritize open communication and fast responses, keeping you informed at every stage of your project. You can count on us for timely updates and a commitment to delivering on schedule.",
           "link": "/"
         },
         "feature6": {
           "id": 6,
           "icon": "img3",
-          "title": "Cost-Effective Solutions",
-          "description": "American Best IT Ltd. offers digital PR services in Bangladesh which involve getting high-quality backlinks from websites and blogs and honest customer reviews. Digital PR aids you to reach your target audience by featuring your products...",
+          "title": "Cost-Effective Manufacturing:",
+          "description": "By leveraging advanced technology and efficient production methods, we offer high-quality parts at competitive prices. Our focus on reducing waste and optimizing processes ensures cost savings without sacrificing quality.",
           "link": "/"
         }
       },
       "button": "SEE OUR WORK"
     },
     "CustomPart": {
-      "title": "Custom Parts Make Easy",
+      "title": "Expert CNC Part Production",
       "button": "EXPLORE NOW"
     },
     "CounterSection": {
@@ -125,18 +125,23 @@
       "WorksList": {
         "work1": {
           "id": 1,
-          "title": "Fast Turnaround",
-          "description": "Salesforce is an integrated customer relationship management (CRM) platform that brings companies and customers together in a solution. It includes all the departments like "
+          "title": "Project Consultation & Quotation",
+          "description": "We start by discussing your specific needs—materials, design, and deadlines—to provide a clear, competitive quote tailored to your project."
         },
         "work2": {
           "id": 2,
-          "title": "Fast Turnaround",
-          "description": "Salesforce is an integrated customer relationship management (CRM) platform that brings companies and customers together in a solution. It includes all the departments like "
+          "title": "Precision CNC Machining, Finishing & Quality Control",
+          "description": "With advanced CNC technology, we create precise parts for any project, whether it’s a prototype or a large production run. We add professional finishes, like anodizing and electroplating, and follow up with detailed quality checks to ensure everything meets your standards."
         },
         "work3": {
           "id": 3,
-          "title": "Direct Delivery To You",
-          "description": "Salesforce is an integrated customer relationship management (CRM) platform that brings companies and customers together in a solution. It includes all the departments like "
+          "title": "Thorough Final Inspections",
+          "description": "Before shipping, each part is carefully inspected for accuracy and finish. We’re committed to delivering only the highest quality, so you get exactly what you need."
+        },
+        "work4": {
+          "id": 4,
+          "title": "Secure Packaging, Worldwide Delivery & Dedicated Support",
+          "description": "We securely package your parts to keep them safe during shipping and send them worldwide with tracking. Our support doesn’t stop there—we’re here to assist with any needs after delivery to make sure you’re fully satisfied with every order."
         }
       }
     },
@@ -242,60 +247,61 @@
   },
   "ServicePage": {
     "title": "Products & services",
-    "Process": {
-      "section1": {
-        "title": "Processes",
-        "description": "We offer expert CNC prototyping services, precision CNC machining services, and plastic CNC prototyping. Our highly skilled workforce operates state-of-the-art machines.",
-        "list": {
-          "item1": "CNC Milling",
-          "item2": "CNC Machining",
-          "item3": "CNC Turning",
-          "item4": "CNC Router",
-          "item5": "Prototype CNC",
-          "item6": "EDM"
-        },
-        "img": "img1"
-      },
-      "section2": {
-        "title": "Equipment",
-        "description": "We can mill complex shapes from the toughest materials using our advanced equipment, ensuring speed, precision, and quality.",
-        "list": {
-          "item1": "3 Axis Machining",
-          "item2": "4 Axis Machining",
-          "item3": "5 Axis Machining (up to 110\" x 72\" x 40\")",
-          "item4": "7 Axis Lathe",
-          "item5": "5 Axis Gun Drill",
-          "item6": ""
-        },
-        "img": "img2"
-      },
-      "section3": {
-        "title": "Materials",
-        "description": "Choose from a wide range of CNC machining services and materials to get your project done quickly and efficiently.",
-        "list": {
-          "item1": "Aluminum Billet",
-          "item2": "Aluminum Casting",
-          "item3": "Brass/Bronze",
-          "item4": "Zinc",
-          "item5": "Copper",
-          "item6": "Titanium"
-        },
-        "img": "img3"
-      },
-      "section4": {
-        "title": "Industries Served",
-        "description": "Our CNC machining services can be used for a variety of industries and applications. Trust us for your prototype CNC machining needs.",
-        "list": {
-          "item1": "Automotive (Autonomous)",
-          "item2": "Aerospace",
-          "item3": "Defense",
-          "item4": "Medical",
-          "item5": "Consumer Products",
-          "item6": "Industrial"
-        },
-        "img": "img4"
-      }
+   "Process": {
+  "section1": {
+    "title": "Processes",
+    "description": "By effectively combining our processes, we tailor solutions to your specific business goals, establishing a strong presence in the CNC machining industry.",
+    "list": {
+      "item1": "Milling",
+      "item2": "Drilling",
+      "item3": "Turning",
+      "item4": "Boring",
+      "item5": "Threading",
+      "item6": ""
     },
+    "img": "img1"
+  },
+  "section2": {
+    "title": "Equipment",
+    "description": "Thanks to our advanced CNC milling machines, turning machines, machining centers, 3-axis machines, 4-axis machines, and 5-axis machines, we can create intricate shapes with efficiency, exceptional accuracy, and top-notch quality.",
+    "list": {
+      "item1": "CNC Milling Machines",
+      "item2": "CNC Turning Machines",
+      "item3": "CNC Machining Centers",
+      "item4": "3-Axis CNC Machines",
+      "item5": "4-Axis CNC Machines",
+      "item6": "5-Axis CNC Machines"
+    },
+    "img": "img2"
+  },
+  "section3": {
+    "title": "Materials",
+    "description": "Our range of CNC materials guarantees precision and flexibility for your projects, using high-quality metals, plastics, wood, and ceramics tailored to your requirements.",
+    "list": {
+      "item1": "Metals (Aluminum, Steel, Stainless Steel, Brass, Copper, Titanium)",
+      "item2": "Plastics (ABS, Nylon, Acrylic, Polyethylene, Polypropylene)",
+      "item3": "Wood",
+      "item4": "Ceramics",
+      "item5": "",
+      "item6": ""
+    },
+    "img": "img3"
+  },
+  "section4": {
+    "title": "Industries Served",
+    "description": "At Wintech, we pride ourselves on offering CNC machining services that are as diverse as the businesses we serve. When it comes to your prototype CNC machining requirements, trust us to provide you with outstanding results that stand out from the ordinary.",
+    "list": {
+      "item1": "Aerospace",
+      "item2": "Automotive",
+      "item3": "Medical",
+      "item4": "Electronics",
+      "item5": "Energy",
+      "item6": "Manufacturing"
+    },
+    "img": "img4"
+  }
+}
+,
     "Wintech": {
       "title": "The Wintech Standard",
       "DataList": {
@@ -303,21 +309,21 @@
           "id": 1,
           "icon": "img1",
           "title": "Quality",
-          "description": "Our inspection equipment includes CMM, Linear Height, and Projector, thread gages, Pin... We follow the ISO 9001 quality system from the material purchase to machining to inspection.",
+          "description": "Our inspection equipment—such as CMM, Linear Height, Projectors, thread gauges, and pin gauges—ensures the highest quality in every part we produce. We rigorously follow the ISO 9001 quality management system from material sourcing to machining and final inspection.",
           "link": "/"
         },
         "item2": {
           "id": 2,
           "icon": "img2",
           "title": "Certification",
-          "description": "Our quality management system is ISO 9001:2015 certified, certificate No.: 51822Q07569R0S. IAF, CNAS certificate and ISO 13485:2016 certified, certificate No.: 64623B8060538ROS.",
+          "description": "Our quality management system is ISO 9001:2015 certified (Certificate No.: 91440300573109994L) and meets the rigorous standards of ISO 41888:2016 (Certificate No.:91440300573109994L). Both certifications are accredited by IAF and CNAS",
           "link": "/"
         },
         "item3": {
           "id": 3,
           "icon": "img3",
-          "title": "Quality Documents",
-          "description": "The First Article Inspection report, Certificate of Conformance, Material Certificate, and Finishing Test Report will be provided on your requirements.",
+          "title": "Quality Documentation",
+          "description": "Upon request, we provide comprehensive quality documentation, including inspection reports, Certificates of Conformance, Material Certificates, and Finishing Test Reports, ensuring each part meets your exact specifications.",
           "link": "/"
         }
       },
@@ -332,18 +338,21 @@
     "title": "About Us",
     "WhoWeAre": {
       "title": "Who We Are",
-      "des1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat dignissim lectus tortor, magna lobortis. Cursus at condimentum tincidunt parturient gravida suspendisse eu, ac arcu. Nunc molestie risus, quis et dolor placerat lacinia bibendum. Eu proin cursus amet, pharetra sollicitudin iaculis.",
-      "des2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat dignissim lectus tortor, magna lobortis. Cursus at condimentum tincidunt parturient gravida suspendisse eu, ac arcu. Nunc molestie risus, quis et dolor placerat lacinia bibendum. Eu proin cursus amet, pharetra sollicitudin iaculis.",
-      "des3": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat dignissim lectus tortor, magna lobortis. Cursus at condimentum tincidunt parturient gravida suspendisse eu, ac arcu. Nunc molestie risus, quis et dolor placerat lacinia bibendum. Eu proin cursus amet, pharetra sollicitudin iaculis.",
-      "des4": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat dignissim lectus tortor, magna lobortis. Cursus at condimentum tincidunt parturient gravida suspendisse eu, ac arcu. Nunc molestie risus, quis et dolor placerat lacinia bibendum. Eu proin cursus amet, pharetra sollicitudin iaculis."
+      "des1": "Wintec Precision Machining Co., Ltd., located in Shenzhen, China, is an ISO 9001:2015 certified CNC parts manufacturer with over 10 years of expertise in high-precision CNC machining. Since 2006, we have been delivering quality machined parts to industries including electronics, medical devices, DC motors, automotive suspension, green energy, and hydraulics.",
+      "des2": "We specialize in CNC turning, CNC milling, complex mill-turning, and advanced 4- and 5-axis machining. Our expertise extends to working with a variety of materials, such as carbon steel, stainless steel, aluminum, copper, Delrin, and PEEK, to meet diverse client requirements. Equipped with more than 50 top-tier Japanese CNC machines, including Mazak, Fanuc, Citizen, and Brother, we can handle projects ranging from 2mm to 300mm in diameter.",
+      "des3": "To ensure ready-to-use parts with top-quality finishes, we offer a range of finishing options, including anodizing, electroplating, powder coating, and e-polishing. This allows us to meet the highest standards of precision and aesthetics for our clients.",
+      "des4": "Wintec’s mission is to lead the global CNC machining industry by providing high-quality, cost-effective solutions tailored to our customers’ diverse needs. We are committed to upholding exceptional quality standards, honoring commitments, investing in advanced technology, and achieving customer satisfaction, all while striving to operate responsibly and contribute to a sustainable future."
     },
     "WhatWeDo": {
       "title": "What We Do?",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. A, egestas nibh cursus viverra dui. Orci, nulla pulvinar purus nisi. Nulla est consequat nibh morbi nisl orci. Semper enim gravida in nisl varius. Eget amet egestas ornare morbi viverra volutpat diam quis leo. Ut pellentesque pharetra nibh dui tristique tempor. Odio volutpat nulla ipsum sollicitudin nunc nec maecenas. Senectus amet, nulla nibh lobortis interdum sit. Scelerisque augue non habitant morbi velit nibh mus eget consequat. Id tempor elementum tincidunt vulputate est. Iaculis est velit, facilisis consequat cras egestas. Pulvinar arcu augue aliquam malesuada pharetra fusce pulvinar. At euismod aliquet nisl faucibus dui sagittis blandit eget. Risus volutpat praesent pretium a.",
+      "description1": "At Wintec Precision Machining Co., Ltd., we specialize in delivering high-quality CNC machining solutions to meet diverse industry needs worldwide. With over a decade of experience, we provide a comprehensive suite of CNC machining services that emphasize quality, customization, and speed.",
+      "description2": "Our experienced team, advanced technology, state-of-the-art equipment, and strict management practices form the foundation of our company's growth and success. These elements, combined with our commitment to precision in CNC machining, have earned us the trust of our customers. We believe that through our ongoing dedication and pursuit of excellence, we can achieve mutual benefits and long-lasting success for both our company and our clients.",
       "list": {
-        "para1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pretium lacus venenatis pretium fringilla nisi, duis eget. Ac mauris aliquam suscipit massa feugiat quis risus dictum. Ornare tellus sit enim fermentum vitae. Vel pellentesque pellentesque tristique metus. Quam faucibus ut eu et. Et massa faucibus risus imperdiet fermentum enim, proin ultrices sapien.",
-        "para2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pretium lacus venenatis pretium fringilla nisi, duis eget. Ac mauris aliquam suscipit massa feugiat quis risus dictum. Ornare tellus sit enim fermentum vitae. Vel pellentesque pellentesque tristique metus. Quam faucibus ut eu et. Et massa faucibus risus imperdiet fermentum enim, proin ultrices sapien.",
-        "para3": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pretium lacus venenatis pretium fringilla nisi, duis eget. Ac mauris aliquam suscipit massa feugiat quis risus dictum. Ornare tellus sit enim fermentum vitae. Vel pellentesque pellentesque tristique metus. Quam faucibus ut eu et. Et massa faucibus risus imperdiet fermentum enim, proin ultrices sapien."
+        "para1": "We offer CNC turning, CNC milling, and advanced 4- and 5-axis machining. Our state-of-the-art equipment, including over 50 Japanese CNC machines like Mazak, Fanuc, and Citizen, ensures high precision and reliable performance for every part we produce.",
+        "para2": "Our expertise spans a wide range of materials, including carbon steel, stainless steel, aluminum, copper, Delrin, and PEEK, allowing us to meet specific client needs across electronics, medical devices, automotive, green energy, and hydraulics industries. We handle orders of any size, with no minimum order quantity (MOQ), providing flexibility and cost savings to our clients.",
+        "para3": "Quality is integral to our work. As an ISO 9001:2015-certified company, we maintain stringent quality control processes, including IQC, FAI, IPQC, and FI, ensuring each part meets rigorous international standards. We also offer comprehensive quality documentation, such as inspection reports and certificates, to guarantee compliance and reliability.",
+        "para4": "We partner with trusted subcontractors to provide full surface finishing options like anodizing, electroplating, powder coating, and e-polishing. This ensures that we deliver fully completed parts, ready for use, from prototyping to mass production.",
+        "para5": "With a strategic location near major shipping hubs, Wintec efficiently exports to Europe and North America, making us a trusted partner for international clients. Our global logistics experience and commitment to on-time delivery help us serve clients worldwide."
       }
     },
     "Facilities": {

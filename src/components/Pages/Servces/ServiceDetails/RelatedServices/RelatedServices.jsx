@@ -3,7 +3,7 @@ import getSpecificCategory from "../../../../../lib/getSpecificCategory";
 import ServiceCard from "../../AllServices/ServiceCard";
 import notFoundImg from "../../../../../../public/assets/services/product-not-found.png";
 
-const RelatedServices = async ({ product }) => {
+const RelatedServices = async ({ product, locale }) => {
   const relatedProducts = await getSpecificCategory(product?.category?.categoryId);
   const isProduct = product?._id;
 
@@ -18,7 +18,7 @@ const RelatedServices = async ({ product }) => {
         {filteredProducts?.length > 0 ? (
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-8">
             {filteredProducts?.map((product, i) => (
-              <ServiceCard key={i} product={product}></ServiceCard>
+              <ServiceCard key={i} locale={locale} product={product}></ServiceCard>
             ))}
           </div>
         ) : (

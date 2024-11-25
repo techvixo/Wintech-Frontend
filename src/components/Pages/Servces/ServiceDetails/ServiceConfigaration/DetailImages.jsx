@@ -82,22 +82,24 @@ const DetailImages = ({ productImage }) => {
 
   return (
     <div className="w-full md:w-3/4 pt-3">
-      <Slider {...settings}>
-        {otherImages.map((img, i) => {
-          return (
-            <div key={i} className="px-2">
-              <Image
-                width={400}
-                height={400}
-                src={img?.imgUrl}
-                // src={`${BASEURL}/${img}`}
-                alt={"product-image"}
-                className="w-full"
-              />
-            </div>
-          );
-        })}
-      </Slider>
+     {productImage?.length > 0 &&
+       <Slider {...settings}>
+       {productImage.map((img, i) => {
+         return (
+           <div key={i} className="px-2">
+             <Image
+               width={400}
+               height={400}
+               // src={img?.imgUrl}
+               src={`${BASEURL}/${img}`}
+               alt={"product-image"}
+               className="w-full"
+             />
+           </div>
+         );
+       })}
+     </Slider>
+     }
     </div>
   );
 };

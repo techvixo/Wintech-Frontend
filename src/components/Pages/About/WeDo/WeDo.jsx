@@ -11,7 +11,7 @@ const WeDo = () => {
         </h2>
         <div className="top_content">
           <p className="my-2">
-          {t(`WhatWeDo.description`)}
+          {t(`WhatWeDo.description1`)}
           </p>
         </div>
         <div className="flex flex-col gap-3 md:gap-5 pt-2 md:pt-5">
@@ -32,6 +32,23 @@ const WeDo = () => {
               <MdOutlineKeyboardDoubleArrowRight />
             </span>{" "}
             <span>{t(`WhatWeDo.list.para3`)}</span>
+          </p>
+          <p className="flex gap-3">
+            <span className="pt-2">
+              <MdOutlineKeyboardDoubleArrowRight />
+            </span>{" "}
+            <span>{t(`WhatWeDo.list.para4`)}</span>
+          </p>
+          <p className="flex gap-3">
+            <span className="pt-2">
+              <MdOutlineKeyboardDoubleArrowRight />
+            </span>{" "}
+            <span>{t(`WhatWeDo.list.para5`)}</span>
+          </p>
+        </div>
+        <div className="top_content">
+          <p className="my-2">
+          {t(`WhatWeDo.description2`)}
           </p>
         </div>
       </div>
