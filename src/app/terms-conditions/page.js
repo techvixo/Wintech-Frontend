@@ -13,7 +13,7 @@ const TermsAndConditions = () => {
           <div>
             <h2 className="text-xl font-semibold text-gray-800">Welcome to Wintec!</h2>
             <p>
-              By accessing, browsing, or using this website (the "Site") or any services provided by Wintec, you ("User," "Customer," or "You") agree to comply with and be bound by these Terms and Conditions ("Terms"). Please read these Terms carefully before using the Site or purchasing any products. If you do not agree to these Terms, please refrain from using the Site or purchasing any products.
+              By accessing, browsing, or using this website (the &quot;Site&quot;) or any services provided by Wintec, you (User,Customer, or You) agree to comply with and be bound by these Terms and Conditions (Terms). Please read these Terms carefully before using the Site or purchasing any products. If you do not agree to these Terms, please refrain from using the Site or purchasing any products.
             </p>
           </div>
 
@@ -44,8 +44,8 @@ const TermsAndConditions = () => {
                 <strong>Prohibited Activities:</strong> You agree not to:
                 <ul className="list-decimal list-inside ml-4">
                   <li>Violate any applicable laws, regulations, or third-party rights.</li>
-                  <li>Engage in fraudulent activities or actions that could harm Wintec's reputation.</li>
-                  <li>Interfere with the Site’s operation or attempt to gain unauthorized access to our systems.</li>
+                  <li>Engage in fraudulent activities or actions that could harm Wintec&quot;s reputation.</li>
+                  <li>Interfere with the Site&quot;s operation or attempt to gain unauthorized access to our systems.</li>
                 </ul>
               </li>
             </ul>
@@ -58,7 +58,7 @@ const TermsAndConditions = () => {
               All content on the Site, including text, images, logos, graphics, designs, and software, is the exclusive property of Wintec and protected under applicable intellectual property laws. You may not use, copy, or distribute any content without prior written consent from Wintec.
             </p>
             <p>
-              The name "Wintec" and related trademarks are the property of Wintec. Use of these trademarks without express permission is strictly prohibited.
+              The name Wintec and related trademarks are the property of Wintec. Use of these trademarks without express permission is strictly prohibited.
             </p>
           </div>
 

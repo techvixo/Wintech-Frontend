@@ -64,7 +64,7 @@ const ConversationsBox = () => {
 
   if (loading) return <div>Loading...</div>;
   if (error) return <div>Error: {error}</div>;
-console.log(preData);
+// console.log(preData);
   return (
     <div id="conversations_box" className="relative">
       <div className="conversations">
