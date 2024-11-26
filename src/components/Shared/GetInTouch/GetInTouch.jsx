@@ -2,7 +2,7 @@ import { FaPhoneAlt } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa6";
 import { FaLocationDot } from "react-icons/fa6";
 import { MdOutlineMailOutline } from "react-icons/md";
-
+import { FaYoutube } from "react-icons/fa6";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { FaFacebookF } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
@@ -42,7 +42,7 @@ const GetInTouch = () => {
                   </span>
                 </p>
                 <p>
-                {t(`ContactForm.ContactInfo.call`)} : <span className="font-semibold">+234905 121 8127</span>
+                {t(`ContactForm.ContactInfo.call`)} : <span className="font-semibold">+86-0755-86372308</span>
                 </p>
               </div>
               <div className="flex items-center gap-2">
@@ -52,7 +52,7 @@ const GetInTouch = () => {
                   </span>
                 </p>
                 <p>
-                {t(`ContactForm.ContactInfo.wp`)} : <span className="font-semibold">8269900555</span>
+                {t(`ContactForm.ContactInfo.wp`)} : <span className="font-semibold">+8618018740613</span>
                 </p>
               </div>
               <div className="flex items-center gap-2">
@@ -64,7 +64,7 @@ const GetInTouch = () => {
                 <p>
                 {t(`ContactForm.ContactInfo.mail`)} :{" "}
                   <span className="font-semibold">
-                    contact@ecohavenrealty.com
+                  marketing@wintec-machining.com
                   </span>
                 </p>
               </div>
@@ -87,37 +87,37 @@ const GetInTouch = () => {
             {t(`ContactForm.social`)}
             </p>
             <div className="flex items-center text-md md:text-2xl gap-3 md:gap-6 text-black my-3">
-              <a
+            <a
                 target="blank"
-                href="https://x.com/Tech_Vixo"
+                href="https://x.com/WintecMachining"
                 className=" "
               >
                 <FaSquareXTwitter />
               </a>
               <a
                 target="blank"
-                href=" https://www.facebook.com/profile.php?id=61554756906846"
+                href="https://www.facebook.com/share/12Jp4VpTPYm/?mibextid=kFxxJD"
                 className=" "
               >
                 <FaFacebookF />
               </a>
               <a
                 target="blank"
-                href=" https://www.linkedin.com/company/tech-vixo/"
+                href="https://www.linkedin.com/company/wintec-precision-machining-co--ltd/mycompany/"
                 className=" "
               >
                 <FaLinkedinIn />
               </a>
               <a
                 target="blank"
-                href="https://www.instagram.com/tech_vixo/"
+                href="https://youtube.com/@wintec-machining?si=3QVzwdcA5bKh0oPk"
                 className="text-black "
               >
-                <BsInstagram />
+                <FaYoutube />
               </a>
               <a
                 target="blank"
-                href="https://wa.me/+8801835339927"
+                href="https://wa.me/+8618018740613"
                 className=""
               >
                 <RiWhatsappFill />

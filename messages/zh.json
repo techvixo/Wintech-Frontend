@@ -230,15 +230,15 @@
       }
     },
     "ContactForm": {
-      "title": "联系我们安排参观您的新产品。",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing? 探索机会",
+      "title": "联系我们",
+      "description": "我们邀请您与我们联系！",
       "office": "公司办公室",
       "social": "让我们联系吧。我们就在您的点击之间！",
       "ContactInfo": {
         "call": "电话",
         "wp": "WhatsApp",
         "mail": "邮件",
-        "address": "11, Odo-Olowu, Ijeshatedo B/Stop, Surulere"
+        "address": "1st Floor, Building 7,Houhai Industrial Park, Loucun Community, Guangming New District, Shenzhen, China 518106"
       }
     },
     "FindProduct": {
@@ -301,6 +301,43 @@
       "item6": "制造业"
     },
     "img": "img4"
+  }
+},
+"FAQ": {
+  "title": "常见问题解答",
+  "QuestionList": {
+    "question1": {
+      "title": "主要的 CNC 加工工艺是什么？",
+      "description": "主要的 CNC 加工工艺包括：\n\n- CNC 铣削：通过旋转切削工具去除材料以成形工件。\n- CNC 车削：通过切削工具去除材料以成形旋转工件。\n- 五轴加工：一种复杂的工艺，可以从多个角度加工零件。"
+    },
+    "question2": {
+      "title": "CNC 加工可以生产哪些类型的零件？",
+      "description": "CNC 加工可以生产各种零件，包括：\n\n- 机械部件\n- 汽车零部件\n- 航空航天部件\n- 医疗设备\n- 原型"
+    },
+    "question3": {
+      "title": "CNC 加工与传统加工方法相比如何？",
+      "description": "与传统方法相比，CNC 加工具有多种优势，例如更高的精度、降低的人工成本以及生产复杂形状的能力。"
+    },
+    "question4": {
+      "title": "您可以为我的 CNC 加工项目提供设计服务吗？",
+      "description": "Wintech CNC 加工服务提供商提供设计和工程服务，以帮助您开发产品创意。"
+    },
+    "question5": {
+      "title": "CNC 加工项目的交付周期是多少？",
+      "description": "交付周期取决于零件的复杂性、材料的可用性和排队长度等因素。最好与您的服务提供商讨论具体的时间安排。"
+    },
+    "question6": {
+      "title": "CNC 加工服务的成本是多少？",
+      "description": "CNC 加工服务的成本取决于零件的复杂性、材料、加工时间和数量等因素。最好从多个服务提供商那里获得报价。"
+    },
+    "question7": {
+      "title": "我可以参观您工厂了解 CNC 加工过程吗？",
+      "description": "Wintech CNC 加工服务提供商提供设施参观，让客户亲身了解他们的能力和工艺流程。"
+    },
+    "question8": {
+      "title": "CNC 加工可以使用哪些材料？",
+      "description": "CNC 加工可以使用多种材料，包括金属（铝、不锈钢、黄铜等）、塑料（ABS、尼龙、聚碳酸酯等）和复合材料。"
+    }
   }
 },
    "Wintech": {
@@ -451,13 +488,22 @@
     }
   },
   "Portfolio": {
-    "title": "作品集"
+    "title": "作品集",
+    "Photos": {
+      "title": "作品集",
+      "description": "Wintec 精密机械提供高质量的 CNC 加工服务，具有无与伦比的精度。我们的作品集中展示了一系列精心制作的组件，旨在满足各种行业的高标准。探索我们的产品，了解我们的先进设备和专业团队如何以卓越的准确性和可靠性将每个项目变为现实。"
+    },
+    "Videos": {
+      "title": "视频",
+      "description": "Wintec 精密机械提供高质量的 CNC 加工服务，具有无与伦比的精度。我们的作品集中展示了一系列精心制作的组件，旨在满足各种行业的高标准。探索我们的产品，了解我们的先进设备和专业团队如何以卓越的准确性和可靠性将每个项目变为现实。"
+    }
   },
   "Blog": {
     "title": "赢科技博客",
+    "description": "在 Wintec Precision Machining，我们的博客是您了解 CNC 加工和精密工程最新资讯的首选来源。我们致力于为您提供有关我们服务的实用、真实见解 — CNC 车削、铣削、复杂铣削车削、5 轴加工和表面精加工。我们会定期更新行业进展、项目亮点和实践技巧，旨在向您展示我们制造的每个组件的精度影响。",
     "Subscribe": {
-      "title": "订阅我们的新闻通讯？",
-      "description": "加入商业俱乐部（超过1千名成员），每月获取营销服务。",
+      "title": "订阅我们的新闻通讯。",
+      "description": "加入我们由超过（5+ 名成员）组成的社区，随时了解 WINTEC 的最新动态和创新。每月获取独家见解！",
       "button": "订阅"
     },
     "BlogDetail": {
@@ -468,14 +514,14 @@
     "title": "联系我们",
     "ContactForm": {
       "title": "联系我们",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing? 探索机会",
+      "description": "欢迎您与我们联系！无论您有疑问、需要更多有关我们服务的信息，还是想探索与 WINTEC 合作的机会。",
       "office": "公司办公室",
       "social": "让我们联系吧。我们就在您的点击之间！",
       "ContactInfo": {
         "call": "电话",
         "wp": "WhatsApp",
         "mail": "邮件",
-        "address": "11, Odo-Olowu, Ijeshatedo B/Stop, Surulere"
+        "address": "1st Floor, Building 7,Houhai Industrial Park, Loucun Community, Guangming New District, Shenzhen, China 518106"
       }
     }
   }

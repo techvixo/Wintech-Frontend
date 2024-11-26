@@ -92,11 +92,14 @@ const ContactForm = () => {
           <option disabled value="">
             Select one
           </option>
-          <option value="Website Design and Development">
-            Website Design and Development
+          <option value="CNC Machining">
+            CNC Machining
           </option>
-          <option value="Digital Creative landing page">
-            Digital Creative landing page
+          <option value="Materials Machined">
+            Materials Machined
+          </option>
+          <option value="Surface Finishing">
+            Surface Finishing
           </option>
         </select>
       </div>

@@ -2,9 +2,10 @@
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import img from "../../../../../../public/assets/services/service-img.png";
 import Image from "next/image";
 import { BASEURL } from "../../../../../../Constant";
+import { PhotoProvider, PhotoView } from "react-photo-view";
+import "react-photo-view/dist/react-photo-view.css";
 // Custom Next Arrow Component
 const NextArrow = ({ onClick }) => {
   return (
@@ -55,20 +56,6 @@ const PrevArrow = ({ onClick }) => {
   );
 };
 const DetailImages = ({ productImage }) => {
-  const otherImages = [
-    {
-      imgUrl: img,
-    },
-    {
-      imgUrl: img,
-    },
-    {
-      imgUrl: img,
-    },
-    {
-      imgUrl: img,
-    },
-  ];
 
   const settings = {
     dots: false,
@@ -82,24 +69,28 @@ const DetailImages = ({ productImage }) => {
 
   return (
     <div className="w-full md:w-3/4 pt-3">
-     {productImage?.length > 0 &&
-       <Slider {...settings}>
-       {productImage.map((img, i) => {
-         return (
-           <div key={i} className="px-2">
-             <Image
-               width={400}
-               height={400}
-               // src={img?.imgUrl}
-               src={`${BASEURL}/${img}`}
-               alt={"product-image"}
-               className="w-full"
-             />
-           </div>
-         );
-       })}
-     </Slider>
-     }
+      {productImage?.length > 0 && (
+        <PhotoProvider>
+          <Slider {...settings}>
+            {productImage?.map((img, i) => {
+              return (
+                <div key={i} className="px-2">
+                  <PhotoView src={`${BASEURL}/${img}`}>
+                    <Image
+                      width={500}
+                      height={400}
+                      // src={img?.imgUrl}
+                      src={`${BASEURL}/${img}`}
+                      alt={"product-image"}
+                      className="w-full  cursor-pointer"
+                    />
+                  </PhotoView>
+                </div>
+              );
+            })}
+          </Slider>
+        </PhotoProvider>
+      )}
     </div>
   );
 };

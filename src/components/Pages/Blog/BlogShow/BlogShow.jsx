@@ -1,4 +1,4 @@
-// import img from "../../../../../public/assets/blog-img/blog.png";
+import DescriptionText from "./DescriptionText";
 import Image from "next/image";
 import notFoundImg from "../../../../../public/assets/services/product-not-found.png";
 
@@ -8,6 +8,7 @@ const BlogShow = ({ locale, blogs }) => {
   return (
     <div className="my-5 md:my-14">
       <div className="main_container">
+        <DescriptionText></DescriptionText>
         {blogs?.length > 0 ? (
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-6">
             {blogs.map((blog, i) => {

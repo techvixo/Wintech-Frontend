@@ -1,28 +1,17 @@
-import img from "../../../../../../public/assets/portfolio-img/portfolio.png";
 import PortfolioCard from "../PortfolioCard";
 import getPortfolioImage from "../../../../../lib/getPortfolioImage";
 import { getLocale } from "next-intl/server";
 
-const RelatedImagePortfolio = async () => {
+const RelatedImagePortfolio = async ({slag}) => {
   const relatedPortfolioImages = await getPortfolioImage();
   const locale = await getLocale();
-  const data = [
-    {
-      title: "Project Name",
-      img: img,
-      link: "/",
-    },
-    {
-      title: "Project Name",
-      img: img,
-      link: "/",
-    },
-    {
-      title: "Project Name",
-      img: img,
-      link: "/",
-    },
-  ];
+  const isImage = slag;
+
+  // Filter out the current product from related products
+  const filteredPortfolios = relatedPortfolioImages?.data?.filter(
+    (relatedImage) => relatedImage?._id !== isImage
+  );
+  console.log("PPPPPPPPPPPPPPPPP:", filteredPortfolios);
   return (
     <div className="my-5 md:my-14">
       <div className="main_container">
@@ -30,7 +19,7 @@ const RelatedImagePortfolio = async () => {
           Other Portfolio
         </h2>
         <div className="w-full grid grid-cols-1 md:grid-cols-3 md:gap-4 gap-y-5 md:gap-y-10">
-          {relatedPortfolioImages?.data?.map((portfolio, i) => {
+          {filteredPortfolios?.map((portfolio, i) => {
             return (
               <PortfolioCard key={i} locale={locale} portfolio={portfolio}></PortfolioCard>
             );

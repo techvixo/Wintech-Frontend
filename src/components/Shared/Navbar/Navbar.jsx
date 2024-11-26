@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 import logo from "../../../../public/assets/logo/logo.png";
 import mainLogo from "../../../../public/assets/logo/main-logo.png";
 import secondLogo from "../../../../public/assets/logo/second-logo.png";
-import { MdOutlineEmail, MdPhoneIphone } from "react-icons/md";
+import { BsWhatsapp } from "react-icons/bs";
 import { IoIosArrowDown } from "react-icons/io";
 import { IoIosArrowUp } from "react-icons/io";
 import { usePathname } from "next/navigation";
@@ -123,32 +123,33 @@ const Navbar = ({allCategories, local}) => {
             <span className="text-white text-sm">{t("NabTop.social")} :</span>
             <a
               target="blank"
-              href="https://x.com/Tech_Vixo"
+              href="https://x.com/WintecMachining"
               className="flex items-center justify-center hover:text-secondary transition text-white  text-sm md:text-base rounded-full "
             >
               <FaSquareXTwitter />
             </a>
             <a
               target="blank"
-              href=" https://www.facebook.com/profile.php?id=61554756906846"
+              href="https://www.facebook.com/share/12Jp4VpTPYm/?mibextid=kFxxJD"
               className="flex items-center justify-center hover:text-secondary transition text-white  text-sm md:text-base rounded-full "
             >
               <FaFacebookF />
             </a>
             <a
               target="blank"
-              href=" https://www.linkedin.com/company/tech-vixo/"
+              href="https://www.linkedin.com/company/wintec-precision-machining-co--ltd/mycompany/"
               className="flex items-center justify-center hover:text-secondary transition text-white  text-sm md:text-base rounded-full "
             >
               <FaLinkedinIn />
             </a>
             <a
-              target="blank"
-              href="https://www.instagram.com/tech_vixo/"
-              className="flex items-center justify-center hover:text-secondary transition text-white  text-sm md:text-base rounded-full "
-            >
-              <BsInstagram />
-            </a>
+  target="_blank"
+  rel="noopener noreferrer"
+  href="https://wa.me/+8618018740613"
+  className="flex items-center justify-center hover:text-secondary transition text-white text-sm md:text-base rounded-full"
+>
+  <BsWhatsapp />
+</a>
             {/* <a
                 target="blank"
                   href="https://wa.me/+8801835339927"

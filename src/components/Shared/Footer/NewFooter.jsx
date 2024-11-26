@@ -113,7 +113,10 @@ const NewFooter = () => {
             <div className="mt-2 flex flex-col gap-3">
               {/* <p className='flex items-start gap-3 text-[#FFFFFFE5]'><span className="text-xl font-semibold text-primary"><FaLocationDot /></span><span>House 04, Road 15, Block-D, (2nd floor), banani, dhaka-1213</span></p> */}
               <p className="flex items-center gap-3 text-[#FFFFFFE5]">
-                <span className="text-xs md:text-sm">Address：1st Floor, Building 7,Houhai Industrial Park, Loucun Community, Guangming New District, Shenzhen, China 518106</span>
+                <span className="text-xs md:text-sm">
+                  Address：1st Floor, Building 7,Houhai Industrial Park, Loucun
+                  Community, Guangming New District, Shenzhen, China 518106
+                </span>
               </p>
               <p className="flex items-center gap-3 text-[#FFFFFFE5]">
                 <span className="text-xl font-semibold text-secondary">
@@ -125,7 +128,9 @@ const NewFooter = () => {
                 <span className="text-xl font-semibold text-secondary">
                   <MdOutlineEmail />
                 </span>
-                <span className="lowercase text-xs md:text-sm">marketing@wintec-machining.com</span>
+                <span className="lowercase text-xs md:text-sm">
+                  marketing@wintec-machining.com
+                </span>
               </p>
             </div>
           </div>
@@ -170,8 +175,9 @@ const NewFooter = () => {
                   type="email"
                   required
                   placeholder="Type your email"
-                  className={`input input-sm input-bordered join-item w-full ${isValidEmail ? "" : "border-red-500"
-                    }`} // Add red border when email is not valid
+                  className={`input input-sm input-bordered join-item w-full ${
+                    isValidEmail ? "" : "border-red-500"
+                  }`} // Add red border when email is not valid
                 />
                 <button
                   onClick={handleSubscribe}
@@ -195,20 +201,41 @@ const NewFooter = () => {
         <div className="footer_border py-2 md:py-4 w-full text-[#939393] flex flex-col-reverse md:flex-row justify-between items-center gap-3 mt-4 ">
           <div className="md:w-1/2 md:flex flex-col items-start">
             <div className=" flex items-center justify-center md:justify-start gap-3">
-              <Link href={"https://www.facebook.com/fare.com.bd"} target="blank">
+              <Link
+                href={
+                  "https://www.facebook.com/share/12Jp4VpTPYm/?mibextid=kFxxJD"
+                }
+                target="blank"
+              >
                 <span className="flex items-center justify-center bg-secondary text-white h-8 w-8 text-lg rounded-full font-bold shadow hover:bg-[#3b5998] hover:scale-110 transition duration-300 ease-in-out">
                   <FaFacebookF />
                 </span>
               </Link>
-              <span className="flex items-center justify-center bg-secondary text-white h-8 w-8 text-lg rounded-full font-bold shadow hover:bg-[#0077b5] hover:scale-110 transition duration-300 ease-in-out">
+              <Link
+                href={
+                  "https://www.linkedin.com/company/wintec-precision-machining-co--ltd/mycompany/"
+                }
+                target="blank"
+                className="flex items-center justify-center bg-secondary text-white h-8 w-8 text-lg rounded-full font-bold shadow hover:bg-[#0077b5] hover:scale-110 transition duration-300 ease-in-out"
+              >
                 <FaLinkedinIn />
-              </span>
-              <span className="flex items-center justify-center bg-secondary text-white h-8 w-8 text-lg rounded-full font-bold shadow hover:bg-[#1da1f2] hover:scale-110 transition duration-300 ease-in-out">
+              </Link>
+              <Link
+                href={"https://x.com/WintecMachining"}
+                target="blank"
+                className="flex items-center justify-center bg-secondary text-white h-8 w-8 text-lg rounded-full font-bold shadow hover:bg-[#1da1f2] hover:scale-110 transition duration-300 ease-in-out"
+              >
                 <FaSquareXTwitter />
-              </span>
-              <span className="flex items-center justify-center bg-secondary text-white h-8 w-8 text-lg rounded-full font-bold shadow hover:bg-[#ff0000] hover:scale-110 transition duration-300 ease-in-out">
+              </Link>
+              <Link
+                href={
+                  "https://youtube.com/@wintec-machining?si=3QVzwdcA5bKh0oPk"
+                }
+                target="blank"
+                className="flex items-center justify-center bg-secondary text-white h-8 w-8 text-lg rounded-full font-bold shadow hover:bg-[#ff0000] hover:scale-110 transition duration-300 ease-in-out"
+              >
                 <FaYoutube />
-              </span>
+              </Link>
               {/* WeChat QR Code */}
               <div className="QR_Code">
                 <Image
@@ -241,10 +268,17 @@ const NewFooter = () => {
           </div>
         </div>
         <p className="text-sm text-center text-white mt-4 md:mt-4 w-full">
-          © Copyright Wintec precision machining Co.,Ltd {currentYear} - All Rights Reserved.
+          © Copyright Wintec precision machining Co.,Ltd {currentYear} - All
+          Rights Reserved.
         </p>
         <p className="text-sm text-center text-secondary py-3 w-full">
-          <a className="hover:underline" target="blank" href="https://techvixo.com/">Designed and developed by @ Tech-vixo</a>
+          <a
+            className="hover:underline"
+            target="blank"
+            href="https://techvixo.com/"
+          >
+            Designed and developed by @ Tech-vixo
+          </a>
         </p>
       </div>
     </section>

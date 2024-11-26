@@ -6,7 +6,7 @@ import FindProducts from "../../../../../components/Shared/FindProducts/FindProd
 import RelatedImagePortfolio from "../RelatedPortfolioImage/RelataedPortfolioImage";
 import { BASEURL } from "../../../../../../Constant";
 
-const ImagePortfolioDetails = ({ locale, data }) => {
+const ImagePortfolioDetails = ({ locale, data, slag }) => {
   return (
     <div>
       <div className="blog_detail_top bg-[#252B421A] py-3 md:py-5">
@@ -46,7 +46,7 @@ const ImagePortfolioDetails = ({ locale, data }) => {
           {/* <p className="text-sm md:text-base text-[#606060] my-3 md:my-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pellentesque leo nec aenean maecenas odio tempus id. Mauris, elementum est egestas tincidunt pellentesque. Tempus massa rhoncus velit nec. Lorem purus est facilisis quam lorem amet, nunc lectus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pellentesque leo nec aenean maecenas odio tempus id. Mauris, elementum est egestas tincidunt pellentesque. Tempus massa rhoncus velit nec. Lorem purus est facilisis quam lorem amet, nunc lectus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pellentesque leo nec aenean maecenas odio tempus id. Mauris, elementum est egestas tincidunt pellentesque. Tempus massa rhoncus velit nec. Lorem purus est facilisis quam lorem amet, nunc lectus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pellentesque leo nec aenean maecenas odio tempus id. Mauris, elementum est egestas tincidunt pellentesque. Tempus massa rhoncus velit nec. Lorem purus est facilisis quam lorem amet, nunc lectus.</p> */}
         </div>
       </div>
-      <RelatedImagePortfolio></RelatedImagePortfolio>
+      <RelatedImagePortfolio slag={slag}></RelatedImagePortfolio>
       <FindProducts></FindProducts>
     </div>
   );

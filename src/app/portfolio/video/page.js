@@ -5,8 +5,13 @@ import ShareBanner from "../../../components/Shared/ShareBanner/ShareBanner";
 import TopGap from "../../../components/Shared/TopGap/TopGap";
 import bannerImg from "../../../../public/assets/banner-img.png"
 import PageMenu from "../../../components/Pages/Portfolios/PageMenu/PageMenu";
+import getBanners from "../../../lib/getBanner";
+import { getLocale } from "next-intl/server";
+import { BASEURL } from "../../../../Constant";
 
-export default function Page() {
+export default async function Page() {
+  const banner = await getBanners("portfolio")
+  const locale = await getLocale();
   const menus = [
     {
       id: 1,
@@ -22,7 +27,16 @@ export default function Page() {
   return (
     <div className="">
       <TopGap></TopGap>
-      <ShareBanner bannerBg={bannerImg} title={"Portfolio"} link={"portfolio"}></ShareBanner>
+      <ShareBanner
+        bannerBg={`${BASEURL}/${banner?.data?.banner_image}`}
+        title={locale == "en" ? banner?.data?.title_en
+          : banner?.data?.title_cn
+        }
+        des={locale == "en" ? banner?.data?.description_en
+          : banner?.data?.description_cn
+        }
+        link={"portfolio"}
+      ></ShareBanner>
       <PageMenu menus={menus}></PageMenu>
       <VideoPortfolio></VideoPortfolio>
       <FindProducts></FindProducts>

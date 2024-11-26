@@ -1,5 +1,4 @@
-import FAQ from "../../components/Pages/Home/FAQ/FAQ";
-import PageMenu from "../../components/Pages/Portfolios/PageMenu/PageMenu";
+import ServiceFAQ from "../../components/Pages/Servces/ServiceFAQ/ServiceFAQ";
 import ServiceMenu from "../../components/Pages/Servces/ServiceMenu";
 import AllServices from "../../components/Pages/Servces/AllServices/AllServices";
 import MachinesCenter from "../../components/Pages/Servces/MachinsCenter/MachinsCenter";
@@ -8,34 +7,15 @@ import ServiceProcesses from "../../components/Pages/Servces/ServiceProcesses/Se
 import WintechStandard from "../../components/Pages/Servces/WintechStandard/WintechStandard";
 import GetInTouch from "../../components/Shared/GetInTouch/GetInTouch";
 import TopGap from "../../components/Shared/TopGap/TopGap";
-import getAllCategories from "../../lib/getAllCategories"
 import getProducts from "../../lib/getProducts"
 import getBanners from "../../lib/getBanner"
 import { getLocale } from "next-intl/server";
 
 export default async function Page() {
-  // const allCategories = await getAllCategories()
   const allProducts = await getProducts()
   const banner = await getBanners("services")
   const locale = await getLocale();
-  // console.log("banner:", banner.data)
-  const menus = [
-    {
-      id: 1,
-      name: "CNC Machining Services",
-      link: "/services/cnc-machining",
-    },
-    {
-      id: 2,
-      name: "Materials Machined",
-      link: "/services/materials-machined",
-    },
-    {
-      id: 3,
-      name: "Surface Finishing Services",
-      link: "/services/surface-finishing",
-    },
-  ];
+
 
   return (
     <div className="">
@@ -47,7 +27,7 @@ export default async function Page() {
       <ServiceProcesses></ServiceProcesses>
       <WintechStandard></WintechStandard>
       <MachinesCenter></MachinesCenter>
-      <FAQ></FAQ>
+      <ServiceFAQ></ServiceFAQ>
       <GetInTouch></GetInTouch>
     </div>
   );

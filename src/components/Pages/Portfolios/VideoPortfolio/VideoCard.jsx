@@ -12,14 +12,14 @@ const VideoCard = ({ portfolio }) => {
           className="w-full rounded-md"
         />
       </div>
-      <div className="absolute bottom-[-20px] left-0 w-full flex items-center justify-center">
+      {/* <div className="absolute bottom-[-20px] left-0 w-full flex items-center justify-center">
         <Link
           href={`/portfolio/${portfolio?.title}`}
           className="text-[#252B42] shadow-md bg-white w-2/3 text-center hover:text-white hover:bg-primary transition text-sm p-2 md:p-3 px-5 md:px-7 cursor-pointer rounded-md font-semibold "
         >
         {portfolio?.title}
         </Link>
-      </div>
+      </div> */}
     </div>
   );
 };

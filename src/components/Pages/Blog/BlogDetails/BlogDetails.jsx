@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { IoIosArrowForward } from "react-icons/io";
-import blogDetailsImg from "../../../../../public/assets/blog-img/blog-details.png";
 import Image from "next/image";
 import Subscribe from "../../Contact/Subscribe/Subscribe";
 import RelatedBlogs from "../RelatadeBlog/RelatedBlogs";
@@ -10,11 +9,17 @@ import getAllBlogs from "../../../../lib/getAllBlogs";
 import { BASEURL } from "../../../../../Constant";
 import { getLocale } from "next-intl/server";
 
-const BlogDetails = async () => {
-  const blog = await getSingleBlog("673cb7447f4e54dc479bd5fb");
+const BlogDetails = async ({id}) => {
+  const blog = await getSingleBlog(id);
   const relatedBlogs = await getAllBlogs()
   const locale = await getLocale();
-  // console.log("blog:", relatedBlogs?.data);
+  const isBlog = id;
+
+  // Filter out the current Blog from related blogs
+  const filterBlogs = relatedBlogs?.data?.filter(
+    (relatedBlog) => relatedBlog?._id !== isBlog
+  );
+  // console.log("blogGGGGGGGGGGGGGGGGGGG:", filterBlogs);
   return (
     <div>
       <div className="blog_detail_top bg-[#252B421A] py-3 md:py-5">
@@ -132,7 +137,7 @@ const BlogDetails = async () => {
           </p>
         </div> */}
       </div>
-      <RelatedBlogs locale={locale} blogs={relatedBlogs?.data}></RelatedBlogs>
+      <RelatedBlogs locale={locale} blogs={filterBlogs}></RelatedBlogs>
       <Subscribe></Subscribe>
       <GetInTouch></GetInTouch>
     </div>

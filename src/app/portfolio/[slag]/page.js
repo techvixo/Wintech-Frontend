@@ -4,14 +4,13 @@ import TopGap from "../../../components/Shared/TopGap/TopGap";
 import getSpecificPortfolioImage from "../../../lib/getSpecificPortfolioImage";
 
 export default async function Page({ params }) {
-  const categoryId = "673c4b77fac2fb248739782d"
-  const categoryProducts = await getSpecificPortfolioImage(categoryId);
+  const categoryProducts = await getSpecificPortfolioImage(params?.slag);
   const locale = await getLocale();
-  console.log("categoryId:", categoryProducts?.data)
+  // console.log("categoryIdTTTTTTTTTTTTTTTTT:", params.slag)
   return (
     <div className="">
       <TopGap></TopGap>
-      <ImagePortfolioDetails locale={locale} data={categoryProducts?.data}></ImagePortfolioDetails>
+      <ImagePortfolioDetails slag={params?.slag} locale={locale} data={categoryProducts?.data}></ImagePortfolioDetails>
     </div>
   );
 }
