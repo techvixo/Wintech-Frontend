@@ -5,12 +5,13 @@ import { IoIosLock } from "react-icons/io";
 
 const ProductDetails = ({configurations}) => {
   const [activeTab, setActiveTab] = useState("introduction");
-  // Convert configurations object to array of objects
-  const configurationsArray = Object.entries(configurations).map(([key, value]) => ({
-    [key]: value,
-  }));
+  // Check if configurations exist
+  const configurationsArray = configurations
+    ? Object.entries(configurations).map(([key, value]) => ({
+        [key]: value,
+      }))
+    : null;
 
-  console.log("Configurations as Array of Objects:", configurationsArray);
   return (
     <div className="py-3 md:py-5">
       {/* Tabs */}
@@ -43,12 +44,20 @@ const ProductDetails = ({configurations}) => {
           <div className="w-full md:w-3/5">
             <h3 className="text-lg font-semibold text-gray-700 mb-2 md:mb-4">Product Name: <span className="font-bold text-gray-900">CNC Machining Services</span></h3>
             <ul className="space-y-1 md:space-y-2 text-gray-600">
-            {configurationsArray?.map((config, index) => (
-                <li key={index} className="capitalize">
-                  {Object.keys(config)[0]}:{" "}
-                  <span className="text-gray-800">{Object.values(config)[0]}</span>
-                </li>
-              ))}
+            {configurationsArray ? (
+              <ul className="space-y-1 md:space-y-2 text-gray-600">
+                {configurationsArray.map((config, index) => (
+                  <li key={index} className="capitalize">
+                    {Object.keys(config)[0]}:{" "}
+                    <span className="text-gray-800">
+                      {Object.values(config)[0]}
+                    </span>
+                  </li>
+                ))}
+              </ul>
+            ) : (
+              <p className="text-red-600">Configurations not found.</p>
+            )}
               {/* <li>Detection Mode: <span className="text-gray-800">Automated</span></li>
               <li>Size: <span className="text-gray-800">Variable</span></li>
               <li>Voltage: <span className="text-gray-800">220V</span></li>
