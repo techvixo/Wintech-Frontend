@@ -4,75 +4,8 @@ import NavLink from "./NavLink";
 import logo from "../../../../public/assets/logo/logo.png";
 import Link from "next/link";
 const SubMenuBar = ({ setNavToggle, allCategories }) => {
-  const servicesList =  [
-    {
-      serviceName: "CNC Machining Services",
-      path: "/cnc-machining",
-      subServiceName: [
-        {
-          path: "/cnc-turing",
-          title: "CNC Turning",
-        },
-        {
-          path: "/cnc-turing",
-          title: "CNC Milling",
-        },
-        {
-          path: "/cnc-turing",
-          title: "Complex Mill-Turning",
-        },
-        {
-          path: "/cnc-turing",
-          title: "5-Axis Machining",
-        },
-      ]
-    },
-    {
-      serviceName: "Materials Machined",
-      path: "/cnc-machining",
-      subServiceName: [
-        {
-          path: "/cnc-turing",
-          title: "Metals",
-        },
-        {
-          path: "/cnc-turing",
-          title: "Plastics",
-        },
-        {
-          path: "/cnc-turing",
-          title: "Complex Mill",
-        },
-        {
-          path: "/cnc-turing",
-          title: " Machining",
-        },
-      ]
-    },
-    {
-      serviceName: "Surface Finishing Services",
-      path: "/cnc-machining",
-      subServiceName: [
-        {
-          path: "/cnc-turing",
-          title: "CNC Turning",
-        },
-        {
-          path: "/cnc-turing",
-          title: "CNC Milling",
-        },
-        {
-          path: "/cnc-turing",
-          title: "Complex Mill-Turning",
-        },
-        {
-          path: "/cnc-turing",
-          title: "5-Axis Machining",
-        },
-      ]
-    },
-  ]
-  console.log("HHHHHHHHHHHHHHHH:", allCategories);
+
+  // console.log("HHHHHHHHHHHHHHHH:", allCategories);
   return (
     <div className="sub_nav_manu py-6 z-10 shadow-lg absolute top-28 left-0 right-0 w-full h-auto bg-primary p-1 text-white ">
       <div className="main_container">

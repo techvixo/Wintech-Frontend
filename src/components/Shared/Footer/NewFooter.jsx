@@ -2,9 +2,9 @@
 import logo from "../../../../public/assets/logo/logo.png";
 import qrCode from "../../../../public/assets/footer-img/qr-code.jpeg";
 import shap from "../../../../public/assets/footer-img/footer-top-shap.png";
-import m1 from "../../../../public/assets/footer-img/peyment-mathod/1.png";
-import m2 from "../../../../public/assets/footer-img/peyment-mathod/2.png";
-import m3 from "../../../../public/assets/footer-img/peyment-mathod/3.png";
+import m1 from "../../../../public/assets/footer-img/peyment-mathod/amex.png";
+import m2 from "../../../../public/assets/footer-img/peyment-mathod/paypal.png";
+import m3 from "../../../../public/assets/footer-img/peyment-mathod/unionpay.png";
 import m4 from "../../../../public/assets/footer-img/peyment-mathod/4.png";
 import m5 from "../../../../public/assets/footer-img/peyment-mathod/5.png";
 import { FaLocationDot } from "react-icons/fa6";

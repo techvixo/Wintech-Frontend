@@ -22,7 +22,7 @@ const Banner = ({ locale, data }) => {
   const handleSearch = () => {
     redirect("/services");
   };
-  console.log("object:", data);
+  // console.log("object:", data);
   return (
     <div id="banner" className="md:banner overflow-hidden ">
       <div className="slider-container w-full h-full">
