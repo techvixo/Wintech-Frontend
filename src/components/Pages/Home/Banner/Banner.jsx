@@ -39,7 +39,7 @@ const Banner = ({ locale, data }) => {
                     <h2 className="text-3xl md:text-center text-white font-bold md:text-4xl capitalize ">
                       {locale == "en" ? slider?.title_en : slider?.title_cn}
                     </h2>
-                    <p className="text-white text-sm md:text-lg">
+                    <p className="text-white text-center md:w-2/3 text-sm md:text-lg">
                       {locale == "en"
                         ? slider?.description_en
                         : slider?.description_cn}

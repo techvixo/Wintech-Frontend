@@ -7,8 +7,8 @@ export default async function getSpecificCategory(props) {
         ,{  cache: 'no-store' }
         )
 
-    if (!result.ok) {
-        throw new Error("There was an error fetching get specific Category Data!")
-    }
+    // if (!result.ok) {
+    //     throw new Error("There was an error fetching get specific Category Data!")
+    // }
     return result.json();
 }

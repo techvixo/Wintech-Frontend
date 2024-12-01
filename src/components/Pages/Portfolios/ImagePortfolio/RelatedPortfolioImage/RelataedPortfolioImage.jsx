@@ -11,7 +11,7 @@ const RelatedImagePortfolio = async ({slag}) => {
   const filteredPortfolios = relatedPortfolioImages?.data?.filter(
     (relatedImage) => relatedImage?._id !== isImage
   );
-  console.log("PPPPPPPPPPPPPPPPP:", filteredPortfolios);
+  // console.log("PPPPPPPPPPPPPPPPP:", filteredPortfolios);
   return (
     <div className="my-5 md:my-14">
       <div className="main_container">

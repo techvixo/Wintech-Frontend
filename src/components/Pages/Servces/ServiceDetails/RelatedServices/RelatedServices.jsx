@@ -4,14 +4,15 @@ import ServiceCard from "../../AllServices/ServiceCard";
 import notFoundImg from "../../../../../../public/assets/services/product-not-found.png";
 
 const RelatedServices = async ({ product, locale }) => {
-  const relatedProducts = await getSpecificCategory(product?.category?.categoryId);
+  const relatedProducts = await getSpecificCategory(product?.category);
+  // const relatedProducts = [];
   const isProduct = product?._id;
 
   // Filter out the current product from related products
   const filteredProducts = relatedProducts?.data?.products?.filter(
     (relatedProduct) => relatedProduct?._id !== isProduct
   );
-
+// console.log("RRRRRRRRRRRRRRRRRRRRRRRRRRRRRR",product);
   return (
     <div className="my-5 md:my-14">
       <div className="main_container">
