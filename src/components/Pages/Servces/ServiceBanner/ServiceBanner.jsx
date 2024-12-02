@@ -28,7 +28,7 @@ const ServiceBanner = ({ bannerBg, title, link, des }) => {
             <p className="text-sm md:text-base text-white">
               {des}
             </p>
-            <Link href={"/services"}>
+            <Link href={"/contact"}>
               <button className="shadow md:shadow-md font-semibold bg-gradient-to-r from-[#4177B7] to-[#86BCFC] hover:bg-gradient-to-r hover:from-[#86BCFC] hover:to-[#4177B7] p-2 text-base md:text-lg px-3 md:px-10 rounded-md text-[#FFFFFF] transition">
                 Get an instant quote
               </button>

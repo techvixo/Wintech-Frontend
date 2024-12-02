@@ -4,7 +4,7 @@ import ServiceCard from "../../AllServices/ServiceCard";
 import notFoundImg from "../../../../../../public/assets/services/product-not-found.png";
 
 const RelatedServices = async ({ product, locale }) => {
-  const relatedProducts = await getSpecificCategory(product?.category);
+  const relatedProducts = await getSpecificCategory(product?.category?.categoryId);
   // const relatedProducts = [];
   const isProduct = product?._id;
 
