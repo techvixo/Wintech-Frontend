@@ -3,7 +3,7 @@ import { useState } from "react";
 import { FaCloudArrowDown } from "react-icons/fa6";
 import { IoIosLock } from "react-icons/io";
 
-const ProductDetails = ({configurations}) => {
+const ProductDetails = ({configurations, product, locale}) => {
   const [activeTab, setActiveTab] = useState("introduction");
   // Check if configurations exist
   const configurationsArray = configurations
@@ -11,7 +11,7 @@ const ProductDetails = ({configurations}) => {
         [key]: value,
       }))
     : null;
-
+console.log("RRRRRRRRRRRRRRRRRRr", product);
   return (
     <div className="py-3 md:py-5">
       {/* Tabs */}
@@ -69,8 +69,11 @@ const ProductDetails = ({configurations}) => {
 
             <div className="mt-6">
               <h4 className="text-lg font-semibold text-gray-700">Our Service:</h4>
-              <p className="text-gray-600 mt-2">
+              {/* <p className="text-gray-600 mt-2">
                 Explore our comprehensive range of CNC machining services and products, including CNC turning, CNC milling, complex mill-turning, and 5-axis machining, tailored for diverse industries.
+              </p> */}
+              <p className="text-gray-600 mt-2">
+              {locale == "en" ? product?.subTitle_en : product?.subTitle_cn}
               </p>
             </div>
           </div>

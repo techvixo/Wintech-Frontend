@@ -30,7 +30,7 @@ const ServiceConfigaration = ({product, locale}) => {
         </div>
        </div>
       </div>
-      <ProductDetails configurations={product?.configurations}></ProductDetails>
+      <ProductDetails locale={locale} product={product} configurations={product?.configurations}></ProductDetails>
      </div>
     </div>
   )
