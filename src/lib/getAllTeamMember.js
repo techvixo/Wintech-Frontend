@@ -3,7 +3,8 @@ import { BASEURL } from "../../Constant";
 export default async function getAllTeamMember() {
     // console.log(props)
     const result = await fetch(
-        `${BASEURL}/our-team/all`,
+        `${BASEURL}/our-team/all`
+        ,{  cache: 'no-store' }
     )
 
     if (!result.ok) {

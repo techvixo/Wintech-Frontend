@@ -5,7 +5,7 @@ import { BASEURL } from "../../../../../Constant"
 const PartnerCard = ({part, locale}) => {
   return (
    <div  className="px-2 mb-5">
-   <div className="bg-white rounded-t-lg shadow overflow-hidden">
+   <div className="bg-white  shadow overflow-hidden">
      <Image
      width={400}
      height={400}

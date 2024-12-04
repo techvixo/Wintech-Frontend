@@ -4,6 +4,7 @@ export default async function getPartners() {
     // console.log(props)
     const result = await fetch(
         `${BASEURL}/partner/all`,
+        {  cache: 'no-store' }
     )
 
     if (!result.ok) {

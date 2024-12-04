@@ -5,7 +5,7 @@ import { BASEURL } from "../../../../../Constant";
 
 const Certificates = ({certificatesData, locale}) => {
   const t = useTranslations('AboutPage');
-  console.log(certificatesData);
+  // console.log(certificatesData);
   return (
     <div className="py-3 md:py-5">
       <div className="">

@@ -56,7 +56,7 @@ const Footer = () => {
     },
   ];
   const handleSubscribe = async () => {
-    console.log(inputValue);
+    // console.log(inputValue);
     // Regular expression for email validation
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
@@ -75,7 +75,7 @@ const Footer = () => {
           },
         });
         // console.log(response)
-        console.log(response?.data);
+        // console.log(response?.data);
         if (response?.data?.success) {
           window.alert(response?.data?.message);
           setInputValue("");
@@ -87,7 +87,7 @@ const Footer = () => {
       // Add your subscription logic here
     } else {
       // If email is not valid, set isValidEmail state to false
-      console.log("Invalid email:", inputValue);
+      // console.log("Invalid email:", inputValue);
       setIsValidEmail(false);
     }
   };

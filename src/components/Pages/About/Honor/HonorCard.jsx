@@ -1,14 +1,14 @@
 import Image from "next/image"
 
 
-const PartnerCard = ({part}) => {
+const PartnerCard = ({item}) => {
   return (
    <div  className="px-2 mb-5">
    <div className="bg-white rounded-t-lg shadow overflow-hidden">
      <Image
      width={400}
-       src={part.imgUrl}
-       alt={part.name}
+       src={item.imgUrl}
+       alt={item.name}
        className="w-full h-24 object-cover"
      />
      {/* <div className="p-2 bg-[#FBFAFE]">

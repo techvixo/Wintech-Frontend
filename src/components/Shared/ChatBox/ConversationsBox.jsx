@@ -50,7 +50,7 @@ const ConversationsBox = () => {
           `${BASEURL}/message/chat-user/send-message`,
           messageData
         );
-        console.log("Response:", response.data);
+        // console.log("Response:", response.data);
         setMessage("");
         fetchUsers();
       } catch (error) {

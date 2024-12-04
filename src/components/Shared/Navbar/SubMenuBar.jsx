@@ -13,19 +13,27 @@ const SubMenuBar = ({ setNavToggle, allCategories }) => {
           <span className="absolute -z-50 top-[-20px] left-1/2  rotate-45  bg-primary h-5 w-5 "></span>
         </div>
         <div className="grid grid-cols-4 gap-5">
-          {allCategories?.slice(0,3)?.map((service, i) => {
+          {allCategories?.slice(0, 3)?.map((service, i) => {
             return (
               <div key={i} className="mx-auto z-40 p-2">
                 <NavLink
                   onClick={() => setNavToggle(false)}
                   href={`/services/${service?._id}`}
-                  // activeClassName=""
-                  // exact={service?.path === "/"}
+                // activeClassName=""
+                // exact={service?.path === "/"}
                 >
                   {service?.name_en}
                 </NavLink>
                 <ul className=" py-2">
-                  {service?.products?.slice(0,5)?.map((subService, i) => {
+                  {service?.products?.slice(0, 5)?.map((subService, i) => {
+                    // Function to convert a string into a URL-friendly slug
+                    const generateSlug = (text) => {
+                      return text
+                        .toLowerCase() // Convert to lowercase
+                        .replace(/\s+/g, "-") // Replace spaces with hyphens
+                        .replace(/[^\w-]+/g, ""); // Remove all non-word characters
+                    };
+                    const slug = generateSlug(service?.name_en);
                     return (
                       <li
                         key={i}
@@ -33,9 +41,9 @@ const SubMenuBar = ({ setNavToggle, allCategories }) => {
                       >
                         <NavLink
                           onClick={() => setNavToggle(false)}
-                          href={`/services/service-name/${subService?._id}`}
-                          // activeClassName=""
-                          // exact={subService?.path === "/"}
+                          href={`/services/${slug}/${subService?._id}`}
+                        // activeClassName=""
+                        // exact={subService?.path === "/"}
                         >
                           {subService?.title_en}
                         </NavLink>
@@ -48,7 +56,7 @@ const SubMenuBar = ({ setNavToggle, allCategories }) => {
           })}
           <div className="w-full flex items-center justify-center">
             <Link className="w-2/3" href={"/"}>
-            <Image src={logo} alt="logo" width={200} className="w-full" />
+              <Image src={logo} alt="logo" width={200} className="w-full" />
             </Link>
           </div>
         </div>

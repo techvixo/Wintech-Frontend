@@ -2,7 +2,8 @@ import { BASEURL } from "../../Constant";
 
 export default async function getBanners(props) {
     const result = await fetch(
-        `${BASEURL}/web-banner/${props}`,
+        `${BASEURL}/web-banner/${props}`
+        ,{  cache: 'no-store' }
     )
 
     if (!result.ok) {

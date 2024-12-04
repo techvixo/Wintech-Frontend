@@ -2,7 +2,8 @@ import { BASEURL } from "../../Constant";
 
 export default async function getCertificates() {
     const result = await fetch(
-        `${BASEURL}/certificate/all`,
+        `${BASEURL}/certificate/all`
+        ,{  cache: 'no-store' }
     )
 
     if (!result.ok) {

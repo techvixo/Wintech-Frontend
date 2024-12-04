@@ -11,8 +11,8 @@ const generateSlug = (text) => {
     .replace(/\s+/g, "-") // Replace spaces with hyphens
     .replace(/[^\w-]+/g, ""); // Remove all non-word characters
 };
-  const title = locale === "en" ? product?.title_en : product?.title_cn;
-  const slug = generateSlug(title); // Generate the slug for the title
+  // const title = locale === "en" ? product?.title_en : product?.title_cn;
+  const slug = generateSlug(product?.title_en); // Generate the slug for the title
   const link = `/services/${slug}/${product?._id}`;
  
   return (
