@@ -3,13 +3,8 @@
 import { useTranslations } from "next-intl";
 
 const FeaturedVideoShow = ({ locale, videos }) => {
-  const videosList = {
-    left_side_video: "", // Example of missing video source
-    right_side_video: "https://www.youtube.com/embed/O5lZqqy7VQE",
-  };
 
   const t = useTranslations("HomePage");
-console.log(videos?.right_side_video)
   return (
     <div className="py-3 md:py-5">
       <div className="main_container">
