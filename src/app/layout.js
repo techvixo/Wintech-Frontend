@@ -9,7 +9,7 @@ import SocialIcons from "../components/Shared/SocialIcons/SocialIcons";
 import { Toaster } from "react-hot-toast";
 
 export const metadata = {
-  title: "Wintech - Home",
+  title: "Wintec - Home",
   description: "Best machine company in china",
 };
 

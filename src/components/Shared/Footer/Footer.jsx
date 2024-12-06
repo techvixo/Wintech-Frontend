@@ -128,7 +128,7 @@ const Footer = () => {
           <div className="flex flex-col gap-3 font-normal">
             <p className="text-white font-bold  mb-3">COMPANY</p>
             <Link href="/about-us">
-              <span>About Wintech</span>
+              <span>About Wintec</span>
             </Link>
             <Link href="/mission-vision">
               <span>Mission & vission</span>
@@ -209,7 +209,7 @@ const Footer = () => {
             </div>
             <p className="text-sm text-center text-white mt-4">
               {" "}
-              © Copyright 2024 - WinTech Bangladesh Ltd. All Rights Reserved.
+              © Copyright 2024 - WinTec Bangladesh Ltd. All Rights Reserved.
             </p>
           </div>
           <div className="md:flex justify-end w-full md:w-1/2">

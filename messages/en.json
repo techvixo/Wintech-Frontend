@@ -289,7 +289,7 @@
       },
       "section4": {
         "title": "Industries Served",
-        "description": "At Wintech, we pride ourselves on offering CNC machining services that are as diverse as the businesses we serve. When it comes to your prototype CNC machining requirements, trust us to provide you with outstanding results that stand out from the ordinary.",
+        "description": "At wintec, we pride ourselves on offering CNC machining services that are as diverse as the businesses we serve. When it comes to your prototype CNC machining requirements, trust us to provide you with outstanding results that stand out from the ordinary.",
         "list": {
           "item1": "Aerospace",
           "item2": "Automotive",
@@ -318,7 +318,7 @@
         },
         "question4": {
           "title": "Can you provide design services for my CNC machining project?",
-          "description": "Wintech CNC machining service providers offer design and engineering services to help you develop your product idea."
+          "description": "wintec CNC machining service providers offer design and engineering services to help you develop your product idea."
         },
         "question5": {
           "title": "What is the lead time for CNC machining projects?",
@@ -330,7 +330,7 @@
         },
         "question7": {
           "title": "Can I visit your facility to see the CNC machining process?",
-          "description": "Wintech CNC machining service providers offer facility tours to give clients a firsthand look at their capabilities and processes."
+          "description": "wintec CNC machining service providers offer facility tours to give clients a firsthand look at their capabilities and processes."
         },
         "question8": {
           "title": "What materials can be used with CNC machining?",
@@ -338,8 +338,8 @@
         }
       }
     },
-    "Wintech": {
-      "title": "The Wintech Standard",
+    "wintec": {
+      "title": "The wintec Standard",
       "DataList": {
         "item1": {
           "id": 1,

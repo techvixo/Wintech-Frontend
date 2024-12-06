@@ -6,7 +6,10 @@ import TopGap from "../../components/Shared/TopGap/TopGap";
 import getBanners from "../../lib/getBanner";
 import { BASEURL } from "../../../Constant";
 import { getLocale } from "next-intl/server";
-
+export const metadata = {
+  title: "Wintec - Contact",
+  description: "Best machine company in china",
+};
 export default async function Page() {
   const banner = await getBanners("contact_us")
   const locale = await getLocale();

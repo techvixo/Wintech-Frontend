@@ -6,7 +6,10 @@ import TopGap from "../../components/Shared/TopGap/TopGap";
 import getAllBlogs from "../../lib/getAllBlogs"
 import { getLocale } from "next-intl/server";
 import getBanners from "../../lib/getBanner"
-
+export const metadata = {
+  title: "Wintec - Blog",
+  description: "Best machine company in china",
+};
 export default async function Page() {
   const blogsData = await getAllBlogs()
   const banner = await getBanners("blog")

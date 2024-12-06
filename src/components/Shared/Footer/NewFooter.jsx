@@ -137,7 +137,7 @@ const NewFooter = () => {
           <div className="flex flex-col gap-3 font-normal">
             <p className="text-white font-bold  mb-3">NAVIGATION</p>
             <Link href="/about">
-              <span>About Wintech</span>
+              <span>About Wintec</span>
             </Link>
             <Link href="/portfolio">
               <span>Portfolio</span>

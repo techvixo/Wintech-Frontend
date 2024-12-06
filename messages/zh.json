@@ -320,7 +320,7 @@
     },
     "question4": {
       "title": "您可以为我的 CNC 加工项目提供设计服务吗？",
-      "description": "Wintech CNC 加工服务提供商提供设计和工程服务，以帮助您开发产品创意。"
+      "description": "wintec CNC 加工服务提供商提供设计和工程服务，以帮助您开发产品创意。"
     },
     "question5": {
       "title": "CNC 加工项目的交付周期是多少？",
@@ -332,7 +332,7 @@
     },
     "question7": {
       "title": "我可以参观您工厂了解 CNC 加工过程吗？",
-      "description": "Wintech CNC 加工服务提供商提供设施参观，让客户亲身了解他们的能力和工艺流程。"
+      "description": "wintec CNC 加工服务提供商提供设施参观，让客户亲身了解他们的能力和工艺流程。"
     },
     "question8": {
       "title": "CNC 加工可以使用哪些材料？",
@@ -340,8 +340,8 @@
     }
   }
 },
-   "Wintech": {
-  "title": "Wintech 标准",
+   "wintec": {
+  "title": "wintec 标准",
   "DataList": {
     "item1": {
       "id": 1,

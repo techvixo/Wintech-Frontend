@@ -10,7 +10,10 @@ import TopGap from "../../components/Shared/TopGap/TopGap";
 import getProducts from "../../lib/getProducts"
 import getBanners from "../../lib/getBanner"
 import { getLocale } from "next-intl/server";
-
+export const metadata = {
+  title: "Wintec - Services",
+  description: "Best machine company in china",
+};
 export default async function Page() {
   const allProducts = await getProducts()
   const banner = await getBanners("services")

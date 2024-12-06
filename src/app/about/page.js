@@ -15,7 +15,10 @@ import getCertificates from "../../lib/getCertificates";
 import getPartners from "../../lib/getPartners";
 import getBanners from "../../lib/getBanner";
 import { getLocale } from "next-intl/server";
-
+export const metadata = {
+  title: "Wintec - About",
+  description: "Best machine company in china",
+};
 
 export default async function Page() {
   const teamMembers = await getAllTeamMember()

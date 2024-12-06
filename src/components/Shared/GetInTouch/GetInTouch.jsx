@@ -75,7 +75,7 @@ const GetInTouch = () => {
                   </span>
                 </p>
                 <p>
-                  WINTECH :{" "}
+                  WINTEC :{" "}
                   <span className="font-semibold">
                   {t(`ContactForm.ContactInfo.address`)}
                   </span>
