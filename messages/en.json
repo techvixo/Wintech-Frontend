@@ -338,7 +338,7 @@
         }
       }
     },
-    "wintec": {
+    "Wintech": {
       "title": "The wintec Standard",
       "DataList": {
         "item1": {
@@ -368,6 +368,41 @@
     "MachineCenter": {
       "title": "Our CNC Machining Center",
       "shortTitle": "Our Galley"
+    },
+    "ProcessSteps": {
+      "title": "Our Ordering Process",
+      "StepsList": {
+        "step1": {
+          "id": 1,
+          "title": "Get a Quote",
+          "description": "Upload your design file through our online quote system to receive a personalized quote."
+        },
+        "step2": {
+          "id": 2,
+          "title": "Order Placement",
+          "description": "Once specifications and pricing are confirmed, place your order and provide delivery details."
+        },
+        "step3": {
+          "id": 3,
+          "title": "Product Manufacturing",
+          "description": "We select the optimal production technique and materials to begin manufacturing promptly."
+        },
+        "step4": {
+          "id": 4,
+          "title": "Quality Inspection",
+          "description": "Every part undergoes a quality and functionality check to meet our standards."
+        },
+        "step5": {
+          "id": 5,
+          "title": "Shipping & Delivery",
+          "description": "Your order is securely packaged and shipped according to the selected delivery method."
+        }
+      },
+      "button": "START YOUR ORDER"
+    },
+    "GetStart": {
+      "title": "Let’s Get Started",
+      "button": "Get Instant Quote"
     }
   },
   "AboutPage": {
