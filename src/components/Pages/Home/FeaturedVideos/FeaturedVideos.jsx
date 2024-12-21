@@ -19,7 +19,7 @@ const FeaturedVideos = ({locale, videos}) => {
     },
   ];
   const t = useTranslations('HomePage');
-  console.log(videos)
+  // console.log(videos)
   return (
     <div className="py-3 md:py-5 ">
       <div className="main_container">

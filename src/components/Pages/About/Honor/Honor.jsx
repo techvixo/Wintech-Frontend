@@ -1,50 +1,50 @@
-import img1 from "../../../../../public/assets/home-img/machine/1.png";
-import img2 from "../../../../../public/assets/home-img/machine/2.png";
-import img3 from "../../../../../public/assets/home-img/machine/3.png";
-import img4 from "../../../../../public/assets/home-img/machine/2.png";
-import { useTranslations } from "next-intl";
-import HonorCard from "./HonorCard";
+"use client";
+import { useState } from "react";
+import PartnerCard from "../OurPartner/PartnerCard";
 
-const Honor = () => {
-  const honerData = [
-    {
-      id: 1,
-      name: "CNC Machining Services",
-      imgUrl: img1,
-    },
-    {
-      id: 2,
-      name: "Materials Machined",
-      imgUrl: img2,
-    },
-    {
-      id: 3,
-      name: "Surface Finishing Services",
-      imgUrl: img3,
-    },
-    {
-      id: 4,
-      name: "Precision Engineering",
-      imgUrl: img4,
-    },
-  ];
+const Honor = ({ honors, locale }) => {
+  const [currentPage, setCurrentPage] = useState(1);
+  const partnersPerPage = 6;
 
-  const t = useTranslations('HomePage');
+  // Calculate the index range for the current page
+  const indexOfLastPartner = currentPage * partnersPerPage;
+  const indexOfFirstPartner = indexOfLastPartner - partnersPerPage;
+  const currentPartners = honors?.slice(indexOfFirstPartner, indexOfLastPartner);
+
+  // Calculate total pages
+  const totalPages = Math.ceil((honors?.length || 0) / partnersPerPage);
+
+  // Handle page change
+  const handlePageChange = (pageNumber) => {
+    setCurrentPage(pageNumber);
+  };
+
   return (
     <div className="my-5 md:my-10">
       <div className="main_container relative">
-        <h2 className="text-center text-2xl md:text-3xl font-bold text-[#070F11] my-4 md:my-7">
-          {/* {t(`CncMachined.title`)} */}
-          {"Our Honor"}
+        <h2 className="md:pt-5 text-2xl md:text-3xl font-bold text-[#070F11] my-4 md:my-7">
+          {"Our Honer"}
         </h2>
-        <h3 className="text-xl md:text-2xl font-bold text-gray-500 text-center">Data Not Found!</h3>
-        {/* <div className="grid grid-cols-2  gap-2 md:gap-4 pt-2">
-          {honerData?.map((item, i) => {
-            return (
-              <HonorCard key={i} item={item}></HonorCard>
-            );
-          })}
-        </div> */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-5">
+          {currentPartners?.map((part, i) => (
+            <PartnerCard locale={locale} key={i} part={part}></PartnerCard>
+          ))}
+        </div>
+
+        {/* Pagination */}
+        <div className="flex justify-center mt-5">
+          {Array.from({ length: totalPages }, (_, i) => (
+           <button
+           key={i}
+           className={`px-3 py-1 border rounded-full  hover:border-blue-500 ${
+             currentPage === i + 1 ? "bg-blue-500 text-white" : "bg-gray-200"
+           }`}
+           onClick={() => handlePageChange(i + 1)}
+         >
+           {i + 1}
+         </button>
+          ))}
+        </div>
       </div>
     </div>
   );

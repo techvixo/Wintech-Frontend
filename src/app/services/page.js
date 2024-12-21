@@ -26,7 +26,7 @@ export default async function Page() {
       <ServiceBannerWrapper locale={locale} banner={banner?.data}></ServiceBannerWrapper>
       {/* <PageMenu menus={menus}></PageMenu> */}
       <ServiceMenu></ServiceMenu>
-      <AllServices products={allProducts?.data}></AllServices>
+      <AllServices locale={locale} products={allProducts?.data}></AllServices>
       <ServiceProcesses></ServiceProcesses>
       <WintechStandard></WintechStandard>
       <MachinesCenter></MachinesCenter>

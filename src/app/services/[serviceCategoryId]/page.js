@@ -32,7 +32,7 @@ export default async function Page({params}) {
       ></ServiceBanner>
       {/* <PageMenu menus={menus}></PageMenu> */}
       <ServiceMenu></ServiceMenu>
-      <AllServices products={categoryProducts?.data?.products}></AllServices>
+      <AllServices locale={locale} products={categoryProducts?.data?.products}></AllServices>
       <ServiceProcesses></ServiceProcesses>
       <WintechStandard></WintechStandard>
       <MachinesCenter></MachinesCenter>

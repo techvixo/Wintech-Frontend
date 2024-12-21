@@ -1,129 +1,52 @@
 "use client";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-
-// Import your images
-import img1 from "../../../../../public/assets/home-img/machine/1.png";
-import img2 from "../../../../../public/assets/home-img/machine/2.png";
-import img3 from "../../../../../public/assets/home-img/machine/3.png";
-import img4 from "../../../../../public/assets/home-img/machine/2.png"; // Reusing img2
-import Image from "next/image";
-import { useTranslations } from "next-intl";
+import { useState } from "react";
 import PartnerCard from "./PartnerCard";
 
-// Custom Next Arrow Component
-const NextArrow = ({ onClick }) => {
-  return (
-    <button
-      className="absolute right-0 top-1/2 z-10 transform-translate-y-1/2 bg-gray-100 text-gray-800 rounded-full p-2 shadow-lg hover:bg-gray-300"
-      onClick={onClick}
-    >
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-        className="w-6 h-6"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={2}
-          d="M9 5l7 7-7 7"
-        />
-      </svg>
-    </button>
-  );
-};
+const OurPartner = ({ ourPartners, locale }) => {
+  const [currentPage, setCurrentPage] = useState(1);
+  const partnersPerPage = 6;
 
-// Custom Previous Arrow Component
-const PrevArrow = ({ onClick }) => {
-  return (
-    <button
-      className="absolute left-0 z-10 top-1/2 transform-translate-y-1/2 bg-gray-100 text-gray-800 rounded-full p-2 shadow-lg hover:bg-gray-300"
-      onClick={onClick}
-    >
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-        className="w-6 h-6"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={2}
-          d="M15 19l-7-7 7-7"
-        />
-      </svg>
-    </button>
-  );
-};
+  // Calculate the index range for the current page
+  const indexOfLastPartner = currentPage * partnersPerPage;
+  const indexOfFirstPartner = indexOfLastPartner - partnersPerPage;
+  const currentPartners = ourPartners?.slice(indexOfFirstPartner, indexOfLastPartner);
 
-const OurPartner = ({ourPartners, locale}) => {
-  const ourPartner = [
-    {
-      id: 1,
-      name: "CNC Machining Services",
-      imgUrl: img1,
-    },
-    {
-      id: 2,
-      name: "Materials Machined",
-      imgUrl: img2,
-    },
-    {
-      id: 3,
-      name: "Surface Finishing Services",
-      imgUrl: img3,
-    },
-    {
-      id: 4,
-      name: "Precision Engineering",
-      imgUrl: img4,
-    },
-  ];
+  // Calculate total pages
+  const totalPages = Math.ceil((ourPartners?.length || 0) / partnersPerPage);
 
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    nextArrow: <NextArrow />,
-    prevArrow: <PrevArrow />,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 2,
-        },
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-        },
-      },
-    ],
+  // Handle page change
+  const handlePageChange = (pageNumber) => {
+    setCurrentPage(pageNumber);
   };
-  const t = useTranslations('HomePage');
+
   return (
-   <div className="my-5 md:my-10">
-     <div className="main_container relative">
-      <h2 className="text-center text-2xl md:text-3xl font-bold text-[#070F11] my-4 md:my-7">
-      {/* {t(`CncMachined.title`)} */}
-      {"Our Partner"}
-      </h2>
-      <Slider {...settings}>
-        {ourPartners?.map((part, i) => {
-          return <PartnerCard locale={locale} key={i} part={part}></PartnerCard>;
-        })}
-      </Slider>
+    <div className="my-5 md:my-10">
+      <div className="main_container relative">
+        <h2 className="md:pt-5 text-2xl md:text-3xl font-bold text-[#070F11] my-4 md:my-7">
+          {"Our Partner"}
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-5">
+          {currentPartners?.map((part, i) => (
+            <PartnerCard locale={locale} key={i} part={part}></PartnerCard>
+          ))}
+        </div>
+
+        {/* Pagination */}
+        <div className="flex justify-center mt-5">
+          {Array.from({ length: totalPages }, (_, i) => (
+           <button
+           key={i}
+           className={`px-3 py-1 border rounded-full  hover:border-blue-500 ${
+             currentPage === i + 1 ? "bg-blue-500 text-white" : "bg-gray-200"
+           }`}
+           onClick={() => handlePageChange(i + 1)}
+         >
+           {i + 1}
+         </button>
+          ))}
+        </div>
+      </div>
     </div>
-   </div>
   );
 };
 

@@ -6,11 +6,13 @@ import TopGap from "../../../components/Shared/TopGap/TopGap";
 import bannerImg from "../../../../public/assets/banner-img.png"
 import PageMenu from "../../../components/Pages/Portfolios/PageMenu/PageMenu";
 import getBanners from "../../../lib/getBanner";
+import getHomePageData from "../../../lib/getHomePageData";
 import { getLocale } from "next-intl/server";
 import { BASEURL } from "../../../../Constant";
 
 export default async function Page() {
   const banner = await getBanners("portfolio")
+  const videos = await getHomePageData();
   const locale = await getLocale();
   const menus = [
     {
@@ -38,7 +40,7 @@ export default async function Page() {
         link={"portfolio"}
       ></ShareBanner>
       <PageMenu menus={menus}></PageMenu>
-      <VideoPortfolio></VideoPortfolio>
+      <VideoPortfolio locale={locale} videos={videos?.data}></VideoPortfolio>
       <FindProducts></FindProducts>
     </div>
   );

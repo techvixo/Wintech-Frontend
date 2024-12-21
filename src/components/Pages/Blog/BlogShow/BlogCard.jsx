@@ -20,14 +20,14 @@ const BlogCard = ({ blog, locale }) => {
           height={400}
           src={`${BASEURL}/${blog?.heading_image}`}
           alt={locale == "en" ? blog?.name_en : blog?.name_cn}
-          className="w-full rounded-md"
+          className="w-full rounded-md h-52 md:h-64 object-cover"
         />
       </div>
       <h4 className="text-[#252B42] my-2 text-lg md:text-2xl font-semibold capitalize">
-        {locale == "en" ? blog?.name_en : blog?.name_cn}
+        {locale == "en" ? blog?.name_en?.slice(0, 40) + ".." : blog?.name_cn?.slice(0, 40) + ".."}
       </h4>
       <p className="text-sm md:text-base text-[#606060] my-2 mb-4 md:mb-7">
-      {description || "No description available."}
+      {description?.slice(0, 150) + ".." || "No description available."}
       </p>
       <Link
         href={`/blog/${blog?._id}`}
