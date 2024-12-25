@@ -1,18 +1,16 @@
-
 import VideoPortfolio from "../../../components/Pages/Portfolios/VideoPortfolio/VideoPortfolio";
 import FindProducts from "../../../components/Shared/FindProducts/FindProducts";
 import ShareBanner from "../../../components/Shared/ShareBanner/ShareBanner";
 import TopGap from "../../../components/Shared/TopGap/TopGap";
-import bannerImg from "../../../../public/assets/banner-img.png"
 import PageMenu from "../../../components/Pages/Portfolios/PageMenu/PageMenu";
 import getBanners from "../../../lib/getBanner";
-import getHomePageData from "../../../lib/getHomePageData";
 import { getLocale } from "next-intl/server";
 import { BASEURL } from "../../../../Constant";
+import getVideos from "../../../lib/getVideos";
 
 export default async function Page() {
   const banner = await getBanners("portfolio")
-  const videos = await getHomePageData();
+  const videos = await getVideos();
   const locale = await getLocale();
   const menus = [
     {

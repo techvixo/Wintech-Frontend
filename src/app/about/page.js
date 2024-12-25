@@ -13,6 +13,7 @@ import TopGap from "../../components/Shared/TopGap/TopGap";
 import getAllTeamMember from "../../lib/getAllTeamMember";
 import getCertificates from "../../lib/getCertificates";
 import getPartners from "../../lib/getPartners";
+import getHonors from "../../lib/getHonors";
 import getBanners from "../../lib/getBanner";
 import { getLocale } from "next-intl/server";
 export const metadata = {
@@ -21,17 +22,22 @@ export const metadata = {
 };
 
 export default async function Page() {
+  const banner = await getBanners("about_us")
   const teamMembers = await getAllTeamMember()
   const certificatesData = await getCertificates()
   const partnerData = await getPartners()
-  const banner = await getBanners("about_us")
+  const honorsData = await getHonors()
   const locale = await getLocale();
 // console.log("certificatesData:", partnerData.data);
   return (
     <div className="">
       <TopGap></TopGap>
       <AboutBanner  locale={locale} banner={banner?.data}></AboutBanner>
-      <AboutMenuTab locale={locale} ourPartners={partnerData?.data}></AboutMenuTab>
+      <AboutMenuTab
+       locale={locale}
+        ourPartners={partnerData?.data}
+        ourHonors={honorsData?.data}
+        ></AboutMenuTab>
       <WeDo></WeDo>
       <Facilities></Facilities>
       <OurTeam locale={locale} ourTeamMembers={teamMembers?.data}></OurTeam>
