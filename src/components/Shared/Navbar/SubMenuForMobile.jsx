@@ -39,9 +39,9 @@ const SubMenuForMobile = ({ setNavToggle, openSubMenus, allCategories }) => {
             </span>
             <MenuLink
               onClick={() => setNavToggle(false)}
-              href={`/product/${subService?._id}`}
+              href={`/services/${subService?._id}`}
               activeClassName="text-secondary font-semibold"
-              exact={`/product/${subService?._id}` === "/"}
+              exact={`/services/${subService?._id}` === "/"}
             >
               {subService?.name_en}
             </MenuLink>
